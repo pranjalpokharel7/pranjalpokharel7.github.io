@@ -63,14 +63,6 @@ paginate = 5
 
     [languages.en.menu]
       [[languages.en.menu.main]]
-        identifier = "writings"
-        name = "Writings"
-        url = "/writings"
-      [[languages.en.menu.main]]
-        identifier = "weebland"
-        name = "Weeb-Land"
-        url = "/weebland"
-      [[languages.en.menu.main]]
         identifier = "about"
         name = "About"
         url = "/about"

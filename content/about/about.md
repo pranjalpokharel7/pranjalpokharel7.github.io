@@ -1,8 +1,8 @@
 ---
 title: "About Me"
 date: 2021-02-13T18:31:06+05:45
-draft: true
-showFullContent: true
+draft: false 
+description: "Hi there!"
 ---
 
 **Name:** Pranjal Pokharel\
