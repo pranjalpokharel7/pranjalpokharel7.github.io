@@ -1,4 +1,4 @@
-baseURL = "http://example.org/"
+baseURL = "http://pranjalpokharel.com.np/"
 languageCode = "en-us"
 theme = "terminal"
 paginate = 5
@@ -47,9 +47,9 @@ paginate = 5
   [languages.en]
     languageName = "English"
     title = "Pranjal Pokharel | Blog Site"
-    subtitle = ""
+    subtitle = "Punpun"
     owner = "Pranjal Pokharel"
-    keywords = ""
+    keywords = "blog,developer,anime"
     copyright = "© 2021 Pranjal Pokharel"
     menuMore = "Show More"
     readMore = "Read More"
