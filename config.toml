@@ -57,7 +57,7 @@ paginate = 5
     missingBackButtonLabel = "Back to home page"
 
     [languages.en.params.logo]
-      logoText = "PPOK24'S HOME"
+      logoText = "PUNPUN'S HOME"
       logoHomeLink = "/"
 
     [languages.en.menu]

@@ -3,7 +3,7 @@ title: "Punpun's Valentine Playlist (2021)"
 date: 2021-02-13T16:40:18+05:45
 draft: false 
 tags: ["japanese-music"]
-description: "13 Songs (Lucky Number!) For The Day"
+description: "13 Songs For The Day"
 ---
 
 Keeping things short, here's the link to the playlist of some romantic (feel good) Japanese songs that I usually have on loop, Valentine's day or not:

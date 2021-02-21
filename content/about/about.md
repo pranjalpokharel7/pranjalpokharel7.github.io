@@ -18,5 +18,9 @@ As of now, I am a 2nd Year Bachelor in Computer Engineering Student (BCT) studyi
 - "It is what it is."
 - "Privacy matters."
 
+**Dedicated:**
 
+To my **mom and dad**, thanks for bearing with my indecisive, weepy, overthinking and neglectful self, both of you have made me who I am today, my mom being my first computer teacher and my dad being my first spiritual mentor. In terms of your competition, there is no competition.
+
+Except maybe my **sister**, who has been my source of inspiration and moral compass for all these years. Hope you conquer everything you've set out to do, you are my hero.
 
