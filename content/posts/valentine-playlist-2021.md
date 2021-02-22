@@ -69,7 +69,7 @@ It just makes it more fun!"
 ### City Pop: For A Trip Through Nostalgia
 
 #### 4) [Crazy For You - Saito Marina](https://www.youtube.com/watch?v=_hMcJAERPHE&list=PL63_35IpRqoTJ_qyJoL2YSeYK-iYlUAqk&index=4)
-This is it. The most listened to song on my playlist. The only song from this list that I will sing in my wedding, hypothetical scenarios in 3..2..1...
+This is it. The most listened to song on my playlist. The only song from this list that I will sing in my wedding, hypothetical scenarios in 3..2..1..
 
 Since this song, I've listened to Saito Marina sing originals and cover countless other songs from the 80s but this one is beyond special to me. Hard to express the feelings the melody evokes in my heart - a walk along the beach, hand holding, smiling as you glance at each other, knowing that given the time and place there's no other place you'd rather be, than with each other.
 ```
@@ -119,7 +119,8 @@ Everything comes to an end in due time, don't hurry!"
 ### Slow Songs - Romantic Partners For Life, Songs For The End Of The Journey
 
 #### 7) [Sakura - Ikimonogakari](https://www.youtube.com/watch?v=NNgDURlUbfE&list=PL63_35IpRqoTJ_qyJoL2YSeYK-iYlUAqk&index=7)
-Cherry blossoms, springs, rivers, fluttering hearts - a song in perfect sync with the Japanese nature and love. 
+Cherry blossoms, springs, rivers, a longing for a genuine relationship - a 
+song in perfect sync with the Japanese nature and love. 
 
 I might point out at this point that most of the songs I've in this playlist are lyrics videos, so even if you're new to Japanese music, you can follow along with the translated lyrics. And while the lyrics are more on the sentimental side of missing a loved one, be sure not to miss this song, because it is simply, art.
 ```

@@ -16,7 +16,7 @@ To **Bipin Lal Shrestha** sir, your classes were the most fun I had in school
 and ones to treasure. Hope the full-page answers I wrote to 2 marks 
 questions didn't tire you back then :KEK:.
 
-#### To my colleagues
+#### To my friends
 
 To **Adarsha Thapa** and **Sitanshu Shrestha**, two of my friends from high
 school, who despite being leagues ahead of me in terms of programming prowess 
@@ -24,10 +24,15 @@ and real-world skills, are still as humble as ever. To **Ankit Acharya**, my bes
 mate from high school through college, currently struggling against the hellish
 tides of Chartered Accountant (CA) studies.
 
-To **Sanskar Amgain**, the one whom I arguably consider to be the best programmer
+To **Nabin Ghimire** and **Laxmi Kanta Poudel**, the two idiots who saved my 
+college life from being miserable. **Nabin Gautam** is probably busy partying 
+with 'Australia's Top Models', but in case you see this, book me a flight 
+ticket ASAP (because I need to join in, sshhh...).
+
+To **Sanskar Amgain**, the one whom I consider to be arguably the best programmer
 from our batch. **Sandesh Ghimire**, my first friend in Pulchowk and the man
 with the best design sense I've met till date. **Ranju G.C.**, the perfect
-project and lab partner one could ask for (one of the few lone souls who finds 
+project and lab partner one could ask for (and one of the few lone souls who finds 
 my jokes funny).
 
 To **Prabin Paudel**, the guy who has stuck with me through thick and thin. 
@@ -44,30 +49,30 @@ A rag-tag bunch of defenders of Mother Earth, who have
 taken some time off for now to cater to my needs. It is because of you guys that 
 I have a new home to look forward to everytime vacation ends. 
 
-**Udeshya Dhungana**, the Arch-user and the man who introduced me to Vim 
+To **Udeshya Dhungana**, the Arch-user and the man who introduced me to Vim 
 (guy prefers Emacs though, for now :evil_smirk:). **Nishan Poudel**, my guitar hero,
-the Florida man who taught me to relax a bit 
+my Florida man who has taught me to relax a bit 
 and enjoy life the way it comes. Both excellent programmers, and even closer roommates.
 
-**Sandesh Pokhrel**, my brother from another mother, footbal maestro and 
+To **Sandesh Pokhrel**, my brother from another mother, footbal maestro and 
 magician. **Santosh Pangeni**, man as skinny as they come, my arch nemesis on Fifa
 when it comes to playing styles. **Nikhil Aryal**, the man who couldn't say 'no',
 the sword that guards the realms of men. 
 
-**Mukul Atreya**, someone whom I want to play the 
+To **Mukul Atreya**, fellow connoisseur of anime, someone whom I want to play the 
 guitar with onstage before I graduate. **Sangam Chaulagain**, our alpha, pack 
 leader, a smile ladies die for. **Tilak Chad**, my weeb buddy, Dennis Ritchie lite, the man I love the most
 having intellectual conversations with. **Milan Shrestha**, someone I share 'the
 same district bond' with, and whose family makes me feel like home when I visit.
 
-**Berma Yadav** for being patient as my
-table tennis practice partner and showing the true 'art of personal hygiene'.
+To **Berma Yadav** for being patient as my
+table tennis practice partner and showing me the true 'art of personal hygiene'.
 **Bishnu Paudel**, the guy who has rescued me from potential exam failures on 
 multiple occasions as my study guide and who waited for me in the hospital
 that one critical time. **Gopal Pangeni** for showing me the importance of kindness
 and hard work, here's to doing a civil project with you in the future!
 
-**Ujjwal Kandel** for simply existing.
+To **Ujjwal Kandel** for simply existing.
 
 #### To my seniors
 
@@ -93,9 +98,10 @@ queue :cringe:.
 
 To **Krishna Upadhyaya**, for demonstration of how to walk a thin-line between
 hostel expulsion and legendary programmer status. Fiercest supporter of Pulchowk IT 
-Community from outside the college, and our one time sponsor for CP contest.
+Community from outside the college, and our one time sponsor for CP contest 
+(more on that some other day).
 
 To **Sandesh Bhusal**, for giving me an ideal to strive for. You are the ghost I 
 am chasing and someone whom I want to make proud. Here's to hoping I buckle 
-down, stop complaining about engineering life and what not, and never stop 
+down, stop complaining about engineering life, and never stop 
 walking. Cheers!
