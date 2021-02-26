@@ -12,10 +12,11 @@ description: "Hi there!"
 As of now, I am a 2nd Year Bachelor in Computer Engineering Student (BCT) studying in Pulchowk Campus, IOE, Nepal. Social links are at the footer of this page. You can contact me by email/twitter. 
 
 **Email:** pranjalpokharel007@gmail.com, 075bct061.pranjal@pcampus.edu.np\
-**Hobbies:** Programming, Guitar, Digital Art, Fiction Writing, Manga/Anime\
-**Quotes:**
-- "It is what it is."
-- "Privacy matters."
+\
+**Quotes To Live By:**
+- "It is what it is." - *Random Stoic*
+- "He who has a why to live can bear almost any how." - *Nietzsche*
+- "Everything that irritates us about others can lead us to an understanding of ourselves." - *Jung*
 
 **Dedicated:**
 
