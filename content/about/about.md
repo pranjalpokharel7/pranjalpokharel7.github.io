@@ -11,9 +11,8 @@ description: "Hi there!"
 **Short Bio:**
 As of now, I am a 2nd Year Bachelor in Computer Engineering Student (BCT) studying in Pulchowk Campus, IOE, Nepal. Social links are at the footer of this page. You can contact me by email/twitter. 
 
-**Email:** pranjalpokharel007@gmail.com\
+**Email:** pranjalpokharel007@gmail.com, 075bct061.pranjal@pcampus.edu.np\
 **Hobbies:** Programming, Guitar, Digital Art, Fiction Writing, Manga/Anime\
-**Philosophy:** Anti-Consumerism, FOSS\
 **Quotes:**
 - "It is what it is."
 - "Privacy matters."
