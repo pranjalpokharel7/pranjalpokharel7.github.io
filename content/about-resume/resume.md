@@ -58,7 +58,7 @@ LOCUS 2020, Pulchowk Campus.
 ---
 #### Relevant Links:
 **GitHub**: https://github.com/pranjalpokharel7\
-**Medium**: https://www.medium.com/@pranjalpokharel007\
+**Medium**: https://pranjalpokharel007.medium.com\
 **LinkedIn**: https://www.linkedin.com/in/pranjal-pokharel-860637188
 
 ---

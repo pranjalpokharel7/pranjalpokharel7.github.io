@@ -23,7 +23,7 @@ paginate = 5
   centerTheme = true 
 
   # set a custom favicon (default is a `themeColor` square)
-  # favicon = "favicon.ico"
+  favicon = ""
 
   # set post to show the last updated
   # If you use git, you can set `enableGitInfo` to `true` and then post will automatically get the last updated
@@ -52,7 +52,7 @@ paginate = 5
     copyright = "© 2021 Pranjal Pokharel"
     menuMore = "Show More"
     readMore = "Read More"
-    readOtherPosts = "Read other posts"
+    readOtherPosts = "Read Other Posts"
     missingContentMessage = "Page not found..."
     missingBackButtonLabel = "Back to home page"
 
@@ -64,9 +64,9 @@ paginate = 5
       [[languages.en.menu.main]]
         identifier = "about"
         name = "About"
-        url = "/about"
+        url = "/about-resume/about"
 
       [[languages.en.menu.main]]
         identifier = "resume"
         name = "Resume"
-        url = "/resume"
+        url = "/about-resume/resume"
