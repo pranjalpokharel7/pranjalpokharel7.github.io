@@ -1,5 +1,5 @@
 ---
-title: "Punpun's Valentine Playlist (2021)"
+title: "Valentine Playlist (2021)"
 date: 2021-02-13T16:40:18+05:45
 draft: false 
 tags: ["japanese-music"]

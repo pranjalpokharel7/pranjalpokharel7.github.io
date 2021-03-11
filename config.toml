@@ -46,7 +46,7 @@ paginate = 5
   [languages.en]
     languageName = "English"
     title = "Pranjal Pokharel | Blog Site"
-    subtitle = "Punpun"
+    subtitle = "ppok24"
     owner = "Pranjal Pokharel"
     keywords = "blog,developer,anime"
     copyright = "© 2021 Pranjal Pokharel"
@@ -57,7 +57,7 @@ paginate = 5
     missingBackButtonLabel = "Back to home page"
 
     [languages.en.params.logo]
-      logoText = "PUNPUN'S HOME"
+      logoText = "HOME"
       logoHomeLink = "/"
 
     [languages.en.menu]

@@ -5,8 +5,7 @@ draft: false
 description: "Hi there!"
 ---
 
-**Name:** Pranjal Pokharel\
-**Nickname:** Punpun (self-given, in case you find my original name too difficult to pronounce)
+**Name:** Pranjal Pokharel
 
 **Short Bio:**
 As of now, I am a 2nd Year Bachelor in Computer Engineering Student (BCT) studying in Pulchowk Campus, IOE, Nepal. Social links are at the footer of this page. You can contact me by email/twitter. 

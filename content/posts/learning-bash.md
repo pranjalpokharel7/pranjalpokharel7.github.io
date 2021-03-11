@@ -3,7 +3,7 @@ title: "Learning Bash Scripting"
 date: 2021-03-08T23:36:14+05:45
 draft: false
 tags: ["programming"]
-description: "*add-clever-description-here..."
+description: "Well Sort Of..."
 ---
 While I have been using Linux for over 2 years now, frankly I had 
 never thought about automating tasks using simple bash scripts. This
@@ -70,7 +70,7 @@ Wait, why are files of name ‘180000’ scattered around my storage? Oh no, for
 - **GNU Awk User’s Guide:** https://www.gnu.org/software/gawk/manual/gawk.html
 - **Useful GitHub Repository:** https://github.com/jlevy/the-art-of-command-line
 - **Split Command Usage:** https://unix.stackexchange.com/questions/24630/whats-the-best-way-to-join-files-again-after-splitting-them 
-- OpenSSL YouTube Video: https://www.youtube.com/watch?v=-nEh7X4dtuw&t=196s 
+- **OpenSSL YouTube Video:** https://www.youtube.com/watch?v=-nEh7X4dtuw&t=196s 
 - **‘Cryptography I’ on Coursera:** https://www.coursera.org/learn/crypto
 - **Advanced Bash Scripting Guide:** https://tldp.org/LDP/abs/html/
 - **Common Bash Pitfalls:** http://mywiki.wooledge.org/BashPitfalls
