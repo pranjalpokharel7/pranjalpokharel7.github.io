@@ -1,3 +1,60 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>programming on Pranjal Pokharel | Blog Site</title><link>http://pranjalpokharel.com.np/tags/programming/</link><description>Recent content in programming on Pranjal Pokharel | Blog Site</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><copyright>© 2021 Pranjal Pokharel</copyright><lastBuildDate>Mon, 08 Mar 2021 23:36:14 +0545</lastBuildDate><atom:link href="http://pranjalpokharel.com.np/tags/programming/index.xml" rel="self" type="application/rss+xml"/><item><title>Learning Bash Scripting</title><link>http://pranjalpokharel.com.np/posts/learning-bash/</link><pubDate>Mon, 08 Mar 2021 23:36:14 +0545</pubDate><guid>http://pranjalpokharel.com.np/posts/learning-bash/</guid><description>While I have been using Linux for over 2 years now, frankly I had never thought about automating tasks using simple bash scripts. This means that while I did not know about bash scripting from a syntactical point of view, I was very comfortable using the command line and it&amp;rsquo;s various commands.
 And so my journey misadventures with bash scripting started with an idea, as always.
-1) Idea! Need to switch to light theme on vim&amp;hellip;wait!</description></item></channel></rss>
+1) Idea! Need to switch to light theme on vim&amp;hellip;wait!</description><content>&lt;p>While I have been using Linux for over 2 years now, frankly I had
+never thought about automating tasks using simple bash scripts. This
+means that while I did not know about bash scripting from a syntactical
+point of view, I was very comfortable using the command line and it&amp;rsquo;s
+various commands.&lt;br>
+&lt;br>
+And so my &lt;del>journey&lt;/del> misadventures with bash scripting started with an idea, as always.&lt;/p>
+&lt;h4 id="1-idea">1) Idea!&lt;/h4>
+&lt;p>Need to switch to light theme on vim&amp;hellip;wait! Do I manually edit my config file every time? Time to write my first bash script.&lt;/p>
+&lt;h4 id="2-overview">2) Overview&lt;/h4>
+&lt;p>I needed to start from the basics. Web search + Reddit later I landed on a website ‘learn-x-in-y-minutes’. 4 hrs to understand basic syntax while executing some code snippets.&lt;/p>
+&lt;h4 id="3-implementation">3) Implementation?&lt;/h4>
+&lt;p>Fundamentally, the script would have to edit the vimrc file –&lt;/p>
+&lt;pre>&lt;code>set background=dark → set background=light
+&lt;/code>&lt;/pre>&lt;p>&lt;code>sed&lt;/code> command for the rewriting job.
+I opened up the man page on &lt;code>date&lt;/code> command and found that using format specifiers returned time in integer.&lt;/p>
+&lt;div class="highlight">&lt;pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-bash" data-lang="bash">CURRENT_TIME&lt;span style="color:#f92672">=&lt;/span>&lt;span style="color:#66d9ef">$(&lt;/span>date +%H%M%S&lt;span style="color:#66d9ef">)&lt;/span>
+&lt;span style="color:#66d9ef">if&lt;/span> &lt;span style="color:#f92672">[&lt;/span> &lt;span style="color:#e6db74">&amp;#34;&lt;/span>$CURRENT_TIME&lt;span style="color:#e6db74">&amp;#34;&lt;/span> -gt &lt;span style="color:#e6db74">&amp;#34;&lt;/span>$STARTING_TIME&lt;span style="color:#e6db74">&amp;#34;&lt;/span> &lt;span style="color:#f92672">]&lt;/span> &lt;span style="color:#f92672">&amp;amp;&amp;amp;&lt;/span> &lt;span style="color:#f92672">[&lt;/span> &lt;span style="color:#e6db74">&amp;#34;&lt;/span>$CURRENT_TIME&lt;span style="color:#e6db74">&amp;#34;&lt;/span> -lt &lt;span style="color:#e6db74">&amp;#34;&lt;/span>$END_TIME&lt;span style="color:#e6db74">&amp;#34;&lt;/span> &lt;span style="color:#f92672">]&lt;/span>
+&lt;span style="color:#66d9ef">then&lt;/span>
+sed -i &lt;span style="color:#e6db74">&amp;#34;s/set\\ background=&lt;/span>$LIGHT_THEME&lt;span style="color:#e6db74">/set\\ background=&lt;/span>$DARK_THEME&lt;span style="color:#e6db74">/&amp;#34;&lt;/span> ~/.vimrc
+&lt;span style="color:#66d9ef">else&lt;/span>
+sed -i &lt;span style="color:#e6db74">&amp;#34;s/set\\ background=&lt;/span>$DARK_THEME&lt;span style="color:#e6db74">/set\\ background=&lt;/span>$LIGHT_THEME&lt;span style="color:#e6db74">/&amp;#34;&lt;/span> ~/.vimrc
+&lt;span style="color:#66d9ef">fi&lt;/span>
+&lt;/code>&lt;/pre>&lt;/div>&lt;p>Debugging! END_TIME less than STARTING_TIME. A swap function should account for that.&lt;/p>
+&lt;h4 id="4-issues">4) Issues!&lt;/h4>
+&lt;p>Why is a file with name ‘180000’ created every time I execute the script? And why is my downloads folder so cluttered? Need a file organizing script…&lt;/p>
+&lt;h4 id="5-one-day-and-awk-later">5) One day and &lt;code>awk&lt;/code> later&lt;/h4>
+&lt;p>Need a list of extensions in a directory. Kind stranger on StackOverflow, how do I understand this insane syntax?&lt;/p>
+&lt;div class="highlight">&lt;pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-bash" data-lang="bash">find . -type f | awk -F. &lt;span style="color:#960050;background-color:#1e0010">&amp;#39;&lt;/span>!a&lt;span style="color:#f92672">[&lt;/span>$NF&lt;span style="color:#f92672">]&lt;/span>++&lt;span style="color:#f92672">{&lt;/span>print $NF&lt;span style="color:#f92672">}&lt;/span>’
+&lt;/code>&lt;/pre>&lt;/div>&lt;p>WHAT IS AWK? Okay, just need to go through the GNU manual&amp;hellip;arrays in &lt;code>awk&lt;/code> are super WEIRD! How about I use&lt;code>sort&lt;/code>…&lt;/p>
+&lt;div class="highlight">&lt;pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-bash" data-lang="bash">find . -maxdepth &lt;span style="color:#ae81ff">1&lt;/span> -type f | awk -F . &lt;span style="color:#e6db74">&amp;#39;{print $NF}&amp;#39;&lt;/span> | sort -u
+&lt;/code>&lt;/pre>&lt;/div>&lt;p>My own solution that I UNDERSTAND! &lt;code>mv&lt;/code>+ regex should finish the work.&lt;/p>
+&lt;h4 id="6-send-100mb-file-over-facebook">6) Send 100MB file over Facebook?&lt;/h4>
+&lt;p>Honestly, I could have provided a drive link and be done. But something in me got excited over somehow bypassing the upload limit of 25 MB. Time to work.&lt;/p>
+&lt;h4 id="7-split-it">7) Split it!&lt;/h4>
+&lt;p>In a GitHub repository I found the usage of &lt;code>split&lt;/code> - so, I CAN SPLIT FILES into pieces without losing data.
+Recombination? &lt;code>cat&lt;/code> command to the rescue. I love Unix forums.&lt;/p>
+&lt;div class="highlight">&lt;pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-bash" data-lang="bash">split --bytes&lt;span style="color:#f92672">=&lt;/span>$CHUNK_SIZE --additional-suffix&lt;span style="color:#f92672">=&lt;/span>$SPLIT_FILE_EXTENSION -d $FILENAME $PREFIX
+&lt;/code>&lt;/pre>&lt;/div>&lt;h4 id="8-just-encrypt-it">8) JUST ENCRYPT IT!&lt;/h4>
+&lt;p>It would be useful if I could implement something from Cryptography I course on Coursera that I took. In a sense, I’d learn two things simultaneously.
+Referred YouTube on openssl, went through the man page and added in some flags of my own:&lt;/p>
+&lt;pre>&lt;code>openssl enc -aes-256-cbc -base64 -pbkdf2 -iter 100000 -pass pass:$PASSWORD -in $file -out fenc/$file
+&lt;/code>&lt;/pre>&lt;h4 id="9-finally">9) Finally…?&lt;/h4>
+&lt;p>IT WORKED! 100 MB pdf sent over Facebook, in chunks of 24 MB, with the decryption working on the other end just as I wanted!&lt;br>
+&lt;br>
+Wait, why are files of name ‘180000’ scattered around my storage? Oh no, forgot to turn off the buggy script&amp;hellip;&lt;/p>
+&lt;h4 id="references">References:&lt;/h4>
+&lt;ul>
+&lt;li>&lt;strong>Learn x in y minutes:&lt;/strong> &lt;a href="https://learnxinyminutes.com/docs/bash/">https://learnxinyminutes.com/docs/bash/&lt;/a>&lt;/li>
+&lt;li>&lt;strong>Awk to get a list of file extensions:&lt;/strong> &lt;a href="https://stackoverflow.com/questions/1842254/how-can-i-find-all-of-the-distinct-file-extensions-in-a-folder-hierarchy">https://stackoverflow.com/questions/1842254/how-can-i-find-all-of-the-distinct-file-extensions-in-a-folder-hierarchy&lt;/a>&lt;/li>
+&lt;li>&lt;strong>GNU Awk User’s Guide:&lt;/strong> &lt;a href="https://www.gnu.org/software/gawk/manual/gawk.html">https://www.gnu.org/software/gawk/manual/gawk.html&lt;/a>&lt;/li>
+&lt;li>&lt;strong>Useful GitHub Repository:&lt;/strong> &lt;a href="https://github.com/jlevy/the-art-of-command-line">https://github.com/jlevy/the-art-of-command-line&lt;/a>&lt;/li>
+&lt;li>&lt;strong>Split Command Usage:&lt;/strong> &lt;a href="https://unix.stackexchange.com/questions/24630/whats-the-best-way-to-join-files-again-after-splitting-them">https://unix.stackexchange.com/questions/24630/whats-the-best-way-to-join-files-again-after-splitting-them&lt;/a>&lt;/li>
+&lt;li>&lt;strong>OpenSSL YouTube Video:&lt;/strong> &lt;a href="https://www.youtube.com/watch?v=-nEh7X4dtuw&amp;amp;t=196s">https://www.youtube.com/watch?v=-nEh7X4dtuw&amp;amp;t=196s&lt;/a>&lt;/li>
+&lt;li>&lt;strong>‘Cryptography I’ on Coursera:&lt;/strong> &lt;a href="https://www.coursera.org/learn/crypto">https://www.coursera.org/learn/crypto&lt;/a>&lt;/li>
+&lt;li>&lt;strong>Advanced Bash Scripting Guide:&lt;/strong> &lt;a href="https://tldp.org/LDP/abs/html/">https://tldp.org/LDP/abs/html/&lt;/a>&lt;/li>
+&lt;li>&lt;strong>Common Bash Pitfalls:&lt;/strong> &lt;a href="http://mywiki.wooledge.org/BashPitfalls">http://mywiki.wooledge.org/BashPitfalls&lt;/a>&lt;/li>
+&lt;/ul></content></item></channel></rss>
