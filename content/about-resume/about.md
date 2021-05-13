@@ -8,9 +8,10 @@ description: "Hi there!"
 **Name:** Pranjal Pokharel
 
 **Short Bio:**
-As of now, I am a 2nd Year Bachelor in Computer Engineering Student (BCT) studying in Pulchowk Campus, IOE, Nepal. Social links are at the footer of this page. You can contact me by email/twitter. 
+As of now, I am a 2nd Year Bachelor in Computer Engineering Student (BCT) studying in Pulchowk Campus, IOE, Nepal. Social links are at the footer of this page. You can contact me by email/discord DM. 
 
 **Email:** pranjalpokharel007@gmail.com, 075bct061.pranjal@pcampus.edu.np\
+**Discord:** ppok24#9422
 \
 **Quotes To Live By:**
 - "It is what it is." - *Random Stoic*

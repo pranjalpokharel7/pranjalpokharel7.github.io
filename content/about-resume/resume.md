@@ -10,9 +10,9 @@ description: "CV of a computer undergrad"
 **Employment Status:** Student\
 **College:** Pulchowk Campus, IOE\
 **Undergraduate:** Bachelor in Computer Engineering\
-**Year:** Second Year, Fourth Semester\
+**Year:** Third Year, Fifth Semester\
 **Address:**
-- Primary: Bharatpur-5, Chitwan 
+- Primary: Bharatpur-5, Chitwan (current)
 - Secondary: Palungtar-2, Gorkha
 - Temporary: Pulchowk, Lalitpur
 
@@ -20,14 +20,21 @@ description: "CV of a computer undergrad"
 - pranjalpokharel007@gmail.com
 - 075bct061.pranjal@pcampus.edu.np
 ---
-### Skills and Experinces
+### Skills and Experiences
 
 #### Relevant Skills:
 - Programming Languages - intermediate in Python, C++, C and JavaScript
 - Novice to intermediate skills in Web Development (front-end) using HTML5,
-CSS3, JavaScript, SASS, jQuery, Flask, React.
+CSS3, JavaScript, SASS, Flask, React.
 - Intermediate skills in Graphic Design/Digital Art using Adobe Illustrator/Photoshop
 - Excellent content writing/documentation skills (English)
+- Others: LaTex, Figma, Git.
+
+#### Work Experince:
+- Worked as a **Front End Developer** at **[Clamphook](https://clamphook.com/)**, an online entrance preparation website.
+- Worked as a **Graphic Designer** in the **LOCUS 2020 Designer's Group** for 
+LOCUS 2020, Pulchowk Campus.
+- Worked as the **Event Coverage Head** of **The Zerone 2020**, an annual tech magazine of Pulchowk Campus covering different tech events within the campus.
 
 #### Highlighted Projects:
 - **[A Day in Pulchowk Campus](https://github.com/Itshyphen/Pulchowk)**
@@ -48,12 +55,6 @@ CSS3, JavaScript, SASS, jQuery, Flask, React.
     * Translate keywords/patterns to emoji across all URLs (eg, :heart: to ❤️)
     * Search functionalities for emoji/emote
     * Addon Link: https://addons.mozilla.org/en-US/firefox/addon/emoji-translator
-
-#### Work Experince:
-- Worked as a **Front End Developer** at **[Clamphook](https://clamphook.com/)**, an online entrance preparation website.
-- Worked as a **Graphic Designer** in the **LOCUS 2020 Designer's Group** for 
-LOCUS 2020, Pulchowk Campus.
-- Worked as the **Event Coverage Head** of **The Zerone 2020**, an annual tech magazine of Pulchowk Campus covering different tech events within the campus.
 
 ---
 #### Relevant Links:
