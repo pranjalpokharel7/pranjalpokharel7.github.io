@@ -2,7 +2,7 @@
 title: "Valentine Playlist (2021)"
 date: 2021-02-13T16:40:18+05:45
 draft: false 
-tags: ["japanese-music"]
+tags: ["music"]
 description: "13 Songs For The Day"
 ---
 
@@ -119,10 +119,9 @@ Everything comes to an end in due time, don't hurry!"
 ### Slow Songs - Romantic Partners For Life, Songs For The End Of The Journey
 
 #### 7) [Sakura - Ikimonogakari](https://www.youtube.com/watch?v=NNgDURlUbfE&list=PL63_35IpRqoTJ_qyJoL2YSeYK-iYlUAqk&index=7)
-Cherry blossoms, springs, rivers, a longing for a genuine relationship - a 
-song in perfect sync with the Japanese nature and love. 
+Cherry blossoms, springs, rivers, a longing for a genuine relationship - a song in perfect sync with the Japanese nature and love. I would say this song is more inclined towards missing someone you couldn't be with, but this song certainly has it's place on all happy and gloomy days.
 
-I might point out at this point that most of the songs I've in this playlist are lyrics videos, so even if you're new to Japanese music, you can follow along with the translated lyrics. And while the lyrics are more on the sentimental side of missing a loved one, be sure not to miss this song, because it is simply, art.
+I might point out at this point that most of the songs I've in this playlist are lyrics videos, so even if you're new to Japanese music, you can follow along with the translated lyrics. 
 ```
 "Sakura hirahira maiorite ochite
 Yureru omoi no take wo dakishimeta
@@ -137,9 +136,7 @@ The cherry blossoms scatter..."
 #### 8) [Koi Wo Shita No Wa - Aiko](https://www.youtube.com/watch?v=rkezyWiRgiw&list=PL63_35IpRqoTJ_qyJoL2YSeYK-iYlUAqk&index=8)
 The best song from my favourite animation movie of all time, *Koe no Katachi (A Silent Voice)*, Japanese or other language. From what I've watched so far, no other movie comes close (at least in the 'Slice of Life' category). 
 
-There is nothing to be ashamed of if you cried when the end credits rolled and this song came on. A beautiful, beautiful story of two people struggling with the circumstances involving each other, culminating with the perfect song. 
-
-Please cherish the ones you love, you never know when it is the last time you get to call them by their name.
+Honestly, this song hits harder after you watch the movie. A beautiful, beautiful story of two people struggling with the circumstances involving each other, culminating with the perfect song.
 ```
 "Hajimete mo saigo mo ima mo,
 Mau hanabira ni kizami okuru yo
