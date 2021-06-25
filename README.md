@@ -1,2 +1,2 @@
 # pranjalpokharel7.github.io
-Work in progress.
+My personal website where I ramble on music, programming, fiction and life.
