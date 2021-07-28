@@ -16,24 +16,28 @@ description: "CV of a computer undergrad"
 - Secondary: Palungtar-2, Gorkha
 - Temporary: Pulchowk, Lalitpur
 
-**Email:** 
+**Email:**
 - pranjalpokharel007@gmail.com
 - 075bct061.pranjal@pcampus.edu.np
+- legacymodex86@protonmail.com (for Mr. Stallman)
+
 ---
 ### Skills and Experiences
 
 #### Relevant Skills:
-- Programming Languages - intermediate in Python, C++, C and JavaScript
-- Novice to intermediate skills in Web Development (front-end) using HTML5,
-CSS3, JavaScript, SASS, Flask, React.
+- Programming Languages - intermediate in Python, C++, C and JavaScript, beginner in Go and Dart
 - Intermediate skills in Graphic Design/Digital Art using Adobe Illustrator/Photoshop
+- Novice to intermediate skills in Web Development using HTML5,
+CSS3, JavaScript, SASS, Flask, React.
+- Beginner in app development through Flutter + Dart.
+- Good expereince in working with the Linux development environment including system calls, networking, job management and shell scripting.
 - Excellent content writing/documentation skills (English)
-- Others: LaTex, Figma, Git.
+- Others: LaTex, Figma (prototyping), Git.
 
 #### Work Experince:
 - Worked as a **Front End Developer** at **[Clamphook](https://clamphook.com/)**, an online entrance preparation website.
-- Worked as a **Graphic Designer** in the **LOCUS 2020 Designer's Group** for 
-LOCUS 2020, Pulchowk Campus.
+- Worked as a **Graphic Designer** in the **LOCUS Design Team** for 
+LOCUS 2020 and LOCUS 2021, Pulchowk Campus.
 - Worked as the **Event Coverage Head** of **The Zerone 2020**, an annual tech magazine of Pulchowk Campus covering different tech events within the campus.
 
 #### Highlighted Projects:
@@ -58,9 +62,12 @@ LOCUS 2020, Pulchowk Campus.
 
 ---
 #### Relevant Links:
+**Discord Username**: ppok24#9422\
+**Design Work**: https://bit.ly/pranjal_designs\
 **GitHub**: https://github.com/pranjalpokharel7\
+**Twitter**: https://twitter.com/punpun_tweets\
 **Medium**: https://pranjalpokharel007.medium.com\
-**LinkedIn**: https://www.linkedin.com/in/pranjal-pokharel-860637188
+**LinkedIn**: https://www.linkedin.com/in/pranjal-pokharel-860637188 (might not respond on time)
 
 ---
 #### Life Outside Programming:

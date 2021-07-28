@@ -9,7 +9,7 @@ description: "Playlist for June 2021"
 Here are 10 songs looping through my thick skull this month of June.
 
 #### 1) [Paprika - Kenshi Yonezu](https://www.youtube.com/watch?v=s582L3gujnw)
-While I didn't really feel anything special about the song when I heard it a year back, my heart has really warmed up to this. Especially after listening to NHK's version sung by kids. Apparently this song will be used as cheer anthem in the Tokyo Olympics too.
+While I didn't really feel anything special about the song when I heard it a year back, my heart has really warmed up to this. Especially after listening to NHK's version sung by kids. Apparently this song will be used as a cheer anthem in the Tokyo Olympics too.
 
 The song is just pure nostalgia - climbing trees, stealing fruits from other people's garden, playing *dhyakki* and *phiyo* (local games involving sandals and stones) - everything that made my childhood worth remembering.
 
@@ -25,7 +25,7 @@ One of the few quality songs I've stumbled onto in random Discord voice channel 
 #### 5) [Spring Thief - Yorushika](https://www.youtube.com/watch?v=Sw1Flgub9s8)
 From "Hana ni Bourei" to "Heikousen" and now onto this song, I've grown a year older listening to Yorushika's songs. "Spring Thief" is a  trademark Yorushika song - upbeat music, superb chorus and I hope not some sad lyrics underneath because I haven't had a time to read the translated lyrics yet :eyes:
 
-Oh did I mention "Heikousen"? Another song that just didn't make into this playlist, but one definitely warrants a listen.
+Oh did I mention "Heikousen"? Another song that just didn't make into this playlist, but one that definitely warrants a listen.
 
 #### 6) [Yasashii Suisei - YOASOBI](https://www.youtube.com/watch?v=VyvhvlYvRnc)
 Honestly, listen to Ikura sing this on "The First Take". So much raw emotion and as soon as the song ends, her hands start to tremble. Truly chilling. There is not a single YOASOBI song that I have listened to and not liked to. "Yasashii Suisei (Comet)" just happened to be the latest one I listened to, and honestly a song with truly beautiful words behind it. 
@@ -42,4 +42,4 @@ This song is fucking legendary, and I often ask how the algorithm missed recomme
 This has definitely been one of those songs that I absolutely couldn't bear to listen to before but now I have to listen to it once a day. I guess this is what it means about your music taste getting refined with time. Regardless, this is easily the best Eve song for me right now, both lyrics and music-wise, and the song that solidified Eve as one of my best Japanese Music artists. Sometimes this song feels too relatable to my daily life, but that's a topic for another day.
 
 #### 10) [Bad Apple - Nomico](https://www.youtube.com/watch?v=FtutLA63Cp8)
-It took me some time to figure out the true meaning behind this song (sike). That doesn't stop me from vibing to it. From ASCII animations to Graphing Calculators, everybody wants a piece of that bizare bad apple, and my ears just can't get enough.
+It took me some time to figure out the true meaning behind this song (sike!). That doesn't stop me from vibing to it. From ASCII animations to Graphing Calculators, everybody wants a piece of that bizarre bad apple, and my ears just can't get enough.
