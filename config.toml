@@ -1,7 +1,7 @@
 baseURL = "http://pranjalpokharel.com.np/"
 languageCode = "en-us"
 theme = "terminal"
-paginate = 5
+paginate = 3
 
 [params]
   # the list of set content will show up on your index page (baseurl).

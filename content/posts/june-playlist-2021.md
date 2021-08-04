@@ -1,5 +1,5 @@
 ---
-title: "What's cooking this month?"
+title: "What's Cooking This Month?"
 date: 2021-06-22T09:48:59+05:45
 draft: false 
 tags: ["music"]
