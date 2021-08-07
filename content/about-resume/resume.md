@@ -62,10 +62,8 @@ LOCUS 2020 and LOCUS 2021, Pulchowk Campus.
 
 ---
 #### Relevant Links:
-**Discord Username**: ppok24#9422\
 **Design Work**: https://bit.ly/pranjal_designs\
 **GitHub**: https://github.com/pranjalpokharel7\
-**Twitter**: https://twitter.com/punpun_tweets\
 **Medium**: https://pranjalpokharel007.medium.com\
 **LinkedIn**: https://www.linkedin.com/in/pranjal-pokharel-860637188 (might not respond on time)
 

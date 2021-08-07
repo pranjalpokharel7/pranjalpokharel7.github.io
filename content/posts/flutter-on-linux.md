@@ -91,7 +91,7 @@ You will need one of three things to run your first app - an Android device conn
 $ flutter devices
 ```
 
-If it says `N devices connected` (N being a number) and lists the available devices, you are good to go. I will go into more details about setting up the emulator in future posts, but since the post is getting longer. For now, go for Chrome, we are only looking to verify flutter setup anyway.
+If it says `N devices connected` (N being a number) and lists the available devices, you are good to go. I will go into more details about setting up the emulator in future posts, since this post is already too long at this point. For now, go for Chrome, we are only looking to verify flutter setup anyway.
 
 To set up the default flutter project, run the command -
 ```bash
