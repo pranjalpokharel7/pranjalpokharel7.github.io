@@ -70,3 +70,8 @@ paginate = 3
         identifier = "resume"
         name = "Resume"
         url = "/about-resume/resume"
+
+      [[languages.en.menu.main]]
+        identifier = "programming"
+        name = "Programming"
+        url = "/tags/programming"
