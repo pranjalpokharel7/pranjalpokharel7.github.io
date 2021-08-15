@@ -135,3 +135,11 @@ Nope, but you will need it for the first build and downloading packages that hav
 **3. "module java.base does not "opens java.io" to unnamed module"**
 
 Refer to my note on newer versions of openjdk probably not supporting legacy code. The stackoverflow solution also seems to suggest the same thing - https://stackoverflow.com/questions/67782975/how-to-fix-the-module-java-base-does-not-opens-java-io-to-unnamed-module
+
+**4. "I installed Google Chrome as a flatpak package, but it acts "wierd" when I run flutter"**
+
+Apparently flatpak Chrome doesn't gel too well with flutter. Thanks to @badnick for pointing it our on Discord. Install from AUR from this one, might fix the issue. Anyway, unless you are programming for browser apps you might not need Chrome beyond this initial testing. So don't be too riled up by this one.
+
+**5. "I close flutter but my computer seems to be getting slow every time I do so. What's happening?"**
+
+Did you 'sudo flutter run'? Chances are the OS is not able to free up the resources because you ran flutter as root. Quick check with `htop` or `top` to verify. See if there are multiple `dart` processes still running even after you've closed flutter and `killall dart`. Sometimes this problem also persists when you close vscode even though you did not do anything `sudo` with it, I'm guessing it's got something to do with how the dart intellisense works, but it's just speculation on my part.
