@@ -10,7 +10,7 @@
 <link rel=stylesheet href=http://pranjalpokharel.com.np/assets/style.css>
 <link rel=stylesheet href=http://pranjalpokharel.com.np/assets/green.css>
 <link rel=apple-touch-icon href=http://pranjalpokharel.com.np/img/apple-touch-icon-192x192.png>
-<link rel="shortcut icon" href=http://pranjalpokharel.com.np/>
+<link rel="shortcut icon" href=http://pranjalpokharel.com.np/icon.png>
 <meta name=twitter:card content="summary">
 <meta name=twitter:site content="ppok24">
 <meta name=twitter:creator content>
@@ -20,7 +20,7 @@
 <meta property="og:description" content="...Sudo Like A Linux Chump!">
 <meta property="og:url" content="http://pranjalpokharel.com.np/posts/flutter-on-linux/">
 <meta property="og:site_name" content="Pranjal Pokharel | Blog Site">
-<meta property="og:image" content="http://pranjalpokharel.com.np/">
+<meta property="og:image" content="http://pranjalpokharel.com.np/icon.png">
 <meta property="og:image:width" content="2048">
 <meta property="og:image:height" content="1024">
 <meta property="article:published_time" content="2021-08-04 11:20:09 +0545 +0545">
@@ -41,10 +41,12 @@ HOME
 <nav class=menu>
 <ul class="menu__inner menu__inner--desktop">
 <li><a href=/about-resume/about>About</a></li>
+<li><a href=/tags/programming>Programming</a></li>
 <li><a href=/about-resume/resume>Resume</a></li>
 </ul>
 <ul class="menu__inner menu__inner--mobile">
 <li><a href=/about-resume/about>About</a></li>
+<li><a href=/tags/programming>Programming</a></li>
 <li><a href=/about-resume/resume>Resume</a></li>
 </ul>
 </nav>
@@ -133,6 +135,10 @@ $ flutter run
 <p>Nope, but you will need it for the first build and downloading packages that haven&rsquo;t been previously installed.</p>
 <p><strong>3. &ldquo;module java.base does not &ldquo;opens java.io&rdquo; to unnamed module&rdquo;</strong></p>
 <p>Refer to my note on newer versions of openjdk probably not supporting legacy code. The stackoverflow solution also seems to suggest the same thing - <a href=https://stackoverflow.com/questions/67782975/how-to-fix-the-module-java-base-does-not-opens-java-io-to-unnamed-module>https://stackoverflow.com/questions/67782975/how-to-fix-the-module-java-base-does-not-opens-java-io-to-unnamed-module</a></p>
+<p><strong>4. &ldquo;I installed Google Chrome as a flatpak package, but it acts &ldquo;wierd&rdquo; when I run flutter&rdquo;</strong></p>
+<p>Apparently flatpak Chrome doesn&rsquo;t gel too well with flutter. Thanks to @badnick for pointing it our on Discord. Install from AUR from this one, might fix the issue. Anyway, unless you are programming for browser apps you might not need Chrome beyond this initial testing. So don&rsquo;t be too riled up by this one.</p>
+<p><strong>5. &ldquo;I close flutter but my computer seems to be getting slow every time I do so. What&rsquo;s happening?"</strong></p>
+<p>Did you &lsquo;sudo flutter run&rsquo;? Chances are the OS is not able to free up the resources because you ran flutter as root. Quick check with <code>htop</code> or <code>top</code> to verify. See if there are multiple <code>dart</code> processes still running even after you&rsquo;ve closed flutter and <code>killall dart</code>. Sometimes this problem also persists when you close vscode even though you did not do anything <code>sudo</code> with it, I&rsquo;m guessing it&rsquo;s got something to do with how the dart intellisense works, but it&rsquo;s just speculation on my part.</p>
 </div></div>
 <div class=pagination>
 <div class=pagination__title>
@@ -140,6 +146,12 @@ $ flutter run
 <hr>
 </div>
 <div class=pagination__buttons>
+<span class="button previous">
+<a href=http://pranjalpokharel.com.np/posts/emulator-on-linux/>
+<span class=button__icon>←</span>
+<span class=button__text>Flutter Series : Emulate Like A Pro! (Part 2)</span>
+</a>
+</span>
 <span class="button next">
 <a href=http://pranjalpokharel.com.np/posts/june-playlist-2021/>
 <span class=button__text>What's Cooking This Month?</span>
@@ -155,7 +167,7 @@ $ flutter run
 <div class="copyright copyright--user">
 <span>© 2021 Pranjal Pokharel</span>
 <span>:: <a href=https://github.com/pranjalpokharel7>Github</a>&nbsp;</span>
-<span>:: <a href=mailto:pranjalpokharel007@gmail.com>Gmail</a>&nbsp;</span>
+<span>:: <a href=https://www.youtube.com/channel/UClbVivuP8qpsVxzBTttCP5g>YouTube</a>&nbsp;</span>
 <span>:: <a href=https://pranjalpokharel007.medium.com/>Medium</a>&nbsp;</span>
 <span>:: <a href=https://twitter.com/punpun_tweets>Twitter</a></span>
 </div>
