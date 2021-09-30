@@ -52,9 +52,9 @@ $ sdkmanager &lt;span style="color:#e6db74">&amp;#34;system-images;android-31;go
 &lt;p>&lt;strong>1. &amp;ldquo;Navigation buttons on the emulator don&amp;rsquo;t work&amp;rdquo;&lt;/strong>&lt;/p>
 &lt;p>Honestly, I never got them to work. By default, the on-screen navigation buttons are hidden - I enabled them and used them as substitute. You&amp;rsquo;ll need to modify some config files for this. Navigate inside your &lt;code>~/.android&lt;/code> directory (usually located in the home page) and then &lt;code>avd/[avd-name]&lt;/code> within which you should see the &lt;code>config.ini&lt;/code> file.&lt;/p>
 &lt;p>Full path might be something like, &lt;code>~/.android/avd/myavdname/config.ini&lt;/code>. Inside the file, edit the line,&lt;/p>
-&lt;pre>&lt;code>hw.keyboard = yes
+&lt;pre tabindex="0">&lt;code>hw.keyboard = yes
 &lt;/code>&lt;/pre>&lt;p>to&lt;/p>
-&lt;pre>&lt;code>hw.keyboard = no
+&lt;pre tabindex="0">&lt;code>hw.keyboard = no
 &lt;/code>&lt;/pre>&lt;p>This should bring up your on-screen navigation keys. However, this can disable your keyboard to emulator input, and you&amp;rsquo;ll have to press the touch screen keyboard manually. Well, let&amp;rsquo;s just hope you are not working on a blogging app :eyes:.&lt;/p>
 &lt;p>You can go through other configuration parameters as well and change them as required.&lt;/p>
 &lt;p>&lt;strong>2. &amp;ldquo;Emulator shut down takes a lot of time, just says saving state and gets stuck there.&amp;quot;&lt;/strong>&lt;/p>
@@ -151,7 +151,7 @@ And so my &lt;del>journey&lt;/del> misadventures with bash scripting started wit
 &lt;p>I needed to start from the basics. Web search + Reddit later I landed on a website ‘learn-x-in-y-minutes’. 4 hrs to understand basic syntax while executing some code snippets.&lt;/p>
 &lt;h4 id="3-implementation">3) Implementation?&lt;/h4>
 &lt;p>Fundamentally, the script would have to edit the vimrc file –&lt;/p>
-&lt;pre>&lt;code>set background=dark → set background=light
+&lt;pre tabindex="0">&lt;code>set background=dark → set background=light
 &lt;/code>&lt;/pre>&lt;p>&lt;code>sed&lt;/code> command for the rewriting job.
 I opened up the man page on &lt;code>date&lt;/code> command and found that using format specifiers returned time in integer.&lt;/p>
 &lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-bash" data-lang="bash">CURRENT_TIME&lt;span style="color:#f92672">=&lt;/span>&lt;span style="color:#66d9ef">$(&lt;/span>date +%H%M%S&lt;span style="color:#66d9ef">)&lt;/span>
@@ -179,7 +179,7 @@ Recombination? &lt;code>cat&lt;/code> command to the rescue. I love Unix forums.
 &lt;/code>&lt;/pre>&lt;/div>&lt;h4 id="8-just-encrypt-it">8) JUST ENCRYPT IT!&lt;/h4>
 &lt;p>It would be useful if I could implement something from Cryptography I course on Coursera that I took. In a sense, I’d learn two things simultaneously.
 Referred YouTube on openssl, went through the man page and added in some flags of my own:&lt;/p>
-&lt;pre>&lt;code>openssl enc -aes-256-cbc -base64 -pbkdf2 -iter 100000 -pass pass:$PASSWORD -in $file -out fenc/$file
+&lt;pre tabindex="0">&lt;code>openssl enc -aes-256-cbc -base64 -pbkdf2 -iter 100000 -pass pass:$PASSWORD -in $file -out fenc/$file
 &lt;/code>&lt;/pre>&lt;h4 id="9-finally">9) Finally…?&lt;/h4>
 &lt;p>IT WORKED! 100 MB pdf sent over Facebook, in chunks of 24 MB, with the decryption working on the other end just as I wanted!&lt;br>
 &lt;br>

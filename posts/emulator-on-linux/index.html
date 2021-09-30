@@ -117,9 +117,9 @@ $ sdkmanager <span style=color:#e6db74>&#34;system-images;android-31;google_apis
 <p><strong>1. &ldquo;Navigation buttons on the emulator don&rsquo;t work&rdquo;</strong></p>
 <p>Honestly, I never got them to work. By default, the on-screen navigation buttons are hidden - I enabled them and used them as substitute. You&rsquo;ll need to modify some config files for this. Navigate inside your <code>~/.android</code> directory (usually located in the home page) and then <code>avd/[avd-name]</code> within which you should see the <code>config.ini</code> file.</p>
 <p>Full path might be something like, <code>~/.android/avd/myavdname/config.ini</code>. Inside the file, edit the line,</p>
-<pre><code>hw.keyboard = yes
+<pre tabindex=0><code>hw.keyboard = yes
 </code></pre><p>to</p>
-<pre><code>hw.keyboard = no
+<pre tabindex=0><code>hw.keyboard = no
 </code></pre><p>This should bring up your on-screen navigation keys. However, this can disable your keyboard to emulator input, and you&rsquo;ll have to press the touch screen keyboard manually. Well, let&rsquo;s just hope you are not working on a blogging app :eyes:.</p>
 <p>You can go through other configuration parameters as well and change them as required.</p>
 <p><strong>2. &ldquo;Emulator shut down takes a lot of time, just says saving state and gets stuck there."</strong></p>
