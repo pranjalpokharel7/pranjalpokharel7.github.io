@@ -22,7 +22,7 @@ The fundamental thing about emulators is that they only go as far as to emulate 
 
 Think of Android Virtual Devices (AVDs) as something that contains configuration on how an Android device should run. A virtual android device, as the abbreviation says, over which you will be able to run your app. There are a lot of AVDs you can choose from, seeing that you have Android running on everywhere ranging from mobile devices to smart watches. 
 
-If you completed the installation of `android-sdk` properly as a part of the previous article, you should have `sdkmanager` available from the command line.
+If you completed the installation of `android-sdk` properly as a part of the previous article, you should have `sdkmanager` available from the command line (might need to log out or restart the system to have `sdkamanager` available after initial install.
 
 ```bash
 $ sdkmanager --list
