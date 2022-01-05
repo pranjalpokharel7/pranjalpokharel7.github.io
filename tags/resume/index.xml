@@ -5,7 +5,7 @@ Undergraduate: Bachelor in Computer Engineering
 Year: Third Year, Fifth Semester
 Address:
 Primary: Bharatpur-5, Chitwan (current) Secondary: Palungtar-2, Gorkha Temporary: Pulchowk, Lalitpur Email:
-pranjalpokharel007@gmail.com 075bct061.pranjal@pcampus.edu.np legacymodex86@protonmail.com (for Mr. Stallman) Skills and Experiences Relevant Skills: Programming Languages - intermediate in Python, C++, C and JavaScript, beginner in Go and Dart Intermediate skills in Graphic Design/Digital Art using Adobe Illustrator/Photoshop Novice to intermediate skills in Web Development using HTML5, CSS3, JavaScript, SASS, Flask, React.</description><content>&lt;h3 id="primary-information">Primary Information&lt;/h3>
+pranjalpokharel007@gmail.com 075bct061.pranjal@pcampus.edu.np legacymodex86@protonmail.com (for Mr. Stallman) Skills and Experiences Relevant Skills: Programming Languages - prefer to work in Python, C++, C, JavaScript and Go Graphic Design/Digital Art using Adobe Illustrator/Photoshop/Figma Web Development using HTML5, CSS3, JavaScript, SASS, Flask, React.</description><content>&lt;h3 id="primary-information">Primary Information&lt;/h3>
 &lt;p>&lt;strong>Name:&lt;/strong> Pranjal Pokharel&lt;br>
 &lt;strong>Employment Status:&lt;/strong> Student&lt;br>
 &lt;strong>College:&lt;/strong> Pulchowk Campus, IOE&lt;br>
@@ -27,24 +27,32 @@ pranjalpokharel007@gmail.com 075bct061.pranjal@pcampus.edu.np legacymodex86@prot
 &lt;h3 id="skills-and-experiences">Skills and Experiences&lt;/h3>
 &lt;h4 id="relevant-skills">Relevant Skills:&lt;/h4>
 &lt;ul>
-&lt;li>Programming Languages - intermediate in Python, C++, C and JavaScript, beginner in Go and Dart&lt;/li>
-&lt;li>Intermediate skills in Graphic Design/Digital Art using Adobe Illustrator/Photoshop&lt;/li>
-&lt;li>Novice to intermediate skills in Web Development using HTML5,
-CSS3, JavaScript, SASS, Flask, React.&lt;/li>
+&lt;li>Programming Languages - prefer to work in Python, C++, C, JavaScript and Go&lt;/li>
+&lt;li>Graphic Design/Digital Art using Adobe Illustrator/Photoshop/Figma&lt;/li>
+&lt;li>Web Development using HTML5, CSS3, JavaScript, SASS, Flask, React.&lt;/li>
 &lt;li>Beginner in app development through Flutter + Dart.&lt;/li>
-&lt;li>Good expereince in working with the Linux development environment including system calls, networking, job management and shell scripting.&lt;/li>
+&lt;li>Excellent expereince in working with the Linux development environment including system calls, networking, job management and shell scripting.&lt;/li>
 &lt;li>Excellent content writing/documentation skills (English)&lt;/li>
 &lt;li>Others: LaTex, Figma (prototyping), Git.&lt;/li>
 &lt;/ul>
 &lt;h4 id="work-experince">Work Experince:&lt;/h4>
 &lt;ul>
-&lt;li>Worked as a &lt;strong>Front End Developer&lt;/strong> at &lt;strong>&lt;a href="https://clamphook.com/">Clamphook&lt;/a>&lt;/strong>, an online entrance preparation website.&lt;/li>
-&lt;li>Worked as a &lt;strong>Graphic Designer&lt;/strong> in the &lt;strong>LOCUS Design Team&lt;/strong> for
-LOCUS 2020 and LOCUS 2021, Pulchowk Campus.&lt;/li>
+&lt;li>&lt;strong>Founding Member&lt;/strong> of &lt;strong>IT Club Pulchowk&lt;/strong> where my responsibilities included event management, social media promotion, marketing, teaching-learning through various programming workshops, graphic design and more.&lt;/li>
+&lt;li>Worked as a &lt;strong>Front End Developer&lt;/strong> at &lt;strong>&lt;a href="https://clamphook.com/">Clamphook&lt;/a>&lt;/strong>, an online entrance preparation website. My responsiblitites primarily comprised implementing design mockups in web using HTML, CSS and ReactJS; integrating API to the front end; and responsive web design.&lt;/li>
+&lt;li>Worked as a &lt;strong>Graphic Designer&lt;/strong> in the &lt;strong>LOCUS Design Team&lt;/strong> for LOCUS 2020 and LOCUS 2021, Pulchowk Campus. Details of my work include graphic design, exhibition management, content writing, resource management and more.&lt;/li>
 &lt;li>Worked as the &lt;strong>Event Coverage Head&lt;/strong> of &lt;strong>The Zerone 2020&lt;/strong>, an annual tech magazine of Pulchowk Campus covering different tech events within the campus.&lt;/li>
 &lt;/ul>
 &lt;h4 id="highlighted-projects">Highlighted Projects:&lt;/h4>
 &lt;ul>
+&lt;li>
+&lt;p>&lt;strong>&lt;a href="https://github.com/pranjalpokharel7/our-rocket">Our Rocket&lt;/a>&lt;/strong>&lt;/p>
+&lt;ul>
+&lt;li>Vostok Rocket Modeling using the OpenGL Graphics API&lt;/li>
+&lt;li>5th Semester College Graphics Project&lt;/li>
+&lt;li>Language Used - C/C++&lt;/li>
+&lt;li>Additional Tools/Libraries Used - Blender 3D, Assimp, CMake, GLFW&lt;/li>
+&lt;/ul>
+&lt;/li>
 &lt;li>
 &lt;p>&lt;strong>&lt;a href="https://github.com/Itshyphen/Pulchowk">A Day in Pulchowk Campus&lt;/a>&lt;/strong>&lt;/p>
 &lt;ul>
@@ -71,6 +79,34 @@ LOCUS 2020 and LOCUS 2021, Pulchowk Campus.&lt;/li>
 &lt;li>Translate keywords/patterns to emoji across all URLs (eg, :heart: to ❤️)&lt;/li>
 &lt;li>Search functionalities for emoji/emote&lt;/li>
 &lt;li>Addon Link: &lt;a href="https://addons.mozilla.org/en-US/firefox/addon/emoji-translator">https://addons.mozilla.org/en-US/firefox/addon/emoji-translator&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;h4 id="other-projects">Other Projects:&lt;/h4>
+&lt;ul>
+&lt;li>
+&lt;p>&lt;strong>&lt;a href="https://github.com/Sandace11/DSA_Project">DSA Project&lt;/a>&lt;/strong>&lt;/p>
+&lt;ul>
+&lt;li>4th Semester Data Structures and Algorithms Project&lt;/li>
+&lt;li>Visualizing sorting algorithms and huffman tree, mostly worked on the sorting part&lt;/li>
+&lt;li>Libraries/Tools Used - SDL2, SDL2_ttf&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>&lt;a href="https://github.com/Imsanskar/CRC">Cyclic Redundancy Check (CRC) implementation in C++&lt;/a>&lt;/strong>&lt;/p>
+&lt;ul>
+&lt;li>CRC check implementation using C++ and Linux system calls&lt;/li>
+&lt;li>Basic networking server implementation using socket programming&lt;/li>
+&lt;li>Both ipv4 and ipv6 supported&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Shell (Bash) Scripts&lt;/strong>&lt;/p>
+&lt;ul>
+&lt;li>Script to switch theme, icon pack, wallpaper, panel colors and window managers in an xfce4 DE (&lt;a href="https://github.com/UdeshyaDhungana/xfce4-theme-switcher">link&lt;/a>)&lt;/li>
+&lt;li>Organize files into sub-directories based on name or extension (&lt;a href="https://github.com/IT-Club-Pulchowk/campus-scripts/blob/main/bash-scripts/file_organizer.sh">link&lt;/a>)&lt;/li>
+&lt;li>Script to login to Pulchowk Campus Captive Portal. Forked, added functionality of launching hotspot. (&lt;a href="https://github.com/IT-Club-Pulchowk/campus-scripts/blob/main/bash-scripts/internet_login.sh">link&lt;/a>)&lt;/li>
+&lt;li>Script to split and encrypt the parts of a file, also recombines them later. (&lt;a href="https://github.com/IT-Club-Pulchowk/campus-scripts/blob/main/bash-scripts/splitter.sh">link&lt;/a>)&lt;/li>
 &lt;/ul>
 &lt;/li>
 &lt;/ul>
