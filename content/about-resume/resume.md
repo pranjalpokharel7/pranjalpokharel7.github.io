@@ -10,7 +10,7 @@ description: "CV of a computer undergrad"
 **Employment Status:** Student\
 **College:** Pulchowk Campus, IOE\
 **Undergraduate:** Bachelor in Computer Engineering\
-**Year:** Third Year, Fifth Semester\
+**Year:** Third Year, Sixth Semester\
 **Address:**
 - Primary: Bharatpur-5, Chitwan (current)
 - Secondary: Palungtar-2, Gorkha
@@ -18,20 +18,22 @@ description: "CV of a computer undergrad"
 
 **Email:**
 - pranjalpokharel007@gmail.com
-- 075bct061.pranjal@pcampus.edu.np
-- legacymodex86@protonmail.com (for Mr. Stallman)
+- 075bct061.pranjal@pcampus.edu.np (college mail)
 
 ---
 ### Skills and Experiences
 
 #### Relevant Skills:
-- Programming Languages - prefer to work in Python, C++, C, JavaScript and Go
-- Graphic Design/Digital Art using Adobe Illustrator/Photoshop/Figma
-- Web Development using HTML5, CSS3, JavaScript, SASS, Flask, React.
-- Beginner in app development through Flutter + Dart.
-- Excellent expereince in working with the Linux development environment including system calls, networking, job management and shell scripting.
-- Excellent content writing/documentation skills (English)
-- Others: LaTex, Figma (prototyping), Git.
+- **Programming Languages** - prefer to work in Python, C++, C, JavaScript and Go
+- **Graphic Design/Digital Art** using Adobe Illustrator/Photoshop/Figma
+- **Web Development**
+  1. Front End: HTML5, CSS3 (SASS, Bootstrap), JavaScript, React.
+  2. Back End: Python (Django, Flask), Node (Express)
+  3. Database: SQLite3, Postgres, MongoDB
+- **Beginner in App Development** through Flutter + Dart.
+- Excellent expereince in working with the **Linux** development environment including system calls, networking, job management and shell scripting.
+- Excellent **content writing/documentation** skills (English)
+- **Others:** LaTex, Git.
 
 #### Work Experince:
 - **Founding Member** of **IT Club Pulchowk** where my responsibilities included event management, social media promotion, marketing, teaching-learning through various programming workshops, graphic design and more.
