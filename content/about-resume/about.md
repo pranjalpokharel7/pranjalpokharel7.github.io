@@ -12,8 +12,6 @@ As of now, I am a 3rd Year Bachelor in Computer Engineering Student (BCT) studyi
 
 **Email:** pranjalpokharel007@gmail.com, 075bct061.pranjal@pcampus.edu.np\
 **Discord:** ppok24#9422\
-**Twitter**: https://twitter.com/ppok24\
-**YouTube**: https://www.youtube.com/channel/UClbVivuP8qpsVxzBTttCP5g
 \
 **Quotes To Live By:**
 - "It is what it is." - *Random Stoic*
