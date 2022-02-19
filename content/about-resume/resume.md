@@ -37,6 +37,7 @@ description: "CV of a computer undergrad"
 
 #### Work Experince:
 - **Founding Member** of **[IT Club Pulchowk](https://github.com/IT-Club-Pulchowk)** where my responsibilities included event management, social media promotion, marketing, teaching-learning through various programming workshops, graphic design and more.
+- Worked as **Blockchain Developer (Intern)** at **[iBriz.ai](https://ibriz.ai/)** where I worked on the Blockchain Transmission Protocol (BTP) project where my tasks mostly included deploying smart contracts, setting up local nodes and configuring the BTP Relayer. 
 - Worked as **Design Intern** at **[Esfera Brandings](https://esferabrandings.com/)**, a brand design and development company (see website for more information). My responsiblitites included designing social media posters for clients, creating design components and re-designing existing client designs. Mostly worked with Illustrator, Figma and Photoshop.
 - Worked as a **Front End Developer** at **[Clamphook](https://clamphook.com/)**, an online entrance preparation website. My responsiblitites primarily comprised implementing design mockups in web using HTML, CSS and ReactJS; integrating API to the front end; and responsive web design.
 - Worked as a **Graphic Designer** in the **[LOCUS](https://www.facebook.com/locus.ioe/) Design Team** for LOCUS 2020 and LOCUS 2021, Pulchowk Campus. Details of my work include graphic design, exhibition management, content writing, resource management and more.
