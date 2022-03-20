@@ -14,8 +14,8 @@ As of now, I am a 3rd Year Bachelor in Computer Engineering Student (BCT) studyi
 **Discord:** ppok24#9422\
 \
 **Quotes To Live By:**
-- "It is what it is." - *Random Stoic*
-- "Everything that irritates us about others can lead us to an understanding of ourselves." - *Jung*
+- "The most important thing is to try and inspire people so that they can be great in whatever they want to do." - *Kobe*
+- "You can't beat me. I'm prepared to die." - *Israel Adesanya, 5th Round vs. Kelvin Gastelum, UFC 236* 
 
 **Dedicated:**
 
