@@ -1,162 +1,27 @@
-<!doctype html><html lang=en>
-<head>
-<title>Learning Bash Scripting :: Pranjal Pokharel | Blog Site</title>
-<meta charset=utf-8>
-<meta name=viewport content="width=device-width,initial-scale=1">
-<meta name=description content="Well Sort Of...">
-<meta name=keywords content="blog,developer,anime">
-<meta name=robots content="noodp">
-<link rel=canonical href=http://pranjalpokharel.com.np/posts/learning-bash/>
-<link rel=stylesheet href=http://pranjalpokharel.com.np/assets/style.css>
-<link rel=stylesheet href=http://pranjalpokharel.com.np/assets/green.css>
-<link rel=apple-touch-icon href=http://pranjalpokharel.com.np/img/apple-touch-icon-192x192.png>
-<link rel="shortcut icon" href=http://pranjalpokharel.com.np/icon.png>
-<meta name=twitter:card content="summary">
-<meta name=twitter:site content="ppok24">
-<meta name=twitter:creator content>
-<meta property="og:locale" content="en">
-<meta property="og:type" content="article">
-<meta property="og:title" content="Learning Bash Scripting">
-<meta property="og:description" content="Well Sort Of...">
-<meta property="og:url" content="http://pranjalpokharel.com.np/posts/learning-bash/">
-<meta property="og:site_name" content="Pranjal Pokharel | Blog Site">
-<meta property="og:image" content="http://pranjalpokharel.com.np/icon.png">
-<meta property="og:image:width" content="2048">
-<meta property="og:image:height" content="1024">
-<meta property="article:published_time" content="2021-03-08 23:36:14 +0545 +0545">
-</head>
-<body class=green>
-<div class="container center headings--one-size">
-<header class=header>
-<div class=header__inner>
-<div class=header__logo>
-<a href=/>
-<div class=logo>
-HOME
-</div>
-</a>
-</div>
-<div class=menu-trigger>menu</div>
-</div>
-<nav class=menu>
-<ul class="menu__inner menu__inner--desktop">
-<li><a href=/about-resume/about>About</a></li>
-<li><a href=/tags/programming>Programming</a></li>
-<li><a href=/about-resume/resume>Resume</a></li>
-</ul>
-<ul class="menu__inner menu__inner--mobile">
-<li><a href=/about-resume/about>About</a></li>
-<li><a href=/tags/programming>Programming</a></li>
-<li><a href=/about-resume/resume>Resume</a></li>
-</ul>
-</nav>
-</header>
-<div class=content>
-<div class=post>
-<h1 class=post-title>
-<a href=http://pranjalpokharel.com.np/posts/learning-bash/>Learning Bash Scripting</a></h1>
-<div class=post-meta>
-<span class=post-date>
-2021-03-08
-</span>
-</div>
-<span class=post-tags>
-#<a href=http://pranjalpokharel.com.np/tags/programming/>programming</a>&nbsp;
-</span>
-<div class=post-content><div>
-<p>While I have been using Linux for over 2 years now, frankly I had
+<!doctype html><html lang=en><head><title>Learning Bash Scripting :: Pranjal Pokharel | Blog Site</title><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><meta name=description content="Well Sort Of..."><meta name=keywords content="blog,developer,anime"><meta name=robots content="noodp"><link rel=canonical href=http://pranjalpokharel.com.np/posts/learning-bash/><link rel=stylesheet href=http://pranjalpokharel.com.np/assets/style.css><link rel=stylesheet href=http://pranjalpokharel.com.np/assets/green.css><link rel=apple-touch-icon href=http://pranjalpokharel.com.np/img/apple-touch-icon-192x192.png><link rel="shortcut icon" href=http://pranjalpokharel.com.np/icon.png><meta name=twitter:card content="summary"><meta name=twitter:site content="ppok24"><meta name=twitter:creator content><meta property="og:locale" content="en"><meta property="og:type" content="article"><meta property="og:title" content="Learning Bash Scripting"><meta property="og:description" content="Well Sort Of..."><meta property="og:url" content="http://pranjalpokharel.com.np/posts/learning-bash/"><meta property="og:site_name" content="Pranjal Pokharel | Blog Site"><meta property="og:image" content="http://pranjalpokharel.com.np/icon.png"><meta property="og:image:width" content="2048"><meta property="og:image:height" content="1024"><meta property="article:published_time" content="2021-03-08 23:36:14 +0545 +0545"></head><body class=green><div class="container center headings--one-size"><header class=header><div class=header__inner><div class=header__logo><a href=/><div class=logo>HOME</div></a></div><div class=menu-trigger>menu</div></div><nav class=menu><ul class="menu__inner menu__inner--desktop"><li><a href=/about-resume/about>About</a></li><li><a href=/tags/programming>Programming</a></li><li><a href=/about-resume/resume>Resume</a></li></ul><ul class="menu__inner menu__inner--mobile"><li><a href=/about-resume/about>About</a></li><li><a href=/tags/programming>Programming</a></li><li><a href=/about-resume/resume>Resume</a></li></ul></nav></header><div class=content><div class=post><h1 class=post-title><a href=http://pranjalpokharel.com.np/posts/learning-bash/>Learning Bash Scripting</a></h1><div class=post-meta><span class=post-date>2021-03-08</span></div><span class=post-tags>#<a href=http://pranjalpokharel.com.np/tags/programming/>programming</a>&nbsp;</span><div class=post-content><div><p>While I have been using Linux for over 2 years now, frankly I had
 never thought about automating tasks using simple bash scripts. This
 means that while I did not know about bash scripting from a syntactical
 point of view, I was very comfortable using the command line and it&rsquo;s
-various commands.<br>
-<br>
-And so my <del>journey</del> misadventures with bash scripting started with an idea, as always.</p>
-<h4 id=1-idea>1) Idea!<a href=#1-idea class=hanchor arialabel=Anchor>&#8983;</a> </h4>
-<p>Need to switch to light theme on vim&mldr;wait! Do I manually edit my config file every time? Time to write my first bash script.</p>
-<h4 id=2-overview>2) Overview<a href=#2-overview class=hanchor arialabel=Anchor>&#8983;</a> </h4>
-<p>I needed to start from the basics. Web search + Reddit later I landed on a website ‘learn-x-in-y-minutes’. 4 hrs to understand basic syntax while executing some code snippets.</p>
-<h4 id=3-implementation>3) Implementation?<a href=#3-implementation class=hanchor arialabel=Anchor>&#8983;</a> </h4>
-<p>Fundamentally, the script would have to edit the vimrc file –</p>
-<pre tabindex=0><code>set background=dark → set background=light
+various commands.<br><br>And so my <del>journey</del> misadventures with bash scripting started with an idea, as always.</p><h4 id=1-idea>1) Idea!<a href=#1-idea class=hanchor arialabel=Anchor>&#8983;</a></h4><p>Need to switch to light theme on vim&mldr;wait! Do I manually edit my config file every time? Time to write my first bash script.</p><h4 id=2-overview>2) Overview<a href=#2-overview class=hanchor arialabel=Anchor>&#8983;</a></h4><p>I needed to start from the basics. Web search + Reddit later I landed on a website ‘learn-x-in-y-minutes’. 4 hrs to understand basic syntax while executing some code snippets.</p><h4 id=3-implementation>3) Implementation?<a href=#3-implementation class=hanchor arialabel=Anchor>&#8983;</a></h4><p>Fundamentally, the script would have to edit the vimrc file –</p><pre tabindex=0><code>set background=dark → set background=light
 </code></pre><p><code>sed</code> command for the rewriting job.
-I opened up the man page on <code>date</code> command and found that using format specifiers returned time in integer.</p>
-<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash>CURRENT_TIME<span style=color:#f92672>=</span><span style=color:#66d9ef>$(</span>date +%H%M%S<span style=color:#66d9ef>)</span>
-<span style=color:#66d9ef>if</span> <span style=color:#f92672>[</span> <span style=color:#e6db74>&#34;</span>$CURRENT_TIME<span style=color:#e6db74>&#34;</span> -gt <span style=color:#e6db74>&#34;</span>$STARTING_TIME<span style=color:#e6db74>&#34;</span> <span style=color:#f92672>]</span> <span style=color:#f92672>&amp;&amp;</span> <span style=color:#f92672>[</span> <span style=color:#e6db74>&#34;</span>$CURRENT_TIME<span style=color:#e6db74>&#34;</span> -lt <span style=color:#e6db74>&#34;</span>$END_TIME<span style=color:#e6db74>&#34;</span> <span style=color:#f92672>]</span>
-<span style=color:#66d9ef>then</span>
-  sed -i <span style=color:#e6db74>&#34;s/set\\ background=</span>$LIGHT_THEME<span style=color:#e6db74>/set\\ background=</span>$DARK_THEME<span style=color:#e6db74>/&#34;</span> ~/.vimrc
-<span style=color:#66d9ef>else</span>
-  sed -i <span style=color:#e6db74>&#34;s/set\\ background=</span>$DARK_THEME<span style=color:#e6db74>/set\\ background=</span>$LIGHT_THEME<span style=color:#e6db74>/&#34;</span> ~/.vimrc
-<span style=color:#66d9ef>fi</span>
-</code></pre></div><p>Debugging! END_TIME less than STARTING_TIME. A swap function should account for that.</p>
-<h4 id=4-issues>4) Issues!<a href=#4-issues class=hanchor arialabel=Anchor>&#8983;</a> </h4>
-<p>Why is a file with name ‘180000’ created every time I execute the script? And why is my downloads folder so cluttered? Need a file organizing script…</p>
-<h4 id=5-one-day-and-awk-later>5) One day and <code>awk</code> later<a href=#5-one-day-and-awk-later class=hanchor arialabel=Anchor>&#8983;</a> </h4>
-<p>Need a list of extensions in a directory. Kind stranger on StackOverflow, how do I understand this insane syntax?</p>
-<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash>find . -type f | awk -F. <span style=color:#960050;background-color:#1e0010>&#39;</span>!a<span style=color:#f92672>[</span>$NF<span style=color:#f92672>]</span>++<span style=color:#f92672>{</span>print $NF<span style=color:#f92672>}</span>’
-</code></pre></div><p>WHAT IS AWK? Okay, just need to go through the GNU manual&mldr;arrays in <code>awk</code> are super WEIRD! How about I use<code>sort</code>…</p>
-<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash>find . -maxdepth <span style=color:#ae81ff>1</span> -type f  |  awk -F . <span style=color:#e6db74>&#39;{print $NF}&#39;</span> |  sort -u
-</code></pre></div><p>My own solution that I UNDERSTAND! <code>mv</code>+ regex should finish the work.</p>
-<h4 id=6-send-100mb-file-over-facebook>6) Send 100MB file over Facebook?<a href=#6-send-100mb-file-over-facebook class=hanchor arialabel=Anchor>&#8983;</a> </h4>
-<p>Honestly, I could have provided a drive link and be done. But something in me got excited over somehow bypassing the upload limit of 25 MB. Time to work.</p>
-<h4 id=7-split-it>7) Split it!<a href=#7-split-it class=hanchor arialabel=Anchor>&#8983;</a> </h4>
-<p>In a GitHub repository I found the usage of <code>split</code> - so, I CAN SPLIT FILES into pieces without losing data.
-Recombination? <code>cat</code> command to the rescue. I love Unix forums.</p>
-<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash>split --bytes<span style=color:#f92672>=</span>$CHUNK_SIZE --additional-suffix<span style=color:#f92672>=</span>$SPLIT_FILE_EXTENSION -d $FILENAME $PREFIX
-</code></pre></div><h4 id=8-just-encrypt-it>8) JUST ENCRYPT IT!<a href=#8-just-encrypt-it class=hanchor arialabel=Anchor>&#8983;</a> </h4>
-<p>It would be useful if I could implement something from Cryptography I course on Coursera that I took. In a sense, I’d learn two things simultaneously.
-Referred YouTube on openssl, went through the man page and added in some flags of my own:</p>
-<pre tabindex=0><code>openssl enc -aes-256-cbc -base64 -pbkdf2 -iter 100000 -pass pass:$PASSWORD -in $file -out fenc/$file
-</code></pre><h4 id=9-finally>9) Finally…?<a href=#9-finally class=hanchor arialabel=Anchor>&#8983;</a> </h4>
-<p>IT WORKED! 100 MB pdf sent over Facebook, in chunks of 24 MB, with the decryption working on the other end just as I wanted!<br>
-<br>
-Wait, why are files of name ‘180000’ scattered around my storage? Oh no, forgot to turn off the buggy script&mldr;</p>
-<h4 id=references>References:<a href=#references class=hanchor arialabel=Anchor>&#8983;</a> </h4>
-<ul>
-<li><strong>Learn x in y minutes:</strong> <a href=https://learnxinyminutes.com/docs/bash/>https://learnxinyminutes.com/docs/bash/</a></li>
-<li><strong>Awk to get a list of file extensions:</strong> <a href=https://stackoverflow.com/questions/1842254/how-can-i-find-all-of-the-distinct-file-extensions-in-a-folder-hierarchy>https://stackoverflow.com/questions/1842254/how-can-i-find-all-of-the-distinct-file-extensions-in-a-folder-hierarchy</a></li>
-<li><strong>GNU Awk User’s Guide:</strong> <a href=https://www.gnu.org/software/gawk/manual/gawk.html>https://www.gnu.org/software/gawk/manual/gawk.html</a></li>
-<li><strong>Useful GitHub Repository:</strong> <a href=https://github.com/jlevy/the-art-of-command-line>https://github.com/jlevy/the-art-of-command-line</a></li>
-<li><strong>Split Command Usage:</strong> <a href=https://unix.stackexchange.com/questions/24630/whats-the-best-way-to-join-files-again-after-splitting-them>https://unix.stackexchange.com/questions/24630/whats-the-best-way-to-join-files-again-after-splitting-them</a></li>
-<li><strong>OpenSSL YouTube Video:</strong> <a href="https://www.youtube.com/watch?v=-nEh7X4dtuw&t=196s">https://www.youtube.com/watch?v=-nEh7X4dtuw&t=196s</a></li>
-<li><strong>‘Cryptography I’ on Coursera:</strong> <a href=https://www.coursera.org/learn/crypto>https://www.coursera.org/learn/crypto</a></li>
-<li><strong>Advanced Bash Scripting Guide:</strong> <a href=https://tldp.org/LDP/abs/html/>https://tldp.org/LDP/abs/html/</a></li>
-<li><strong>Common Bash Pitfalls:</strong> <a href=http://mywiki.wooledge.org/BashPitfalls>http://mywiki.wooledge.org/BashPitfalls</a></li>
-</ul>
-</div></div>
-<div class=pagination>
-<div class=pagination__title>
-<span class=pagination__title-h>Read Other Posts</span>
-<hr>
-</div>
-<div class=pagination__buttons>
-<span class="button previous">
-<a href=http://pranjalpokharel.com.np/posts/june-playlist-2021/>
-<span class=button__icon>←</span>
-<span class=button__text>What's Cooking This Month?</span>
-</a>
-</span>
-<span class="button next">
-<a href=http://pranjalpokharel.com.np/posts/garage-door/>
-<span class=button__text>Garage Door</span>
-<span class=button__icon>→</span>
-</a>
-</span>
-</div>
-</div>
-</div>
-</div>
-<footer class=footer>
-<div class=footer__inner>
-<div class="copyright copyright--user">
-<span>© 2021 Pranjal Pokharel</span>
+I opened up the man page on <code>date</code> command and found that using format specifiers returned time in integer.</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash><span style=display:flex><span>CURRENT_TIME<span style=color:#f92672>=</span><span style=color:#66d9ef>$(</span>date +%H%M%S<span style=color:#66d9ef>)</span>
+</span></span><span style=display:flex><span><span style=color:#66d9ef>if</span> <span style=color:#f92672>[</span> <span style=color:#e6db74>&#34;</span>$CURRENT_TIME<span style=color:#e6db74>&#34;</span> -gt <span style=color:#e6db74>&#34;</span>$STARTING_TIME<span style=color:#e6db74>&#34;</span> <span style=color:#f92672>]</span> <span style=color:#f92672>&amp;&amp;</span> <span style=color:#f92672>[</span> <span style=color:#e6db74>&#34;</span>$CURRENT_TIME<span style=color:#e6db74>&#34;</span> -lt <span style=color:#e6db74>&#34;</span>$END_TIME<span style=color:#e6db74>&#34;</span> <span style=color:#f92672>]</span>
+</span></span><span style=display:flex><span><span style=color:#66d9ef>then</span>
+</span></span><span style=display:flex><span>  sed -i <span style=color:#e6db74>&#34;s/set\\ background=</span>$LIGHT_THEME<span style=color:#e6db74>/set\\ background=</span>$DARK_THEME<span style=color:#e6db74>/&#34;</span> ~/.vimrc
+</span></span><span style=display:flex><span><span style=color:#66d9ef>else</span>
+</span></span><span style=display:flex><span>  sed -i <span style=color:#e6db74>&#34;s/set\\ background=</span>$DARK_THEME<span style=color:#e6db74>/set\\ background=</span>$LIGHT_THEME<span style=color:#e6db74>/&#34;</span> ~/.vimrc
+</span></span><span style=display:flex><span><span style=color:#66d9ef>fi</span>
+</span></span></code></pre></div><p>Debugging! END_TIME less than STARTING_TIME. A swap function should account for that.</p><h4 id=4-issues>4) Issues!<a href=#4-issues class=hanchor arialabel=Anchor>&#8983;</a></h4><p>Why is a file with name ‘180000’ created every time I execute the script? And why is my downloads folder so cluttered? Need a file organizing script…</p><h4 id=5-one-day-and-awk-later>5) One day and <code>awk</code> later<a href=#5-one-day-and-awk-later class=hanchor arialabel=Anchor>&#8983;</a></h4><p>Need a list of extensions in a directory. Kind stranger on StackOverflow, how do I understand this insane syntax?</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash><span style=display:flex><span>find . -type f | awk -F. <span style=color:#960050;background-color:#1e0010>&#39;</span>!a<span style=color:#f92672>[</span>$NF<span style=color:#f92672>]</span>++<span style=color:#f92672>{</span>print $NF<span style=color:#f92672>}</span>’
+</span></span></code></pre></div><p>WHAT IS AWK? Okay, just need to go through the GNU manual&mldr;arrays in <code>awk</code> are super WEIRD! How about I use<code>sort</code>…</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash><span style=display:flex><span>find . -maxdepth <span style=color:#ae81ff>1</span> -type f  |  awk -F . <span style=color:#e6db74>&#39;{print $NF}&#39;</span> |  sort -u
+</span></span></code></pre></div><p>My own solution that I UNDERSTAND! <code>mv</code>+ regex should finish the work.</p><h4 id=6-send-100mb-file-over-facebook>6) Send 100MB file over Facebook?<a href=#6-send-100mb-file-over-facebook class=hanchor arialabel=Anchor>&#8983;</a></h4><p>Honestly, I could have provided a drive link and be done. But something in me got excited over somehow bypassing the upload limit of 25 MB. Time to work.</p><h4 id=7-split-it>7) Split it!<a href=#7-split-it class=hanchor arialabel=Anchor>&#8983;</a></h4><p>In a GitHub repository I found the usage of <code>split</code> - so, I CAN SPLIT FILES into pieces without losing data.
+Recombination? <code>cat</code> command to the rescue. I love Unix forums.</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash><span style=display:flex><span>split --bytes<span style=color:#f92672>=</span>$CHUNK_SIZE --additional-suffix<span style=color:#f92672>=</span>$SPLIT_FILE_EXTENSION -d $FILENAME $PREFIX
+</span></span></code></pre></div><h4 id=8-just-encrypt-it>8) JUST ENCRYPT IT!<a href=#8-just-encrypt-it class=hanchor arialabel=Anchor>&#8983;</a></h4><p>It would be useful if I could implement something from Cryptography I course on Coursera that I took. In a sense, I’d learn two things simultaneously.
+Referred YouTube on openssl, went through the man page and added in some flags of my own:</p><pre tabindex=0><code>openssl enc -aes-256-cbc -base64 -pbkdf2 -iter 100000 -pass pass:$PASSWORD -in $file -out fenc/$file
+</code></pre><h4 id=9-finally>9) Finally…?<a href=#9-finally class=hanchor arialabel=Anchor>&#8983;</a></h4><p>IT WORKED! 100 MB pdf sent over Facebook, in chunks of 24 MB, with the decryption working on the other end just as I wanted!<br><br>Wait, why are files of name ‘180000’ scattered around my storage? Oh no, forgot to turn off the buggy script&mldr;</p><h4 id=references>References:<a href=#references class=hanchor arialabel=Anchor>&#8983;</a></h4><ul><li><strong>Learn x in y minutes:</strong> <a href=https://learnxinyminutes.com/docs/bash/>https://learnxinyminutes.com/docs/bash/</a></li><li><strong>Awk to get a list of file extensions:</strong> <a href=https://stackoverflow.com/questions/1842254/how-can-i-find-all-of-the-distinct-file-extensions-in-a-folder-hierarchy>https://stackoverflow.com/questions/1842254/how-can-i-find-all-of-the-distinct-file-extensions-in-a-folder-hierarchy</a></li><li><strong>GNU Awk User’s Guide:</strong> <a href=https://www.gnu.org/software/gawk/manual/gawk.html>https://www.gnu.org/software/gawk/manual/gawk.html</a></li><li><strong>Useful GitHub Repository:</strong> <a href=https://github.com/jlevy/the-art-of-command-line>https://github.com/jlevy/the-art-of-command-line</a></li><li><strong>Split Command Usage:</strong> <a href=https://unix.stackexchange.com/questions/24630/whats-the-best-way-to-join-files-again-after-splitting-them>https://unix.stackexchange.com/questions/24630/whats-the-best-way-to-join-files-again-after-splitting-them</a></li><li><strong>OpenSSL YouTube Video:</strong> <a href="https://www.youtube.com/watch?v=-nEh7X4dtuw&t=196s">https://www.youtube.com/watch?v=-nEh7X4dtuw&t=196s</a></li><li><strong>‘Cryptography I’ on Coursera:</strong> <a href=https://www.coursera.org/learn/crypto>https://www.coursera.org/learn/crypto</a></li><li><strong>Advanced Bash Scripting Guide:</strong> <a href=https://tldp.org/LDP/abs/html/>https://tldp.org/LDP/abs/html/</a></li><li><strong>Common Bash Pitfalls:</strong> <a href=http://mywiki.wooledge.org/BashPitfalls>http://mywiki.wooledge.org/BashPitfalls</a></li></ul></div></div><div class=pagination><div class=pagination__title><span class=pagination__title-h>Read Other Posts</span><hr></div><div class=pagination__buttons><span class="button previous"><a href=http://pranjalpokharel.com.np/posts/june-playlist-2021/><span class=button__icon>←</span>
+<span class=button__text>What's Cooking This Month?</span></a></span>
+<span class="button next"><a href=http://pranjalpokharel.com.np/posts/garage-door/><span class=button__text>Garage Door</span>
+<span class=button__icon>→</span></a></span></div></div></div></div><footer class=footer><div class=footer__inner><div class="copyright copyright--user"><span>© 2021 Pranjal Pokharel</span>
 <span>:: <a href=https://github.com/pranjalpokharel7>Github</a>&nbsp;</span>
 <span>:: <a href=https://www.youtube.com/channel/UClbVivuP8qpsVxzBTttCP5g>YouTube</a>&nbsp;</span>
-<span>:: <a href=https://pranjalpokharel007.medium.com/>Medium</a></span>
-</div>
-</div>
-</footer>
-<script src=http://pranjalpokharel.com.np/assets/main.js></script>
-<script src=http://pranjalpokharel.com.np/assets/prism.js></script>
-</div>
-</body>
-</html>
+<span>:: <a href=https://pranjalpokharel007.medium.com/>Medium</a></span></div></div></footer><script src=http://pranjalpokharel.com.np/assets/main.js></script>
+<script src=http://pranjalpokharel.com.np/assets/prism.js></script></div></body></html>

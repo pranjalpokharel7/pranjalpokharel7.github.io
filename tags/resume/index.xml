@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>resume on Pranjal Pokharel | Blog Site</title><link>http://pranjalpokharel.com.np/tags/resume/</link><description>Recent content in resume on Pranjal Pokharel | Blog Site</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><copyright>© 2021 Pranjal Pokharel</copyright><lastBuildDate>Fri, 26 Feb 2021 23:06:21 +0545</lastBuildDate><atom:link href="http://pranjalpokharel.com.np/tags/resume/index.xml" rel="self" type="application/rss+xml"/><item><title>Resume/Portfolio</title><link>http://pranjalpokharel.com.np/about-resume/resume/</link><pubDate>Fri, 26 Feb 2021 23:06:21 +0545</pubDate><guid>http://pranjalpokharel.com.np/about-resume/resume/</guid><description>Primary Information Name: Pranjal Pokharel
 Employment Status: Student
 College: Pulchowk Campus, IOE
-Undergraduate: Bachelor in Computer Engineering
+Undergraduate: Bachelor in Computer Engineering (BCT)
 Year: Third Year, Sixth Semester
 Address:
 Primary: Bharatpur-5, Chitwan Secondary: Pulchowk, Lalitpur (current) Permanent: Palungtar-2, Gorkha Email:
@@ -9,7 +9,7 @@ pranjalpokharel007@gmail.com 075bct061.pranjal@pcampus.edu.np (college mail) Ski
 &lt;p>&lt;strong>Name:&lt;/strong> Pranjal Pokharel&lt;br>
 &lt;strong>Employment Status:&lt;/strong> Student&lt;br>
 &lt;strong>College:&lt;/strong> Pulchowk Campus, IOE&lt;br>
-&lt;strong>Undergraduate:&lt;/strong> Bachelor in Computer Engineering&lt;br>
+&lt;strong>Undergraduate:&lt;/strong> Bachelor in Computer Engineering (BCT)&lt;br>
 &lt;strong>Year:&lt;/strong> Third Year, Sixth Semester&lt;br>
 &lt;strong>Address:&lt;/strong>&lt;/p>
 &lt;ul>
@@ -27,12 +27,12 @@ pranjalpokharel007@gmail.com 075bct061.pranjal@pcampus.edu.np (college mail) Ski
 &lt;h4 id="relevant-skills">Relevant Skills:&lt;/h4>
 &lt;ul>
 &lt;li>&lt;strong>Programming Languages&lt;/strong> - prefer to work in Python, C++, C, JavaScript and Go, although I feel language barrier is rarely the issue over the concept itself.&lt;/li>
-&lt;li>&lt;strong>Graphic Design/Digital Art&lt;/strong> using Adobe Illustrator/Photoshop/Figma.&lt;/li>
+&lt;li>&lt;strong>Graphic Design/Digital Art&lt;/strong> using Illustrator/Photoshop/Figma.&lt;/li>
 &lt;li>&lt;strong>Web Development&lt;/strong>
 &lt;ol>
 &lt;li>Front End: HTML5, CSS3 (SASS, Bootstrap), JavaScript, React.&lt;/li>
 &lt;li>Back End: Python (Django, Flask), Node (Express).&lt;/li>
-&lt;li>Database: SQLite3, Postgres, MongoDB.&lt;/li>
+&lt;li>Database: SQLite3, Postgres, MongoDB, BadgerDB.&lt;/li>
 &lt;/ol>
 &lt;/li>
 &lt;li>&lt;strong>Beginner in App Development&lt;/strong> through Flutter + Dart.&lt;/li>
@@ -46,8 +46,9 @@ pranjalpokharel007@gmail.com 075bct061.pranjal@pcampus.edu.np (college mail) Ski
 &lt;li>Worked as &lt;strong>Blockchain Developer (Intern)&lt;/strong> at &lt;strong>&lt;a href="https://ibriz.ai/">iBriz.ai&lt;/a>&lt;/strong> where I worked on the Blockchain Transmission Protocol (BTP) project where my tasks mostly included deploying smart contracts, setting up local nodes and configuring the BTP Relayer.&lt;/li>
 &lt;li>Worked as &lt;strong>Design Intern&lt;/strong> at &lt;strong>&lt;a href="https://esferabrandings.com/">Esfera Brandings&lt;/a>&lt;/strong>, a brand design and development company (see website for more information). My responsiblitites included designing social media posters for clients, creating design components and re-designing existing client designs. Mostly worked with Illustrator, Figma and Photoshop.&lt;/li>
 &lt;li>Worked as a &lt;strong>Front End Developer&lt;/strong> at &lt;strong>&lt;a href="https://clamphook.com/">Clamphook&lt;/a>&lt;/strong>, an online entrance preparation website. My responsiblitites primarily comprised implementing design mockups in web using HTML, CSS and ReactJS; integrating API to the front end; and responsive web design.&lt;/li>
+&lt;li>Worked as a &lt;strong>Content Creator&lt;/strong> for &lt;strong>&lt;a href="https://www.facebook.com/locus.ioe/">LOCUS 2021&lt;/a>&lt;/strong> by creating, editing and managing content such as social media posts, event announcements, brandbook information and more.&lt;/li>
 &lt;li>Worked as a &lt;strong>Graphic Designer&lt;/strong> in the &lt;strong>&lt;a href="https://www.facebook.com/locus.ioe/">LOCUS&lt;/a> Design Team&lt;/strong> for LOCUS 2020 and LOCUS 2021, Pulchowk Campus. Details of my work include graphic design, exhibition management, content writing, resource management and more.&lt;/li>
-&lt;li>Worked as the &lt;strong>Event Coverage Head&lt;/strong> of &lt;strong>&lt;a href="https://medium.com/zerone-magazine">The Zerone&lt;/a>&lt;/strong> 2020, an annual tech magazine of Pulchowk Campus covering different tech events within the campus.&lt;/li>
+&lt;li>Worked as the &lt;strong>Event Coverage Head&lt;/strong> of &lt;strong>&lt;a href="https://medium.com/zerone-magazine">The Zerone 2020&lt;/a>&lt;/strong>, an annual tech magazine of Pulchowk Campus covering different tech events within the campus.&lt;/li>
 &lt;/ul>
 &lt;h4 id="website-projects">Website Projects:&lt;/h4>
 &lt;ul>
@@ -58,50 +59,44 @@ pranjalpokharel007@gmail.com 075bct061.pranjal@pcampus.edu.np (college mail) Ski
 &lt;h4 id="highlighted-projects">Highlighted Projects:&lt;/h4>
 &lt;ul>
 &lt;li>
+&lt;p>&lt;strong>&lt;a href="https://github.com/pranjalpokharel7/yudhisthira">Yudhisthira&lt;/a>&lt;/strong>&lt;/p>
+&lt;ul>
+&lt;li>Custom Blockchain Network from scratch in Go&lt;/li>
+&lt;li>6th Semester Minor Project, BCT&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>
 &lt;p>&lt;strong>&lt;a href="https://github.com/pranjalpokharel7/our-rocket">Our Rocket&lt;/a>&lt;/strong>&lt;/p>
 &lt;ul>
-&lt;li>Vostok Rocket Modeling using the OpenGL Graphics API&lt;/li>
+&lt;li>Vostok Rocket Modeling using the OpenGL Graphics API and C++&lt;/li>
 &lt;li>5th Semester College Graphics Project&lt;/li>
-&lt;li>Language Used - C/C++&lt;/li>
-&lt;li>Additional Tools/Libraries Used - Blender 3D, Assimp, CMake, GLFW&lt;/li>
+&lt;li>Tools/Libraries Used - Blender 3D, Assimp, CMake, GLFW&lt;/li>
 &lt;/ul>
 &lt;/li>
 &lt;li>
 &lt;p>&lt;strong>&lt;a href="https://github.com/Itshyphen/Pulchowk">A Day in Pulchowk Campus&lt;/a>&lt;/strong>&lt;/p>
 &lt;ul>
 &lt;li>Top-down 2D simulation RPG game using C++ and SFML library&lt;/li>
-&lt;li>Setting: Pulchowk Campus&lt;/li>
-&lt;li>Single player&lt;/li>
-&lt;li>Time-based Scoring&lt;/li>
 &lt;/ul>
 &lt;/li>
 &lt;li>
 &lt;p>&lt;strong>&lt;a href="https://github.com/pranjalpokharel7/programming-helper-bot">Programming Helper&lt;/a>&lt;/strong>&lt;/p>
 &lt;ul>
 &lt;li>Discord bot to help programming conversations in a server, made using discord.py and asyncio&lt;/li>
-&lt;li>Can ask questions within neat embeds&lt;/li>
-&lt;li>Notification through DM is user&amp;rsquo;s query is answered&lt;/li>
-&lt;li>Ranking-system based on Q&amp;amp;A quantity of a certain user, can provide roles based on ranks&lt;/li>
-&lt;li>Custom welcome message&lt;/li>
 &lt;/ul>
 &lt;/li>
 &lt;li>
 &lt;p>&lt;strong>&lt;a href="https://github.com/pranjalpokharel7/emoji-translator">Emoji Translator&lt;/a>&lt;/strong>&lt;/p>
 &lt;ul>
-&lt;li>Emoji-based extension for Firefox, vanilla JS&lt;/li>
+&lt;li>Emoji-based extension for Firefox&lt;/li>
 &lt;li>Translate keywords/patterns to emoji across all URLs (eg, :heart: to ❤️)&lt;/li>
-&lt;li>Search functionalities for emoji/emote&lt;/li>
 &lt;li>Addon Link: &lt;a href="https://addons.mozilla.org/en-US/firefox/addon/emoji-translator">https://addons.mozilla.org/en-US/firefox/addon/emoji-translator&lt;/a>&lt;/li>
 &lt;/ul>
 &lt;/li>
-&lt;/ul>
-&lt;h4 id="other-projects">Other Projects:&lt;/h4>
-&lt;ul>
 &lt;li>
-&lt;p>&lt;strong>&lt;a href="https://github.com/Sandace11/DSA_Project">DSA Project&lt;/a>&lt;/strong>&lt;/p>
+&lt;p>&lt;strong>&lt;a href="https://github.com/Sandace11/DSA_Project">Sorting and Huffman Tree Visualization&lt;/a>&lt;/strong>&lt;/p>
 &lt;ul>
-&lt;li>4th Semester Data Structures and Algorithms Project&lt;/li>
-&lt;li>Visualizing sorting algorithms and huffman tree, mostly worked on the sorting part&lt;/li>
+&lt;li>Visualization of sorting algorithms and huffman tree&lt;/li>
 &lt;li>Libraries/Tools Used - SDL2, SDL2_ttf&lt;/li>
 &lt;/ul>
 &lt;/li>
@@ -110,16 +105,12 @@ pranjalpokharel007@gmail.com 075bct061.pranjal@pcampus.edu.np (college mail) Ski
 &lt;ul>
 &lt;li>CRC check implementation using C++ and Linux system calls&lt;/li>
 &lt;li>Basic networking server implementation using socket programming&lt;/li>
-&lt;li>Both ipv4 and ipv6 supported&lt;/li>
 &lt;/ul>
 &lt;/li>
 &lt;li>
-&lt;p>&lt;strong>Shell (Bash) Scripts&lt;/strong>&lt;/p>
+&lt;p>&lt;strong>&lt;a href="https://github.com/nsn39/particle-swarm">Particle Swarm Optimization (Visualization)&lt;/a>&lt;/strong>&lt;/p>
 &lt;ul>
-&lt;li>Script to switch theme, icon pack, wallpaper, panel colors and window managers in an xfce4 DE (&lt;a href="https://github.com/UdeshyaDhungana/xfce4-theme-switcher">link&lt;/a>)&lt;/li>
-&lt;li>Organize files into sub-directories based on name or extension (&lt;a href="https://github.com/IT-Club-Pulchowk/campus-scripts/blob/main/bash-scripts/file_organizer.sh">link&lt;/a>)&lt;/li>
-&lt;li>Script to login to Pulchowk Campus Captive Portal. Forked, added functionality of launching hotspot. (&lt;a href="https://github.com/IT-Club-Pulchowk/campus-scripts/blob/main/bash-scripts/internet_login.sh">link&lt;/a>)&lt;/li>
-&lt;li>Script to split and encrypt the parts of a file, also recombines them later. (&lt;a href="https://github.com/IT-Club-Pulchowk/campus-scripts/blob/main/bash-scripts/splitter.sh">link&lt;/a>)&lt;/li>
+&lt;li>Visualization of PSO algorithm for Traveling Salesman Problem (TSP) using Pygame&lt;/li>
 &lt;/ul>
 &lt;/li>
 &lt;/ul>
@@ -128,7 +119,7 @@ pranjalpokharel007@gmail.com 075bct061.pranjal@pcampus.edu.np (college mail) Ski
 &lt;p>&lt;strong>Design Work&lt;/strong>: &lt;a href="https://bit.ly/pranjal_designs">https://bit.ly/pranjal_designs&lt;/a>&lt;br>
 &lt;strong>GitHub&lt;/strong>: &lt;a href="https://github.com/pranjalpokharel7">https://github.com/pranjalpokharel7&lt;/a>&lt;br>
 &lt;strong>Medium&lt;/strong>: &lt;a href="https://pranjalpokharel007.medium.com">https://pranjalpokharel007.medium.com&lt;/a>&lt;br>
-&lt;strong>LinkedIn&lt;/strong>: &lt;a href="https://www.linkedin.com/in/pranjal-pokharel-860637188">https://www.linkedin.com/in/pranjal-pokharel-860637188&lt;/a> (might not respond on time)&lt;/p>
+&lt;strong>LinkedIn&lt;/strong>: &lt;a href="https://www.linkedin.com/in/pranjal-pokharel-860637188">https://www.linkedin.com/in/pranjal-pokharel-860637188&lt;/a>&lt;/p>
 &lt;hr>
 &lt;h4 id="life-outside-programming">Life Outside Programming:&lt;/h4>
 &lt;p>&lt;strong>Hobbies:&lt;/strong> Guitar, Fiction Writing, Digital Art, Table Tennis, Anime/Manga&lt;br>

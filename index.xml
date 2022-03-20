@@ -8,24 +8,24 @@ On a side note, if your RAM isn&amp;rsquo;t soldered and/or you have some extra 
 &lt;p>The fundamental thing about emulators is that they only go as far as to emulate a specific hardware layout. You need some software to run over the emulated hardware.&lt;/p>
 &lt;p>Think of Android Virtual Devices (AVDs) as something that contains configuration on how an Android device should run. A virtual android device, as the abbreviation says, over which you will be able to run your app. There are a lot of AVDs you can choose from, seeing that you have Android running on everywhere ranging from mobile devices to smart watches.&lt;/p>
 &lt;p>If you completed the installation of &lt;code>android-sdk&lt;/code> properly as a part of the previous article, you should have &lt;code>sdkmanager&lt;/code> available from the command line (might need to log out or restart the system to have &lt;code>sdkamanager&lt;/code> available after initial install.&lt;/p>
-&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-bash" data-lang="bash">$ sdkmanager --list
-&lt;/code>&lt;/pre>&lt;/div>&lt;p>The above command will list out all the available android system-images from which you can create an AVD - you will download a system-image depending on the architecture you&amp;rsquo;re working on.&lt;/p>
-&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-bash" data-lang="bash">&lt;span style="color:#75715e"># expected output&lt;/span>
-...
-platforms;android-30
-platforms;android-31 ... &lt;span style="color:#75715e"># Android SDK Platform&lt;/span>
-...
-system-images;android-31;google_apis;arm64-v8a ...
-system-images;android-31;google_apis;x86_64 ... &lt;span style="color:#75715e"># Google APIs Intel x86 Atom_64 System Image&lt;/span>
-system-images;android-31;google_apis_playstore;arm64-v8a ...
-system-images;android-31;google_apis_playstore;x86_64 ...
-...
-&lt;/code>&lt;/pre>&lt;/div>&lt;p>The number 31 is just the Android API version - newer the better, unless you are specific in not using the latest one. I am on an x86_64 architecture (i.e. my laptop) so I will download the latest system-image and SDK platform correspondingly.&lt;/p>
-&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-bash" data-lang="bash">$ sdkmanager &lt;span style="color:#e6db74">&amp;#34;platforms;android-31&amp;#34;&lt;/span>
-$ sdkmanager &lt;span style="color:#e6db74">&amp;#34;system-images;android-31;google_apis;x86_64&amp;#34;&lt;/span>
-&lt;/code>&lt;/pre>&lt;/div>&lt;p>Following this (and successful installation based on part 1), you should have &lt;code>avdmanager&lt;/code> available from the command line - as the name suggests, we will be using this tool to manage our AVDs.&lt;/p>
-&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-bash" data-lang="bash">$ avdmanager create avd -n myavdname -k &lt;span style="color:#e6db74">&amp;#34;system-images;android-31;google_apis;x86_64&amp;#34;&lt;/span>
-&lt;/code>&lt;/pre>&lt;/div>&lt;p>The above command creates an AVD with the name &amp;lsquo;myavdname&amp;rsquo;. Do not choose custom hardware profile for now, just go for default option. You can always edit the config files later if necessary.&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-bash" data-lang="bash">&lt;span style="display:flex;">&lt;span>$ sdkmanager --list
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>The above command will list out all the available android system-images from which you can create an AVD - you will download a system-image depending on the architecture you&amp;rsquo;re working on.&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-bash" data-lang="bash">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e"># expected output&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>...
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>platforms;android-30
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>platforms;android-31 ... &lt;span style="color:#75715e"># Android SDK Platform&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>...
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>system-images;android-31;google_apis;arm64-v8a ...
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>system-images;android-31;google_apis;x86_64 ... &lt;span style="color:#75715e"># Google APIs Intel x86 Atom_64 System Image&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>system-images;android-31;google_apis_playstore;arm64-v8a ...
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>system-images;android-31;google_apis_playstore;x86_64 ...
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>...
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>The number 31 is just the Android API version - newer the better, unless you are specific in not using the latest one. I am on an x86_64 architecture (i.e. my laptop) so I will download the latest system-image and SDK platform correspondingly.&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-bash" data-lang="bash">&lt;span style="display:flex;">&lt;span>$ sdkmanager &lt;span style="color:#e6db74">&amp;#34;platforms;android-31&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>$ sdkmanager &lt;span style="color:#e6db74">&amp;#34;system-images;android-31;google_apis;x86_64&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>Following this (and successful installation based on part 1), you should have &lt;code>avdmanager&lt;/code> available from the command line - as the name suggests, we will be using this tool to manage our AVDs.&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-bash" data-lang="bash">&lt;span style="display:flex;">&lt;span>$ avdmanager create avd -n myavdname -k &lt;span style="color:#e6db74">&amp;#34;system-images;android-31;google_apis;x86_64&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>The above command creates an AVD with the name &amp;lsquo;myavdname&amp;rsquo;. Do not choose custom hardware profile for now, just go for default option. You can always edit the config files later if necessary.&lt;/p>
 &lt;p>Two links that will certainly be useful to you in the future -&lt;/p>
 &lt;ul>
 &lt;li>&lt;a href="https://developer.android.com/studio/command-line/sdkmanager">skdmanger - official guide&lt;/a>&lt;/li>
@@ -34,17 +34,17 @@ $ sdkmanager &lt;span style="color:#e6db74">&amp;#34;system-images;android-31;go
 &lt;p>Hopefully this section hasn&amp;rsquo;t been too lengthy. Next, we boot up our emulator. About damn time.&lt;/p>
 &lt;h4 id="step-3--you-made-it-you-absolute-madlad">Step 3 : &amp;ldquo;You made it, you absolute madlad!&amp;rdquo;&lt;/h4>
 &lt;p>On your console, type the following command -&lt;/p>
-&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-bash" data-lang="bash">$ emulator -list-avds
-&lt;/code>&lt;/pre>&lt;/div>&lt;p>If your newly created AVD pops up on the list, congratulations, it&amp;rsquo;s your birthday today!&lt;/p>
-&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-bash" data-lang="bash">$ emulator -no-snapshot -avd myavdname
-&lt;/code>&lt;/pre>&lt;/div>&lt;p>The &lt;code>-no-snapshot&lt;/code> command makes sure the emulator does not save state on exit i.e. your emulator will boot up as if your Android phone is on cold boot every time. Just my preference, you can remove this and your emulator should launch just fine. Refer to the official android developer article on &lt;a href="https://developer.android.com/studio/run/emulator-commandline">other command line options&lt;/a>.&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-bash" data-lang="bash">&lt;span style="display:flex;">&lt;span>$ emulator -list-avds
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>If your newly created AVD pops up on the list, congratulations, it&amp;rsquo;s your birthday today!&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-bash" data-lang="bash">&lt;span style="display:flex;">&lt;span>$ emulator -no-snapshot -avd myavdname
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>The &lt;code>-no-snapshot&lt;/code> command makes sure the emulator does not save state on exit i.e. your emulator will boot up as if your Android phone is on cold boot every time. Just my preference, you can remove this and your emulator should launch just fine. Refer to the official android developer article on &lt;a href="https://developer.android.com/studio/run/emulator-commandline">other command line options&lt;/a>.&lt;/p>
 &lt;p>If you are having problems related to hardware acceleration, refer to &lt;a href="https://developer.android.com/studio/run/emulator-acceleration">this article&lt;/a>. Reason I won&amp;rsquo;t explain this over here is because I&amp;rsquo;ve never had problems with it, and better not take word from a developer who hasn&amp;rsquo;t had a bug on the issue. Honestly, it wouldn&amp;rsquo;t hurt to go through the emulator section on the linked website.&lt;/p>
 &lt;h4 id="step-4--counting-like-a-true-soydev">Step 4 : &amp;ldquo;Counting like a true soydev&amp;rdquo;&lt;/h4>
 &lt;p>&lt;code>cd&lt;/code> into your flutter project directory. Time to run your flutter app on the emulator. Start the emulator, and check if flutter has detected your emulator.&lt;/p>
-&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-bash" data-lang="bash">$ flutter devices
-&lt;/code>&lt;/pre>&lt;/div>&lt;p>If it shows your shiny emulator, it&amp;rsquo;s now time to run the counter app -&lt;/p>
-&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-bash" data-lang="bash">$ flutter run
-&lt;/code>&lt;/pre>&lt;/div>&lt;h4 id="and-watch-the-sunrise-on-a-grateful-universe">And watch the sunrise on a grateful universe&amp;hellip;&lt;/h4>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-bash" data-lang="bash">&lt;span style="display:flex;">&lt;span>$ flutter devices
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>If it shows your shiny emulator, it&amp;rsquo;s now time to run the counter app -&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-bash" data-lang="bash">&lt;span style="display:flex;">&lt;span>$ flutter run
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h4 id="and-watch-the-sunrise-on-a-grateful-universe">And watch the sunrise on a grateful universe&amp;hellip;&lt;/h4>
 &lt;p>As with the previous article, some common bugs and/or errors are listed below, though not as much as on the side of quantity. Mention or DM me on Twitter to send your suggestions/query through, link is at the bottom of this website.&lt;/p>
 &lt;p>Also, let me know if you want something more related to flutter, can be setting up editors for example. Honestly though, I am just tired and need some rest from this app development hangover.&lt;/p>
 &lt;h4 id="step-stderr--handling-some-common-errorsbugs">Step stderr : Handling Some Common Errors/Bugs&lt;/h4>
@@ -57,38 +57,38 @@ $ sdkmanager &lt;span style="color:#e6db74">&amp;#34;system-images;android-31;go
 &lt;pre tabindex="0">&lt;code>hw.keyboard = no
 &lt;/code>&lt;/pre>&lt;p>This should bring up your on-screen navigation keys. However, this can disable your keyboard to emulator input, and you&amp;rsquo;ll have to press the touch screen keyboard manually. Well, let&amp;rsquo;s just hope you are not working on a blogging app :eyes:.&lt;/p>
 &lt;p>You can go through other configuration parameters as well and change them as required.&lt;/p>
-&lt;p>&lt;strong>2. &amp;ldquo;Emulator shut down takes a lot of time, just says saving state and gets stuck there.&amp;quot;&lt;/strong>&lt;/p>
+&lt;p>&lt;strong>2. &amp;ldquo;Emulator shut down takes a lot of time, just says saving state and gets stuck there.&amp;rdquo;&lt;/strong>&lt;/p>
 &lt;p>Launch emulator with &lt;code>-no-snapshot&lt;/code> option. I was getting pretty irritated by this and I stopped saving state once and for all. You can also try wiping the previously stored snapshots, simply pass in the &lt;code>-wipe-data&lt;/code> parameter.&lt;/p>
-&lt;p>&lt;strong>3. &amp;ldquo;Installing system-image (sdkmanager) is stuck at x%&amp;quot;&lt;/strong>&lt;/p>
+&lt;p>&lt;strong>3. &amp;ldquo;Installing system-image (sdkmanager) is stuck at x%&amp;rdquo;&lt;/strong>&lt;/p>
 &lt;p>You can try downloading from the source directly, which is our little overlord called Google.&lt;/p>
 &lt;p>&lt;a href="https://dl.google.com/android/repository/sys-img/google_apis/x86_64-30_r10.zip">https://dl.google.com/android/repository/sys-img/google_apis/x86_64-30_r10.zip&lt;/a> - this link downloads the system-image for android-30 SDK, just replace the &lt;code>x86_64-30&lt;/code> with the match from your &lt;code>sdkmanger --list&lt;/code> output.&lt;/p>
 &lt;p>Extract the downloaded zip to the &lt;code>system-images&lt;/code> folder inside &lt;code>/opt/android-sdk/&lt;/code> (assuming you installed from AUR there) and rename it appropriately. For instance, my final full path is - &lt;code>/opt/android-sdk/system-images/android-30/google_apis/x86_64&lt;/code>.&lt;/p></content></item><item><title>Flutter Series : Flutter Like A Butterfly... (Part 1)</title><link>http://pranjalpokharel.com.np/posts/flutter-on-linux/</link><pubDate>Wed, 04 Aug 2021 11:20:09 +0545</pubDate><guid>http://pranjalpokharel.com.np/posts/flutter-on-linux/</guid><description>Yet another poorly written article about Flutter setup on Linux. As the big brain monkey I am, I installed it on my machine about 4 weeks prior and so, due to reasons I did not document my steps then, I don&amp;rsquo;t have screenshots to explain things more visually. The length of this article does not correlate to productive learning - feel free to skip certain sections then bash me about it on Twitter later.</description><content>&lt;p>Yet another poorly written article about Flutter setup on Linux. As the big brain monkey I am, I installed it on my machine about 4 weeks prior and so, due to reasons I did not document my steps then, I don&amp;rsquo;t have screenshots to explain things more visually. The length of this article does not correlate to productive learning - feel free to skip certain sections then bash me about it on Twitter later.&lt;/p>
 &lt;p>Welcome to the rice fields [redacted]!&lt;/p>
 &lt;h4 id="step-1--i-am-simply-too-chad-to-read-the-official-docs">Step 1 : &amp;ldquo;I am simply too chad to read the official docs&amp;rdquo;&lt;/h4>
 &lt;p>Easiest way is to simply git clone the flutter repository then setup the path. Why not download the tarball over git? This way any new release-police catches up, you can &lt;code>git pull&lt;/code> over without a worry.&lt;/p>
-&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-bash" data-lang="bash">$ git clone https://github.com/flutter/flutter.git -b stable
-&lt;/code>&lt;/pre>&lt;/div>&lt;p>We will clone the stable branch (omit everything after the &lt;code>-b&lt;/code> branch if living on the edge is your thing). Wherever you clone it, the next step is to update the $PATH variable in your shell config file.&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-bash" data-lang="bash">&lt;span style="display:flex;">&lt;span>$ git clone https://github.com/flutter/flutter.git -b stable
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>We will clone the stable branch (omit everything after the &lt;code>-b&lt;/code> branch if living on the edge is your thing). Wherever you clone it, the next step is to update the $PATH variable in your shell config file.&lt;/p>
 &lt;p>Don&amp;rsquo;t know how to do that? In your home directory &lt;code>~/&lt;/code>, you should have a config file named &lt;code>.bashrc&lt;/code> (bash) or &lt;code>.zshrc&lt;/code> (zsh) or something else depending upon the shell you use. Simply open the file and add the following lines -&lt;/p>
-&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-bash" data-lang="bash">&lt;span style="color:#75715e"># inside .bashrc&lt;/span>
-export FLUTTER_HOME&lt;span style="color:#f92672">=&lt;/span>~/flutter
-export PATH&lt;span style="color:#f92672">=&lt;/span>$FLUTTER_HOME/bin:$PATH
-&lt;/code>&lt;/pre>&lt;/div>&lt;p>&lt;code>FLUTTER_HOME&lt;/code> is the location to where you git cloned the flutter repo previously (mine is in the home directory). An experienced eye will notice that the PATH we provide is not the actual flutter directory, but the &lt;code>bin&lt;/code> directory INSIDE the root &lt;code>flutter&lt;/code> directory.&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-bash" data-lang="bash">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e"># inside .bashrc&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>export FLUTTER_HOME&lt;span style="color:#f92672">=&lt;/span>~/flutter
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>export PATH&lt;span style="color:#f92672">=&lt;/span>$FLUTTER_HOME/bin:$PATH
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>&lt;code>FLUTTER_HOME&lt;/code> is the location to where you git cloned the flutter repo previously (mine is in the home directory). An experienced eye will notice that the PATH we provide is not the actual flutter directory, but the &lt;code>bin&lt;/code> directory INSIDE the root &lt;code>flutter&lt;/code> directory.&lt;/p>
 &lt;p>Confused about the mumbo-jumbo regarding $PATH variable? This person here explains it in a single minute read - &lt;a href="https://linuxconfig.org/linux-path-environment-variable/">https://linuxconfig.org/linux-path-environment-variable/&lt;/a>&lt;/p>
 &lt;h4 id="step-2--call-a-doctorbut-not-for-me">Step 2 : &amp;ldquo;Call a doctor&amp;hellip;but not for me!&amp;rdquo;&lt;/h4>
 &lt;p>If you&amp;rsquo;ve completed the first step, the following command should execute without the &lt;code>flutter: command not found&lt;/code> error -&lt;/p>
-&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-bash" data-lang="bash">$ flutter doctor
-&lt;/code>&lt;/pre>&lt;/div>&lt;p>It will probably show you are missing the Android SDK and Android Studio (I&amp;rsquo;m assuming those are the flags that pop up). We will not touch that RAM gobbling monstrosity called Android Studio, but we will download the Android SDK which is super necessary.&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-bash" data-lang="bash">&lt;span style="display:flex;">&lt;span>$ flutter doctor
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>It will probably show you are missing the Android SDK and Android Studio (I&amp;rsquo;m assuming those are the flags that pop up). We will not touch that RAM gobbling monstrosity called Android Studio, but we will download the Android SDK which is super necessary.&lt;/p>
 &lt;h4 id="step-3-cool-uncle-java">Step 3: &amp;ldquo;Cool uncle Java&amp;rdquo;&lt;/h4>
 &lt;p>If you have had any experience coding in Java before, this step should be over in a flash. If not, it should still be over in a flash. Linux makes things easier - just install the Java Development Kit (JDK minimum version 8).&lt;/p>
-&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-bash" data-lang="bash">&lt;span style="color:#75715e"># command for arch based distros&lt;/span>
-$ pacman -Ss openjdk
-&lt;/code>&lt;/pre>&lt;/div>&lt;p>The above command should fetch you a list of openjdk versions you can choose to install from. Any distro you use, finding openjdk for your system should be pretty easy from the official repositories (customary bow to Gentoo users).&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-bash" data-lang="bash">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e"># command for arch based distros&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>$ pacman -Ss openjdk
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>The above command should fetch you a list of openjdk versions you can choose to install from. Any distro you use, finding openjdk for your system should be pretty easy from the official repositories (customary bow to Gentoo users).&lt;/p>
 &lt;p>&lt;strong>Note&lt;/strong>: Some legacy flutter projects might not work on the latest jdk-16. If you encounter some weird error during the latter steps, make sure the jdk version is compatible with your project (openjdk-8 is always the safest bet).&lt;/p>
 &lt;h4 id="step-4--hey-are-we-all-using-arch-or-what">Step 4 : &amp;ldquo;Hey, are we all using Arch or what?&amp;rdquo;&lt;/h4>
 &lt;p>The steps should not be that different if you are not on an Arch-based distro, just that you will have to install it from source or go the Android Studio route. Updates on this will arrive as soon as I move onto a Debian machine, which might never happen, just saying&amp;hellip;&lt;/p>
 &lt;p>First things first - you will need the &lt;code>android-tools&lt;/code> package that contains adb (android debug bridge), fastboot and some other tools, that will be useful if you plan not to use an emulator but a connected Android device for development. This should be available on the official repo -&lt;/p>
-&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-bash" data-lang="bash">$ sudo pacman -S android-tools
-&lt;/code>&lt;/pre>&lt;/div>&lt;p>Next, you will need to download the following four packages from the AUR -&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-bash" data-lang="bash">&lt;span style="display:flex;">&lt;span>$ sudo pacman -S android-tools
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>Next, you will need to download the following four packages from the AUR -&lt;/p>
 &lt;ol>
 &lt;li>Command Line Tools (&lt;a href="https://aur.archlinux.org/packages/android-sdk-cmdline-tools-latest/">android-sdk-cmdline-tools-latest&lt;/a>)&lt;/li>
 &lt;li>SDK Build-Tools (&lt;a href="https://aur.archlinux.org/packages/android-sdk-build-tools/">android-sdk-build-tools&lt;/a>)&lt;/li>
@@ -99,22 +99,22 @@ $ pacman -Ss openjdk
 &lt;p>You can also install the &lt;a href="https://aur.archlinux.org/packages/android-emulator/">emulator&lt;/a> package, but configuring the emulator without Android Studio is a bit contrived (docs don&amp;rsquo;t help), and I have had quite a miserable experience with it. Will save that for a future post.&lt;/p>
 &lt;h4 id="step-5--reading-licenses-we-dont-do-that-here">Step 5 : &amp;ldquo;Reading licenses? We don&amp;rsquo;t do that here!&amp;rdquo;&lt;/h4>
 &lt;p>If you&amp;rsquo;ve successfully completed step 4, now&amp;rsquo;s the time to accept some completely &amp;ldquo;innocuous&amp;rdquo; licenses.&lt;/p>
-&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-bash" data-lang="bash">$ sudo flutter doctor --android-licenses
-&lt;/code>&lt;/pre>&lt;/div>&lt;p>Notice the &lt;code>sudo&lt;/code> access which is required. Flutter docs mention using an &amp;ldquo;elevated console&amp;rdquo;, which is pretty easy to miss. Wasted an hour spamming this command and re-accepting android licenses without realizing I simply needed an &amp;ldquo;elevated console&amp;rdquo;.&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-bash" data-lang="bash">&lt;span style="display:flex;">&lt;span>$ sudo flutter doctor --android-licenses
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>Notice the &lt;code>sudo&lt;/code> access which is required. Flutter docs mention using an &amp;ldquo;elevated console&amp;rdquo;, which is pretty easy to miss. Wasted an hour spamming this command and re-accepting android licenses without realizing I simply needed an &amp;ldquo;elevated console&amp;rdquo;.&lt;/p>
 &lt;p>If you run &lt;code>flutter doctor&lt;/code> now, the only warning you should get is &lt;code>Android Studio missing&lt;/code> which is optional either way.&lt;/p>
 &lt;h4 id="step-6--ahh-shit-here-we-hello-world-again">Step 6 : &amp;ldquo;Ahh shit, here we &amp;lsquo;Hello World&amp;rsquo; again&amp;hellip;&amp;rdquo;&lt;/h4>
 &lt;p>Flutter docs have this part after setting up your editor. But I beg to differ - editors are secondary and running your first &amp;lsquo;hello world&amp;rsquo; app comes first.&lt;/p>
 &lt;p>You will need one of three things to run your first app - an Android device connected with &lt;strong>USB debugging enabled&lt;/strong>, a running Android emulator or a Chrome browser (flutter&amp;rsquo;s default app runs on the web too) - simply because android apps do not run out of the box on your desktop Linux machine. To see the devices that are available to run your app -&lt;/p>
-&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-bash" data-lang="bash">$ flutter devices
-&lt;/code>&lt;/pre>&lt;/div>&lt;p>If it says &lt;code>N devices connected&lt;/code> (N being a number) and lists the available devices, you are good to go. I will go into more details about setting up the emulator in future posts, since this post is already too long at this point. For now, go for Chrome, we are only looking to verify flutter setup anyway.&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-bash" data-lang="bash">&lt;span style="display:flex;">&lt;span>$ flutter devices
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>If it says &lt;code>N devices connected&lt;/code> (N being a number) and lists the available devices, you are good to go. I will go into more details about setting up the emulator in future posts, since this post is already too long at this point. For now, go for Chrome, we are only looking to verify flutter setup anyway.&lt;/p>
 &lt;p>To set up the default flutter project, run the command -&lt;/p>
-&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-bash" data-lang="bash">&lt;span style="color:#75715e"># our-app is the name of the folder where we setup the project&lt;/span>
-$ flutter create our-app
-$ cd our-app
-&lt;/code>&lt;/pre>&lt;/div>&lt;p>This will create a folder with the project directory setup from the get-go. &lt;code>cd&lt;/code> into the folder. Next, we will need to install flutter packages and then run the app, which can be done in a single step as,&lt;/p>
-&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-bash" data-lang="bash">&lt;span style="color:#75715e"># requires internet connection&lt;/span>
-$ flutter run
-&lt;/code>&lt;/pre>&lt;/div>&lt;p>First it will download all the packages (which is &lt;code>flutter pub get&lt;/code> or &lt;code>flutter install&lt;/code> if you run separately) into a system cache folder for use. If you have ever used the python package manager &lt;code>pip&lt;/code> outside of the virtual environment, this process is similar to that. Which means if two projects share the same dependency and version, one install should work for both.&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-bash" data-lang="bash">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e"># our-app is the name of the folder where we setup the project&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>$ flutter create our-app
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>$ cd our-app
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>This will create a folder with the project directory setup from the get-go. &lt;code>cd&lt;/code> into the folder. Next, we will need to install flutter packages and then run the app, which can be done in a single step as,&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-bash" data-lang="bash">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e"># requires internet connection&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>$ flutter run
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>First it will download all the packages (which is &lt;code>flutter pub get&lt;/code> or &lt;code>flutter install&lt;/code> if you run separately) into a system cache folder for use. If you have ever used the python package manager &lt;code>pip&lt;/code> outside of the virtual environment, this process is similar to that. Which means if two projects share the same dependency and version, one install should work for both.&lt;/p>
 &lt;p>Wait for &lt;code>assembleDebug&lt;/code> to complete. Basically this installs Gradle and then builds the app for use. First build can take a long time to complete, patience among Flutter devs is highly underrated. Once this process is complete, the default counter app should launch on your Chrome browser.&lt;/p>
 &lt;h4 id="thats-it-folks">That&amp;rsquo;s it folks!&lt;/h4>
 &lt;p>Below this I have listed some errors I had to encounter during this process which might be common to you. I still left out a lot of things to cover, select few being setting up editors, configuring emulator, setting up Google sign-in for emulator, more command line usage in the absence of Android Studio and more.&lt;/p>
@@ -129,13 +129,13 @@ $ flutter run
 &lt;li>Use &lt;code>chown&lt;/code> to modify user permissions to allow read/write access for normal users. This is what I did, just marking individual files that were causing the permission errors and chowning 777.&lt;/li>
 &lt;li>ArchWiki recommends creating new user and with permissions for that specific user to read/write into android-sdk folder (check the link I posted above under section 4 of installing SDK packages).&lt;/li>
 &lt;/ul>
-&lt;p>&lt;strong>2. &amp;ldquo;Do I always need to be online to run my app?&amp;quot;&lt;/strong>&lt;/p>
+&lt;p>&lt;strong>2. &amp;ldquo;Do I always need to be online to run my app?&amp;rdquo;&lt;/strong>&lt;/p>
 &lt;p>Nope, but you will need it for the first build and downloading packages that haven&amp;rsquo;t been previously installed.&lt;/p>
 &lt;p>&lt;strong>3. &amp;ldquo;module java.base does not &amp;ldquo;opens java.io&amp;rdquo; to unnamed module&amp;rdquo;&lt;/strong>&lt;/p>
 &lt;p>Refer to my note on newer versions of openjdk probably not supporting legacy code. The stackoverflow solution also seems to suggest the same thing - &lt;a href="https://stackoverflow.com/questions/67782975/how-to-fix-the-module-java-base-does-not-opens-java-io-to-unnamed-module">https://stackoverflow.com/questions/67782975/how-to-fix-the-module-java-base-does-not-opens-java-io-to-unnamed-module&lt;/a>&lt;/p>
 &lt;p>&lt;strong>4. &amp;ldquo;I installed Google Chrome as a flatpak package, but it acts &amp;ldquo;wierd&amp;rdquo; when I run flutter&amp;rdquo;&lt;/strong>&lt;/p>
 &lt;p>Apparently flatpak Chrome doesn&amp;rsquo;t gel too well with flutter. Thanks to @badnick for pointing it our on Discord. Install from AUR from this one, might fix the issue. Anyway, unless you are programming for browser apps you might not need Chrome beyond this initial testing. So don&amp;rsquo;t be too riled up by this one.&lt;/p>
-&lt;p>&lt;strong>5. &amp;ldquo;I close flutter but my computer seems to be getting slow every time I do so. What&amp;rsquo;s happening?&amp;quot;&lt;/strong>&lt;/p>
+&lt;p>&lt;strong>5. &amp;ldquo;I close flutter but my computer seems to be getting slow every time I do so. What&amp;rsquo;s happening?&amp;rdquo;&lt;/strong>&lt;/p>
 &lt;p>Did you &amp;lsquo;sudo flutter run&amp;rsquo;? Chances are the OS is not able to free up the resources because you ran flutter as root. Quick check with &lt;code>htop&lt;/code> or &lt;code>top&lt;/code> to verify. See if there are multiple &lt;code>dart&lt;/code> processes still running even after you&amp;rsquo;ve closed flutter and &lt;code>killall dart&lt;/code>. Sometimes this problem also persists when you close vscode even though you did not do anything &lt;code>sudo&lt;/code> with it, I&amp;rsquo;m guessing it&amp;rsquo;s got something to do with how the dart intellisense works, but it&amp;rsquo;s just speculation on my part.&lt;/p></content></item><item><title>What's Cooking This Month?</title><link>http://pranjalpokharel.com.np/posts/june-playlist-2021/</link><pubDate>Tue, 22 Jun 2021 09:48:59 +0545</pubDate><guid>http://pranjalpokharel.com.np/posts/june-playlist-2021/</guid><description>Here are 10 songs looping through my thick skull this month of June.
 1) Paprika - Kenshi Yonezu While I didn&amp;rsquo;t really feel anything special about the song when I heard it a year back, my heart has really warmed up to this. Especially after listening to NHK&amp;rsquo;s version sung by kids. Apparently this song will be used as a cheer anthem in the Tokyo Olympics too.
 The song is just pure nostalgia - climbing trees, stealing fruits from other people&amp;rsquo;s garden, playing dhyakki and phiyo (local games involving sandals and stones) - everything that made my childhood worth remembering.</description><content>&lt;p>Here are 10 songs looping through my thick skull this month of June.&lt;/p>
@@ -179,29 +179,29 @@ And so my &lt;del>journey&lt;/del> misadventures with bash scripting started wit
 &lt;pre tabindex="0">&lt;code>set background=dark → set background=light
 &lt;/code>&lt;/pre>&lt;p>&lt;code>sed&lt;/code> command for the rewriting job.
 I opened up the man page on &lt;code>date&lt;/code> command and found that using format specifiers returned time in integer.&lt;/p>
-&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-bash" data-lang="bash">CURRENT_TIME&lt;span style="color:#f92672">=&lt;/span>&lt;span style="color:#66d9ef">$(&lt;/span>date +%H%M%S&lt;span style="color:#66d9ef">)&lt;/span>
-&lt;span style="color:#66d9ef">if&lt;/span> &lt;span style="color:#f92672">[&lt;/span> &lt;span style="color:#e6db74">&amp;#34;&lt;/span>$CURRENT_TIME&lt;span style="color:#e6db74">&amp;#34;&lt;/span> -gt &lt;span style="color:#e6db74">&amp;#34;&lt;/span>$STARTING_TIME&lt;span style="color:#e6db74">&amp;#34;&lt;/span> &lt;span style="color:#f92672">]&lt;/span> &lt;span style="color:#f92672">&amp;amp;&amp;amp;&lt;/span> &lt;span style="color:#f92672">[&lt;/span> &lt;span style="color:#e6db74">&amp;#34;&lt;/span>$CURRENT_TIME&lt;span style="color:#e6db74">&amp;#34;&lt;/span> -lt &lt;span style="color:#e6db74">&amp;#34;&lt;/span>$END_TIME&lt;span style="color:#e6db74">&amp;#34;&lt;/span> &lt;span style="color:#f92672">]&lt;/span>
-&lt;span style="color:#66d9ef">then&lt;/span>
-sed -i &lt;span style="color:#e6db74">&amp;#34;s/set\\ background=&lt;/span>$LIGHT_THEME&lt;span style="color:#e6db74">/set\\ background=&lt;/span>$DARK_THEME&lt;span style="color:#e6db74">/&amp;#34;&lt;/span> ~/.vimrc
-&lt;span style="color:#66d9ef">else&lt;/span>
-sed -i &lt;span style="color:#e6db74">&amp;#34;s/set\\ background=&lt;/span>$DARK_THEME&lt;span style="color:#e6db74">/set\\ background=&lt;/span>$LIGHT_THEME&lt;span style="color:#e6db74">/&amp;#34;&lt;/span> ~/.vimrc
-&lt;span style="color:#66d9ef">fi&lt;/span>
-&lt;/code>&lt;/pre>&lt;/div>&lt;p>Debugging! END_TIME less than STARTING_TIME. A swap function should account for that.&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-bash" data-lang="bash">&lt;span style="display:flex;">&lt;span>CURRENT_TIME&lt;span style="color:#f92672">=&lt;/span>&lt;span style="color:#66d9ef">$(&lt;/span>date +%H%M%S&lt;span style="color:#66d9ef">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#66d9ef">if&lt;/span> &lt;span style="color:#f92672">[&lt;/span> &lt;span style="color:#e6db74">&amp;#34;&lt;/span>$CURRENT_TIME&lt;span style="color:#e6db74">&amp;#34;&lt;/span> -gt &lt;span style="color:#e6db74">&amp;#34;&lt;/span>$STARTING_TIME&lt;span style="color:#e6db74">&amp;#34;&lt;/span> &lt;span style="color:#f92672">]&lt;/span> &lt;span style="color:#f92672">&amp;amp;&amp;amp;&lt;/span> &lt;span style="color:#f92672">[&lt;/span> &lt;span style="color:#e6db74">&amp;#34;&lt;/span>$CURRENT_TIME&lt;span style="color:#e6db74">&amp;#34;&lt;/span> -lt &lt;span style="color:#e6db74">&amp;#34;&lt;/span>$END_TIME&lt;span style="color:#e6db74">&amp;#34;&lt;/span> &lt;span style="color:#f92672">]&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#66d9ef">then&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> sed -i &lt;span style="color:#e6db74">&amp;#34;s/set\\ background=&lt;/span>$LIGHT_THEME&lt;span style="color:#e6db74">/set\\ background=&lt;/span>$DARK_THEME&lt;span style="color:#e6db74">/&amp;#34;&lt;/span> ~/.vimrc
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#66d9ef">else&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> sed -i &lt;span style="color:#e6db74">&amp;#34;s/set\\ background=&lt;/span>$DARK_THEME&lt;span style="color:#e6db74">/set\\ background=&lt;/span>$LIGHT_THEME&lt;span style="color:#e6db74">/&amp;#34;&lt;/span> ~/.vimrc
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#66d9ef">fi&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>Debugging! END_TIME less than STARTING_TIME. A swap function should account for that.&lt;/p>
 &lt;h4 id="4-issues">4) Issues!&lt;/h4>
 &lt;p>Why is a file with name ‘180000’ created every time I execute the script? And why is my downloads folder so cluttered? Need a file organizing script…&lt;/p>
 &lt;h4 id="5-one-day-and-awk-later">5) One day and &lt;code>awk&lt;/code> later&lt;/h4>
 &lt;p>Need a list of extensions in a directory. Kind stranger on StackOverflow, how do I understand this insane syntax?&lt;/p>
-&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-bash" data-lang="bash">find . -type f | awk -F. &lt;span style="color:#960050;background-color:#1e0010">&amp;#39;&lt;/span>!a&lt;span style="color:#f92672">[&lt;/span>$NF&lt;span style="color:#f92672">]&lt;/span>++&lt;span style="color:#f92672">{&lt;/span>print $NF&lt;span style="color:#f92672">}&lt;/span>’
-&lt;/code>&lt;/pre>&lt;/div>&lt;p>WHAT IS AWK? Okay, just need to go through the GNU manual&amp;hellip;arrays in &lt;code>awk&lt;/code> are super WEIRD! How about I use&lt;code>sort&lt;/code>…&lt;/p>
-&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-bash" data-lang="bash">find . -maxdepth &lt;span style="color:#ae81ff">1&lt;/span> -type f | awk -F . &lt;span style="color:#e6db74">&amp;#39;{print $NF}&amp;#39;&lt;/span> | sort -u
-&lt;/code>&lt;/pre>&lt;/div>&lt;p>My own solution that I UNDERSTAND! &lt;code>mv&lt;/code>+ regex should finish the work.&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-bash" data-lang="bash">&lt;span style="display:flex;">&lt;span>find . -type f | awk -F. &lt;span style="color:#960050;background-color:#1e0010">&amp;#39;&lt;/span>!a&lt;span style="color:#f92672">[&lt;/span>$NF&lt;span style="color:#f92672">]&lt;/span>++&lt;span style="color:#f92672">{&lt;/span>print $NF&lt;span style="color:#f92672">}&lt;/span>’
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>WHAT IS AWK? Okay, just need to go through the GNU manual&amp;hellip;arrays in &lt;code>awk&lt;/code> are super WEIRD! How about I use&lt;code>sort&lt;/code>…&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-bash" data-lang="bash">&lt;span style="display:flex;">&lt;span>find . -maxdepth &lt;span style="color:#ae81ff">1&lt;/span> -type f | awk -F . &lt;span style="color:#e6db74">&amp;#39;{print $NF}&amp;#39;&lt;/span> | sort -u
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>My own solution that I UNDERSTAND! &lt;code>mv&lt;/code>+ regex should finish the work.&lt;/p>
 &lt;h4 id="6-send-100mb-file-over-facebook">6) Send 100MB file over Facebook?&lt;/h4>
 &lt;p>Honestly, I could have provided a drive link and be done. But something in me got excited over somehow bypassing the upload limit of 25 MB. Time to work.&lt;/p>
 &lt;h4 id="7-split-it">7) Split it!&lt;/h4>
 &lt;p>In a GitHub repository I found the usage of &lt;code>split&lt;/code> - so, I CAN SPLIT FILES into pieces without losing data.
 Recombination? &lt;code>cat&lt;/code> command to the rescue. I love Unix forums.&lt;/p>
-&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-bash" data-lang="bash">split --bytes&lt;span style="color:#f92672">=&lt;/span>$CHUNK_SIZE --additional-suffix&lt;span style="color:#f92672">=&lt;/span>$SPLIT_FILE_EXTENSION -d $FILENAME $PREFIX
-&lt;/code>&lt;/pre>&lt;/div>&lt;h4 id="8-just-encrypt-it">8) JUST ENCRYPT IT!&lt;/h4>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-bash" data-lang="bash">&lt;span style="display:flex;">&lt;span>split --bytes&lt;span style="color:#f92672">=&lt;/span>$CHUNK_SIZE --additional-suffix&lt;span style="color:#f92672">=&lt;/span>$SPLIT_FILE_EXTENSION -d $FILENAME $PREFIX
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h4 id="8-just-encrypt-it">8) JUST ENCRYPT IT!&lt;/h4>
 &lt;p>It would be useful if I could implement something from Cryptography I course on Coursera that I took. In a sense, I’d learn two things simultaneously.
 Referred YouTube on openssl, went through the man page and added in some flags of my own:&lt;/p>
 &lt;pre tabindex="0">&lt;code>openssl enc -aes-256-cbc -base64 -pbkdf2 -iter 100000 -pass pass:$PASSWORD -in $file -out fenc/$file
@@ -256,7 +256,7 @@ Just like I have to remember to arrange my clothes on the basis of color, now th
 A police siren sounds in the distance. I go outside to check the garage door again.&lt;/p></content></item><item><title>Resume/Portfolio</title><link>http://pranjalpokharel.com.np/about-resume/resume/</link><pubDate>Fri, 26 Feb 2021 23:06:21 +0545</pubDate><guid>http://pranjalpokharel.com.np/about-resume/resume/</guid><description>Primary Information Name: Pranjal Pokharel
 Employment Status: Student
 College: Pulchowk Campus, IOE
-Undergraduate: Bachelor in Computer Engineering
+Undergraduate: Bachelor in Computer Engineering (BCT)
 Year: Third Year, Sixth Semester
 Address:
 Primary: Bharatpur-5, Chitwan Secondary: Pulchowk, Lalitpur (current) Permanent: Palungtar-2, Gorkha Email:
@@ -264,7 +264,7 @@ pranjalpokharel007@gmail.com 075bct061.pranjal@pcampus.edu.np (college mail) Ski
 &lt;p>&lt;strong>Name:&lt;/strong> Pranjal Pokharel&lt;br>
 &lt;strong>Employment Status:&lt;/strong> Student&lt;br>
 &lt;strong>College:&lt;/strong> Pulchowk Campus, IOE&lt;br>
-&lt;strong>Undergraduate:&lt;/strong> Bachelor in Computer Engineering&lt;br>
+&lt;strong>Undergraduate:&lt;/strong> Bachelor in Computer Engineering (BCT)&lt;br>
 &lt;strong>Year:&lt;/strong> Third Year, Sixth Semester&lt;br>
 &lt;strong>Address:&lt;/strong>&lt;/p>
 &lt;ul>
@@ -282,12 +282,12 @@ pranjalpokharel007@gmail.com 075bct061.pranjal@pcampus.edu.np (college mail) Ski
 &lt;h4 id="relevant-skills">Relevant Skills:&lt;/h4>
 &lt;ul>
 &lt;li>&lt;strong>Programming Languages&lt;/strong> - prefer to work in Python, C++, C, JavaScript and Go, although I feel language barrier is rarely the issue over the concept itself.&lt;/li>
-&lt;li>&lt;strong>Graphic Design/Digital Art&lt;/strong> using Adobe Illustrator/Photoshop/Figma.&lt;/li>
+&lt;li>&lt;strong>Graphic Design/Digital Art&lt;/strong> using Illustrator/Photoshop/Figma.&lt;/li>
 &lt;li>&lt;strong>Web Development&lt;/strong>
 &lt;ol>
 &lt;li>Front End: HTML5, CSS3 (SASS, Bootstrap), JavaScript, React.&lt;/li>
 &lt;li>Back End: Python (Django, Flask), Node (Express).&lt;/li>
-&lt;li>Database: SQLite3, Postgres, MongoDB.&lt;/li>
+&lt;li>Database: SQLite3, Postgres, MongoDB, BadgerDB.&lt;/li>
 &lt;/ol>
 &lt;/li>
 &lt;li>&lt;strong>Beginner in App Development&lt;/strong> through Flutter + Dart.&lt;/li>
@@ -301,8 +301,9 @@ pranjalpokharel007@gmail.com 075bct061.pranjal@pcampus.edu.np (college mail) Ski
 &lt;li>Worked as &lt;strong>Blockchain Developer (Intern)&lt;/strong> at &lt;strong>&lt;a href="https://ibriz.ai/">iBriz.ai&lt;/a>&lt;/strong> where I worked on the Blockchain Transmission Protocol (BTP) project where my tasks mostly included deploying smart contracts, setting up local nodes and configuring the BTP Relayer.&lt;/li>
 &lt;li>Worked as &lt;strong>Design Intern&lt;/strong> at &lt;strong>&lt;a href="https://esferabrandings.com/">Esfera Brandings&lt;/a>&lt;/strong>, a brand design and development company (see website for more information). My responsiblitites included designing social media posters for clients, creating design components and re-designing existing client designs. Mostly worked with Illustrator, Figma and Photoshop.&lt;/li>
 &lt;li>Worked as a &lt;strong>Front End Developer&lt;/strong> at &lt;strong>&lt;a href="https://clamphook.com/">Clamphook&lt;/a>&lt;/strong>, an online entrance preparation website. My responsiblitites primarily comprised implementing design mockups in web using HTML, CSS and ReactJS; integrating API to the front end; and responsive web design.&lt;/li>
+&lt;li>Worked as a &lt;strong>Content Creator&lt;/strong> for &lt;strong>&lt;a href="https://www.facebook.com/locus.ioe/">LOCUS 2021&lt;/a>&lt;/strong> by creating, editing and managing content such as social media posts, event announcements, brandbook information and more.&lt;/li>
 &lt;li>Worked as a &lt;strong>Graphic Designer&lt;/strong> in the &lt;strong>&lt;a href="https://www.facebook.com/locus.ioe/">LOCUS&lt;/a> Design Team&lt;/strong> for LOCUS 2020 and LOCUS 2021, Pulchowk Campus. Details of my work include graphic design, exhibition management, content writing, resource management and more.&lt;/li>
-&lt;li>Worked as the &lt;strong>Event Coverage Head&lt;/strong> of &lt;strong>&lt;a href="https://medium.com/zerone-magazine">The Zerone&lt;/a>&lt;/strong> 2020, an annual tech magazine of Pulchowk Campus covering different tech events within the campus.&lt;/li>
+&lt;li>Worked as the &lt;strong>Event Coverage Head&lt;/strong> of &lt;strong>&lt;a href="https://medium.com/zerone-magazine">The Zerone 2020&lt;/a>&lt;/strong>, an annual tech magazine of Pulchowk Campus covering different tech events within the campus.&lt;/li>
 &lt;/ul>
 &lt;h4 id="website-projects">Website Projects:&lt;/h4>
 &lt;ul>
@@ -313,50 +314,44 @@ pranjalpokharel007@gmail.com 075bct061.pranjal@pcampus.edu.np (college mail) Ski
 &lt;h4 id="highlighted-projects">Highlighted Projects:&lt;/h4>
 &lt;ul>
 &lt;li>
+&lt;p>&lt;strong>&lt;a href="https://github.com/pranjalpokharel7/yudhisthira">Yudhisthira&lt;/a>&lt;/strong>&lt;/p>
+&lt;ul>
+&lt;li>Custom Blockchain Network from scratch in Go&lt;/li>
+&lt;li>6th Semester Minor Project, BCT&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>
 &lt;p>&lt;strong>&lt;a href="https://github.com/pranjalpokharel7/our-rocket">Our Rocket&lt;/a>&lt;/strong>&lt;/p>
 &lt;ul>
-&lt;li>Vostok Rocket Modeling using the OpenGL Graphics API&lt;/li>
+&lt;li>Vostok Rocket Modeling using the OpenGL Graphics API and C++&lt;/li>
 &lt;li>5th Semester College Graphics Project&lt;/li>
-&lt;li>Language Used - C/C++&lt;/li>
-&lt;li>Additional Tools/Libraries Used - Blender 3D, Assimp, CMake, GLFW&lt;/li>
+&lt;li>Tools/Libraries Used - Blender 3D, Assimp, CMake, GLFW&lt;/li>
 &lt;/ul>
 &lt;/li>
 &lt;li>
 &lt;p>&lt;strong>&lt;a href="https://github.com/Itshyphen/Pulchowk">A Day in Pulchowk Campus&lt;/a>&lt;/strong>&lt;/p>
 &lt;ul>
 &lt;li>Top-down 2D simulation RPG game using C++ and SFML library&lt;/li>
-&lt;li>Setting: Pulchowk Campus&lt;/li>
-&lt;li>Single player&lt;/li>
-&lt;li>Time-based Scoring&lt;/li>
 &lt;/ul>
 &lt;/li>
 &lt;li>
 &lt;p>&lt;strong>&lt;a href="https://github.com/pranjalpokharel7/programming-helper-bot">Programming Helper&lt;/a>&lt;/strong>&lt;/p>
 &lt;ul>
 &lt;li>Discord bot to help programming conversations in a server, made using discord.py and asyncio&lt;/li>
-&lt;li>Can ask questions within neat embeds&lt;/li>
-&lt;li>Notification through DM is user&amp;rsquo;s query is answered&lt;/li>
-&lt;li>Ranking-system based on Q&amp;amp;A quantity of a certain user, can provide roles based on ranks&lt;/li>
-&lt;li>Custom welcome message&lt;/li>
 &lt;/ul>
 &lt;/li>
 &lt;li>
 &lt;p>&lt;strong>&lt;a href="https://github.com/pranjalpokharel7/emoji-translator">Emoji Translator&lt;/a>&lt;/strong>&lt;/p>
 &lt;ul>
-&lt;li>Emoji-based extension for Firefox, vanilla JS&lt;/li>
+&lt;li>Emoji-based extension for Firefox&lt;/li>
 &lt;li>Translate keywords/patterns to emoji across all URLs (eg, :heart: to ❤️)&lt;/li>
-&lt;li>Search functionalities for emoji/emote&lt;/li>
 &lt;li>Addon Link: &lt;a href="https://addons.mozilla.org/en-US/firefox/addon/emoji-translator">https://addons.mozilla.org/en-US/firefox/addon/emoji-translator&lt;/a>&lt;/li>
 &lt;/ul>
 &lt;/li>
-&lt;/ul>
-&lt;h4 id="other-projects">Other Projects:&lt;/h4>
-&lt;ul>
 &lt;li>
-&lt;p>&lt;strong>&lt;a href="https://github.com/Sandace11/DSA_Project">DSA Project&lt;/a>&lt;/strong>&lt;/p>
+&lt;p>&lt;strong>&lt;a href="https://github.com/Sandace11/DSA_Project">Sorting and Huffman Tree Visualization&lt;/a>&lt;/strong>&lt;/p>
 &lt;ul>
-&lt;li>4th Semester Data Structures and Algorithms Project&lt;/li>
-&lt;li>Visualizing sorting algorithms and huffman tree, mostly worked on the sorting part&lt;/li>
+&lt;li>Visualization of sorting algorithms and huffman tree&lt;/li>
 &lt;li>Libraries/Tools Used - SDL2, SDL2_ttf&lt;/li>
 &lt;/ul>
 &lt;/li>
@@ -365,16 +360,12 @@ pranjalpokharel007@gmail.com 075bct061.pranjal@pcampus.edu.np (college mail) Ski
 &lt;ul>
 &lt;li>CRC check implementation using C++ and Linux system calls&lt;/li>
 &lt;li>Basic networking server implementation using socket programming&lt;/li>
-&lt;li>Both ipv4 and ipv6 supported&lt;/li>
 &lt;/ul>
 &lt;/li>
 &lt;li>
-&lt;p>&lt;strong>Shell (Bash) Scripts&lt;/strong>&lt;/p>
+&lt;p>&lt;strong>&lt;a href="https://github.com/nsn39/particle-swarm">Particle Swarm Optimization (Visualization)&lt;/a>&lt;/strong>&lt;/p>
 &lt;ul>
-&lt;li>Script to switch theme, icon pack, wallpaper, panel colors and window managers in an xfce4 DE (&lt;a href="https://github.com/UdeshyaDhungana/xfce4-theme-switcher">link&lt;/a>)&lt;/li>
-&lt;li>Organize files into sub-directories based on name or extension (&lt;a href="https://github.com/IT-Club-Pulchowk/campus-scripts/blob/main/bash-scripts/file_organizer.sh">link&lt;/a>)&lt;/li>
-&lt;li>Script to login to Pulchowk Campus Captive Portal. Forked, added functionality of launching hotspot. (&lt;a href="https://github.com/IT-Club-Pulchowk/campus-scripts/blob/main/bash-scripts/internet_login.sh">link&lt;/a>)&lt;/li>
-&lt;li>Script to split and encrypt the parts of a file, also recombines them later. (&lt;a href="https://github.com/IT-Club-Pulchowk/campus-scripts/blob/main/bash-scripts/splitter.sh">link&lt;/a>)&lt;/li>
+&lt;li>Visualization of PSO algorithm for Traveling Salesman Problem (TSP) using Pygame&lt;/li>
 &lt;/ul>
 &lt;/li>
 &lt;/ul>
@@ -383,7 +374,7 @@ pranjalpokharel007@gmail.com 075bct061.pranjal@pcampus.edu.np (college mail) Ski
 &lt;p>&lt;strong>Design Work&lt;/strong>: &lt;a href="https://bit.ly/pranjal_designs">https://bit.ly/pranjal_designs&lt;/a>&lt;br>
 &lt;strong>GitHub&lt;/strong>: &lt;a href="https://github.com/pranjalpokharel7">https://github.com/pranjalpokharel7&lt;/a>&lt;br>
 &lt;strong>Medium&lt;/strong>: &lt;a href="https://pranjalpokharel007.medium.com">https://pranjalpokharel007.medium.com&lt;/a>&lt;br>
-&lt;strong>LinkedIn&lt;/strong>: &lt;a href="https://www.linkedin.com/in/pranjal-pokharel-860637188">https://www.linkedin.com/in/pranjal-pokharel-860637188&lt;/a> (might not respond on time)&lt;/p>
+&lt;strong>LinkedIn&lt;/strong>: &lt;a href="https://www.linkedin.com/in/pranjal-pokharel-860637188">https://www.linkedin.com/in/pranjal-pokharel-860637188&lt;/a>&lt;/p>
 &lt;hr>
 &lt;h4 id="life-outside-programming">Life Outside Programming:&lt;/h4>
 &lt;p>&lt;strong>Hobbies:&lt;/strong> Guitar, Fiction Writing, Digital Art, Table Tennis, Anime/Manga&lt;br>
@@ -393,7 +384,7 @@ Short Bio: As of now, I am a 3rd Year Bachelor in Computer Engineering Student (
 Email: pranjalpokharel007@gmail.com, 075bct061.pranjal@pcampus.edu.np
 Discord: ppok24#9422
 Quotes To Live By:
-&amp;ldquo;It is what it is.&amp;rdquo; - Random Stoic &amp;ldquo;Everything that irritates us about others can lead us to an understanding of ourselves.</description><content>&lt;p>&lt;strong>Name:&lt;/strong> Pranjal Pokharel&lt;/p>
+&amp;ldquo;The most important thing is to try and inspire people so that they can be great in whatever they want to do.</description><content>&lt;p>&lt;strong>Name:&lt;/strong> Pranjal Pokharel&lt;/p>
 &lt;p>&lt;strong>Short Bio:&lt;/strong>
 As of now, I am a 3rd Year Bachelor in Computer Engineering Student (BCT) studying in Pulchowk Campus, IOE, Nepal. Social links are at the footer of this page. You can contact me by email/discord DM.&lt;/p>
 &lt;p>&lt;strong>Email:&lt;/strong> &lt;a href="mailto:pranjalpokharel007@gmail.com">pranjalpokharel007@gmail.com&lt;/a>, &lt;a href="mailto:075bct061.pranjal@pcampus.edu.np">075bct061.pranjal@pcampus.edu.np&lt;/a>&lt;br>
@@ -401,8 +392,8 @@ As of now, I am a 3rd Year Bachelor in Computer Engineering Student (BCT) studyi
 &lt;br>
 &lt;strong>Quotes To Live By:&lt;/strong>&lt;/p>
 &lt;ul>
-&lt;li>&amp;ldquo;It is what it is.&amp;rdquo; - &lt;em>Random Stoic&lt;/em>&lt;/li>
-&lt;li>&amp;ldquo;Everything that irritates us about others can lead us to an understanding of ourselves.&amp;rdquo; - &lt;em>Jung&lt;/em>&lt;/li>
+&lt;li>&amp;ldquo;The most important thing is to try and inspire people so that they can be great in whatever they want to do.&amp;rdquo; - &lt;em>Kobe&lt;/em>&lt;/li>
+&lt;li>&amp;ldquo;You can&amp;rsquo;t beat me. I&amp;rsquo;m prepared to die.&amp;rdquo; - &lt;em>Israel Adesanya, 5th Round vs. Kelvin Gastelum, UFC 236&lt;/em>&lt;/li>
 &lt;/ul>
 &lt;p>&lt;strong>Dedicated:&lt;/strong>&lt;/p>
 &lt;p>To my &lt;strong>mom and dad&lt;/strong>, thanks for bearing with my indecisive, weepy, overthinking and neglectful self, both of you have made me who I am today, my mom being my first computer teacher and my dad being my first spiritual mentor. In terms of your competition, there is no competition.&lt;/p>
@@ -417,52 +408,52 @@ Fast Songs: For Crushes And Anything Not Too Serious 1) Renai Circulation - Kana
 &lt;h4 id="1-renai-circulation---kana-hanazawahttpswwwyoutubecomwatchvjdr0jmyoqgalistpl63_35iprqotj_qyjol2yseyk-iyluaqkindex1">1) &lt;a href="https://www.youtube.com/watch?v=jDR0JMyoQGA&amp;amp;list=PL63_35IpRqoTJ_qyJoL2YSeYK-iYlUAqk&amp;amp;index=1">Renai Circulation - Kana Hanazawa&lt;/a>&lt;/h4>
 &lt;p>Legend has it that Alexander The Great listened to this &lt;em>Bakemonogatari Opening&lt;/em> before he set out to see, go and conquer. The Yakuza dance to this song, and your mom hums this while cooking. Safe to say this is the epitome of &amp;lsquo;Japanese Inquisition&amp;rsquo;.&lt;/p>
 &lt;p>At it&amp;rsquo;s heart, it is an adorable song about your first crush, a song sure to set your heart aflutter and remind you of the 13-year-old self, day-dreaming about something as simple as getting to walk along with that special someone on your way back home from school.&lt;/p>
-&lt;pre tabindex="0">&lt;code>&amp;quot;Kami-sama arigatou
+&lt;pre tabindex="0">&lt;code>&amp;#34;Kami-sama arigatou
 Unmei no itazura demo
 Meguriaeta koto ga
-Shiawase na no&amp;quot;
-&amp;quot;Dear God, thank you
-Even if it's just destiny pulling a prank on me,
-I'm so glad of the fact that
-We both had met&amp;quot;
+Shiawase na no&amp;#34;
+&amp;#34;Dear God, thank you
+Even if it&amp;#39;s just destiny pulling a prank on me,
+I&amp;#39;m so glad of the fact that
+We both had met&amp;#34;
 &lt;/code>&lt;/pre>&lt;h4 id="2-centimeter---the-peggieshttpswwwyoutubecomwatchvecdjo1rxow4listpl63_35iprqotj_qyjol2yseyk-iyluaqkindex2">2) &lt;a href="https://www.youtube.com/watch?v=eCDJo1rXOW4&amp;amp;list=PL63_35IpRqoTJ_qyJoL2YSeYK-iYlUAqk&amp;amp;index=2">Centimeter - The Peggies&lt;/a>&lt;/h4>
 &lt;p>This is strictly speaking from my experience - the outstanding quality of this song doesn&amp;rsquo;t exactly correlate with the anime, &lt;em>(Kanojo Okarishimasu, Rent-A-Girlfriend)&lt;/em>. But people who can&amp;rsquo;t keep songs out of their head, beware: the song is sure to keep your head bobbing and feet tapping on an infinite loop.&lt;/p>
 &lt;p>Images this song might bring up in your mind range from that time you found your chest thumping as her leg brushed past yours and that moment when you made a perfect one-one eye contact with him and suddenly found your legs wobbling.&lt;/p>
-&lt;pre tabindex="0">&lt;code>&amp;quot;Dakara unmei datte shinjitai
+&lt;pre tabindex="0">&lt;code>&amp;#34;Dakara unmei datte shinjitai
 Ima suu senchi chikazuitemo ii ka na
-Mune wo saku yo furimuite kureru tabi ni&amp;quot;
-&amp;quot;So this is why, I want to believe in fate!
+Mune wo saku yo furimuite kureru tabi ni&amp;#34;
+&amp;#34;So this is why, I want to believe in fate!
 Now, I think I want to get a few centimeters closer,
 My chest, it beats more,
-Every time you look back at me!&amp;quot;
+Every time you look back at me!&amp;#34;
 &lt;/code>&lt;/pre>&lt;h4 id="3-daddy-daddy-do---masayuki-suzuki-ft-airi-suzukihttpswwwyoutubecomwatchvsnug1csfmgglistpl63_35iprqotj_qyjol2yseyk-iyluaqkindex3">3) &lt;a href="https://www.youtube.com/watch?v=sNuG1Csfmgg&amp;amp;list=PL63_35IpRqoTJ_qyJoL2YSeYK-iYlUAqk&amp;amp;index=3">Daddy Daddy Do - Masayuki Suzuki ft. Airi Suzuki&lt;/a>&lt;/h4>
 &lt;p>A high-school, rom-com anime done right. &lt;em>Kaguya-sama wa Kokurasetai&lt;/em> a fantastic anime to eat some popcorn, kick back on your sofa, chuckle along and never be bored for a moment throughout it&amp;rsquo;s 20-minutes long episodes.&lt;/p>
 &lt;p>Same goes for it&amp;rsquo;s choice of openings. Masayuki Suzuki is a legend in Japanese music and add in the mix Airi Suzuki, someone whom I &lt;del>simped for&lt;/del> like listening to on a loop, this is a song to cherish.&lt;/p>
 &lt;p>This is the point where playful love turns into seductive foreplay and waiting to see who will be the first one to give in and lose head over heels. Because, let&amp;rsquo;s be frank, love is war.&lt;/p>
-&lt;pre tabindex="0">&lt;code>&amp;quot;Daddy, daddy, do
+&lt;pre tabindex="0">&lt;code>&amp;#34;Daddy, daddy, do
 Hoshii nosa anata no subete ga
-Damasaretara sore demo ii motto furuwasete&amp;quot;
-&amp;quot;Daddy, daddy, do!
+Damasaretara sore demo ii motto furuwasete&amp;#34;
+&amp;#34;Daddy, daddy, do!
 I want something like you, so just give up all of you
-Even if I get tricked, that's fine
-It just makes it more fun!&amp;quot;
+Even if I get tricked, that&amp;#39;s fine
+It just makes it more fun!&amp;#34;
 &lt;/code>&lt;/pre>&lt;hr>
 &lt;h3 id="city-pop-for-a-trip-through-nostalgia">City Pop: For A Trip Through Nostalgia&lt;/h3>
 &lt;h4 id="4-crazy-for-you---saito-marinahttpswwwyoutubecomwatchv_hmcjaerphelistpl63_35iprqotj_qyjol2yseyk-iyluaqkindex4">4) &lt;a href="https://www.youtube.com/watch?v=_hMcJAERPHE&amp;amp;list=PL63_35IpRqoTJ_qyJoL2YSeYK-iYlUAqk&amp;amp;index=4">Crazy For You - Saito Marina&lt;/a>&lt;/h4>
 &lt;p>This is it. The most listened to song on my playlist. The only song from this list that I will sing in my wedding, hypothetical scenarios in 3..2..1..&lt;/p>
 &lt;p>Since this song, I&amp;rsquo;ve listened to Saito Marina sing originals and cover countless other songs from the 80s but this one is beyond special to me. Hard to express the feelings the melody evokes in my heart - a walk along the beach, hand holding, smiling as you glance at each other, knowing that given the time and place there&amp;rsquo;s no other place you&amp;rsquo;d rather be, than with each other.&lt;/p>
-&lt;pre tabindex="0">&lt;code>&amp;quot;Akiramenai yo my destiny (oh oh oh),
+&lt;pre tabindex="0">&lt;code>&amp;#34;Akiramenai yo my destiny (oh oh oh),
 Onaji toki wo kazanetai
 Motto!
 Kotoba jatarinai omoi
 Todoketai,
-Hajimaru koto osorezu ni...&amp;quot;
-&amp;quot;I won't give up on my destiny!
+Hajimaru koto osorezu ni...&amp;#34;
+&amp;#34;I won&amp;#39;t give up on my destiny!
 I want to spend my time with you,
 More than anything,
-These feelings that can't be expressed by words alone,
+These feelings that can&amp;#39;t be expressed by words alone,
 I want them to reach you,
-Without the fear of trying to start things...&amp;quot;
+Without the fear of trying to start things...&amp;#34;
 &lt;/code>&lt;/pre>&lt;h4 id="5-telephone-number---junko-ohashihttpswwwyoutubecomwatchvcrgwrm6uxv8listpl63_35iprqotj_qyjol2yseyk-iyluaqkindex5">5) &lt;a href="https://www.youtube.com/watch?v=cRGwRm6uXv8&amp;amp;list=PL63_35IpRqoTJ_qyJoL2YSeYK-iYlUAqk&amp;amp;index=5">Telephone Number - Junko Ohashi&lt;/a>&lt;/h4>
 &lt;p>For some odd reason, I found myself humming this songs as I was attending a pretty serious semester exam (safe to say I didn&amp;rsquo;t do pretty well). A song with a catchy chorus like none, this is another song to sing to your crush, and hoping he will hear your whispers from 500m away and sweep you off your feet.&lt;/p>
 &lt;p>Personally, this reminds me of the first time I tried flirting through the telephone and nearly broke down in nervousness before I could make it past the first minute. You get the picture. No, she and I are NOT married now.&lt;/p>
@@ -472,101 +463,101 @@ A-Ooooh! 5-6-7-0-9!
 &lt;p>It&amp;rsquo;s quite hard to bring up city pop and not mention &lt;em>Plastic Love&lt;/em>. While Mariya Takeuchi&amp;rsquo;s original version might be much closer to people&amp;rsquo;s hearts, there is something about this live performance that just struck a chord with me. Maybe it&amp;rsquo;s the supreme guitar playing and the performance in perfect sync with the drums, or Hayamin&amp;rsquo;s vocal prowess, or maybe all of them.&lt;/p>
 &lt;p>I won&amp;rsquo;t guarantee anything, but I have rarely listened to the original after I listened to this cover. As for the significance of this song in the city pop genre, there need not be said anything.&lt;/p>
 &lt;p>This song is legendary as it is.&lt;/p>
-&lt;pre tabindex="0">&lt;code>&amp;quot;Totsuzen no kisu ya atsui manazashi de
+&lt;pre tabindex="0">&lt;code>&amp;#34;Totsuzen no kisu ya atsui manazashi de
 Koi no puroguramu wo kuruwasenaide ne
 Deai to wakare jouzu ni uchikonde
-Jikan ga kureba owaru don't hurry!&amp;quot;
-&amp;quot;Don't mess up the program of love
+Jikan ga kureba owaru don&amp;#39;t hurry!&amp;#34;
+&amp;#34;Don&amp;#39;t mess up the program of love
 With your sudden kiss...
 ...or a fiery stare
-Don't mess up my programs of love
-I've input hellos and goodbyes so neatly
-Everything comes to an end in due time, don't hurry!&amp;quot;
+Don&amp;#39;t mess up my programs of love
+I&amp;#39;ve input hellos and goodbyes so neatly
+Everything comes to an end in due time, don&amp;#39;t hurry!&amp;#34;
 &lt;/code>&lt;/pre>&lt;hr>
 &lt;h3 id="slow-songs---romantic-partners-for-life-songs-for-the-end-of-the-journey">Slow Songs - Romantic Partners For Life, Songs For The End Of The Journey&lt;/h3>
 &lt;h4 id="7-sakura---ikimonogakarihttpswwwyoutubecomwatchvnngdurlubfelistpl63_35iprqotj_qyjol2yseyk-iyluaqkindex7">7) &lt;a href="https://www.youtube.com/watch?v=NNgDURlUbfE&amp;amp;list=PL63_35IpRqoTJ_qyJoL2YSeYK-iYlUAqk&amp;amp;index=7">Sakura - Ikimonogakari&lt;/a>&lt;/h4>
 &lt;p>Cherry blossoms, springs, rivers, a longing for a genuine relationship - a song in perfect sync with the Japanese nature and love. I would say this song is more inclined towards missing someone you couldn&amp;rsquo;t be with, but this song certainly has it&amp;rsquo;s place on all happy and gloomy days.&lt;/p>
 &lt;p>I might point out at this point that most of the songs I&amp;rsquo;ve in this playlist are lyrics videos, so even if you&amp;rsquo;re new to Japanese music, you can follow along with the translated lyrics.&lt;/p>
-&lt;pre tabindex="0">&lt;code>&amp;quot;Sakura hirahira maiorite ochite
+&lt;pre tabindex="0">&lt;code>&amp;#34;Sakura hirahira maiorite ochite
 Yureru omoi no take wo dakishimeta
 Kimi to haru ni negai shi ano yume wa
-Ima mo miete iru yo sakura maichiru...&amp;quot;
-&amp;quot;The cherry blossoms fell, fluttering down
+Ima mo miete iru yo sakura maichiru...&amp;#34;
+&amp;#34;The cherry blossoms fell, fluttering down
 Embracing every bit of my fluttering love,
-Even now, I'm still dreaming of seeing you this spring,
-The cherry blossoms scatter...&amp;quot;
+Even now, I&amp;#39;m still dreaming of seeing you this spring,
+The cherry blossoms scatter...&amp;#34;
 &lt;/code>&lt;/pre>&lt;h4 id="8-koi-wo-shita-no-wa---aikohttpswwwyoutubecomwatchvrkezywirgiwlistpl63_35iprqotj_qyjol2yseyk-iyluaqkindex8">8) &lt;a href="https://www.youtube.com/watch?v=rkezyWiRgiw&amp;amp;list=PL63_35IpRqoTJ_qyJoL2YSeYK-iYlUAqk&amp;amp;index=8">Koi Wo Shita No Wa - Aiko&lt;/a>&lt;/h4>
 &lt;p>The best song from my favourite animation movie of all time, &lt;em>Koe no Katachi (A Silent Voice)&lt;/em>, Japanese or other language. From what I&amp;rsquo;ve watched so far, no other movie comes close (at least in the &amp;lsquo;Slice of Life&amp;rsquo; category).&lt;/p>
 &lt;p>Honestly, this song hits harder after you watch the movie. A beautiful, beautiful story of two people struggling with the circumstances involving each other, culminating with the perfect song.&lt;/p>
-&lt;pre tabindex="0">&lt;code>&amp;quot;Hajimete mo saigo mo ima mo,
+&lt;pre tabindex="0">&lt;code>&amp;#34;Hajimete mo saigo mo ima mo,
 Mau hanabira ni kizami okuru yo
 Darling!
 Ochiru ame ni utsuru futari
-Sekai wa dare mo shiranai...&amp;quot;
-&amp;quot;Beginning, ending, and this moment I'll engrave them all to,
+Sekai wa dare mo shiranai...&amp;#34;
+&amp;#34;Beginning, ending, and this moment I&amp;#39;ll engrave them all to,
 Those dancing petals and send it to you,
 Darling!
 We two reflected in the falling rain,
-Nobody in this world knows that...&amp;quot;
+Nobody in this world knows that...&amp;#34;
 &lt;/code>&lt;/pre>&lt;h4 id="9-nandemonaiya---radwimpshttpswwwyoutubecomwatchvvx8i21_6isclistpl63_35iprqotj_qyjol2yseyk-iyluaqkindex9">9) &lt;a href="https://www.youtube.com/watch?v=vX8i21_6Isc&amp;amp;list=PL63_35IpRqoTJ_qyJoL2YSeYK-iYlUAqk&amp;amp;index=9">Nandemonaiya - RADWIMPS&lt;/a>&lt;/h4>
 &lt;p>I didn&amp;rsquo;t have to struggle between this and &lt;em>Sparkle&lt;/em> - &lt;em>Nandemonaiya&lt;/em> is the best song from &lt;em>Kimi no Nawa (Your Name)&lt;/em> by far. While I must thank the movie for introducing a lot of people to Japanese anime and songs in general, I am sure people would have been endeared to this masterpiece, with or without the movie.&lt;/p>
 &lt;p>A lovely song to sing on guitar to your loved one. Also the perfect movie to watch on Valentine&amp;rsquo;s if you haven&amp;rsquo;t already.&lt;/p>
-&lt;pre tabindex="0">&lt;code>&amp;quot;Futari no aida toorisugita kaze wa doko kara sabishisa wo hakonde kita no
-Naitari shita sono ato no sora wa yake ni sukitootteitari shitanda&amp;quot;
-&amp;quot;The sorrowful gust of wind that blew right between you and me
+&lt;pre tabindex="0">&lt;code>&amp;#34;Futari no aida toorisugita kaze wa doko kara sabishisa wo hakonde kita no
+Naitari shita sono ato no sora wa yake ni sukitootteitari shitanda&amp;#34;
+&amp;#34;The sorrowful gust of wind that blew right between you and me
 Where did it find the loneliness it carried on the breeze?
 Looking up at the sky after shedding a stream of tears
-I could see for miles of blue, it's never been so clear&amp;quot;
+I could see for miles of blue, it&amp;#39;s never been so clear&amp;#34;
 &lt;/code>&lt;/pre>&lt;h4 id="10-kimi-no-shiranai-monogatari---supercellhttpswwwyoutubecomwatchvede514xijfulistpl63_35iprqotj_qyjol2yseyk-iyluaqkindex11">10) &lt;a href="https://www.youtube.com/watch?v=EDE514XIJfU&amp;amp;list=PL63_35IpRqoTJ_qyJoL2YSeYK-iYlUAqk&amp;amp;index=11">Kimi no Shiranai Monogatari - Supercell&lt;/a>&lt;/h4>
 &lt;p>Space, night sky and star-crossed lovers, and might I say, the best song on &lt;em>Bakemonogatari&lt;/em>, if not the best ending to any anime ever. If &lt;em>Renai Circulation&lt;/em> is the excitement of a new crush, this song is the one that echoes through the skies whispering the name of your soulmate for eternities to come.&lt;/p>
 &lt;p>I&amp;rsquo;ve always understood this song as a prayer of someone who couldn&amp;rsquo;t confess their love before it was too late (get a hint people!). Give this a listen, trust me you won&amp;rsquo;t regret it.&lt;/p>
-&lt;pre tabindex="0">&lt;code>&amp;quot;Itsumodoori no aruhi no koto
+&lt;pre tabindex="0">&lt;code>&amp;#34;Itsumodoori no aruhi no koto
 Kimi wa totsuzen tachiagari itta
-'konya hoshi o mi ni yukou'...&amp;quot;
-&amp;quot;On that ordinary day,
+&amp;#39;konya hoshi o mi ni yukou&amp;#39;...&amp;#34;
+&amp;#34;On that ordinary day,
 You suddenly stood up and said,
-'Let's go stargazing tonight'...&amp;quot;
+&amp;#39;Let&amp;#39;s go stargazing tonight&amp;#39;...&amp;#34;
 &lt;/code>&lt;/pre>&lt;h3 id="kenshi-yonezu">Kenshi Yonezu&lt;/h3>
 &lt;h4 id="11-lemon---kenshi-yonezuhttpswwwyoutubecomwatchvsx_vit4ra7klistpl63_35iprqotj_qyjol2yseyk-iyluaqkindex11">11) &lt;a href="https://www.youtube.com/watch?v=SX_ViT4Ra7k&amp;amp;list=PL63_35IpRqoTJ_qyJoL2YSeYK-iYlUAqk&amp;amp;index=11">Lemon - Kenshi Yonezu&lt;/a>&lt;/h4>
 &lt;p>Kenshi Yonezu deserves a different category of his own - I can&amp;rsquo;t imagine a Japanese singer more popular abroad than he is right now. And &lt;em>Lemon&lt;/em> is his &lt;em>magnum opus&lt;/em>.&lt;/p>
 &lt;p>Honestly, not all romantic love has to be between couples. This song reminds me of how much my family and friends mean to me, and how I&amp;rsquo;d be at an utter loss if anything were to happen to them.&lt;/p>
 &lt;p>Incidentally, this is also the most viewed Japanese music video and rightly so - this is a song for the ages.&lt;/p>
-&lt;pre tabindex="0">&lt;code>&amp;quot;Ano hi no kanashimi sae ano hi no kurushimi sae
+&lt;pre tabindex="0">&lt;code>&amp;#34;Ano hi no kanashimi sae ano hi no kurushimi sae
 Sono subete wo aishiteta anata to tomo ni
 Mune ni nokori hanarenai nigai remon no nioi
 Ame ga furiyamu made wa kaerenai
-Ima demo anata wa watashi no hikari&amp;quot;
-&amp;quot;Even the sadness from that day, even the pain from that day,
+Ima demo anata wa watashi no hikari&amp;#34;
+&amp;#34;Even the sadness from that day, even the pain from that day,
 I loved it all, together with you
 The bitter scent of lemons remains embedded in my heart
-Can't make my way home 'til the rain lets up
-Even now you remain my light&amp;quot;
+Can&amp;#39;t make my way home &amp;#39;til the rain lets up
+Even now you remain my light&amp;#34;
 &lt;/code>&lt;/pre>&lt;h4 id="12-orion---kenshi-yonezuhttpswwwyoutubecomwatchvlzayrgsqeeelistpl63_35iprqotj_qyjol2yseyk-iyluaqkindex12">12) &lt;a href="https://www.youtube.com/watch?v=lzAyrgSqeeE&amp;amp;list=PL63_35IpRqoTJ_qyJoL2YSeYK-iYlUAqk&amp;amp;index=12">Orion - Kenshi Yonezu&lt;/a>&lt;/h4>
 &lt;p>Another masterpiece. While I don&amp;rsquo;t know how popular it is, the certainly is one of a kind. Maybe I have a thing for constellation, stars, prayers and promises.&lt;/p>
 &lt;p>I must admit, I was pretty torn between including this or &lt;em>Uchihage Hanabi&lt;/em>, another romantic song that could replace well any other song from this playlist. Regardless, give both songs a listen, and maybe provide a verdict on which one deserves a spot here over the other.&lt;/p>
-&lt;pre tabindex="0">&lt;code>&amp;quot;Yume no naka de sae, doumo jouzu janai kokoro guai
+&lt;pre tabindex="0">&lt;code>&amp;#34;Yume no naka de sae, doumo jouzu janai kokoro guai
 Ki ni shinaidette nageita koto, naiteita koto
 Hotsureta sode no ito hippatte, futto seiza wo tsukutte mitanda
 Otagai no yubi wo, hoshi toshite
 Sore wa hidoku detarame de, bokura warai aetanda
-Soko ni anata ga ite kureta nara, sore de iinda&amp;quot;
-&amp;quot;Even the contents of my dreams aren't that impressive, let alone the state of my heart,
-'Don't bother yourself with it', I said as I lamented, and as I wept,
+Soko ni anata ga ite kureta nara, sore de iinda&amp;#34;
+&amp;#34;Even the contents of my dreams aren&amp;#39;t that impressive, let alone the state of my heart,
+&amp;#39;Don&amp;#39;t bother yourself with it&amp;#39;, I said as I lamented, and as I wept,
 Tugging on an already unraveling sleeve, suddenly we tried to make a constellation,
 As though both of our fingers were stars,
-But that's all just cruel nonsense and we both laughed at the thought of it,
-And there I realized that if you were by my side, I would be okay...&amp;quot;
+But that&amp;#39;s all just cruel nonsense and we both laughed at the thought of it,
+And there I realized that if you were by my side, I would be okay...&amp;#34;
 &lt;/code>&lt;/pre>&lt;h4 id="13-shunrai---kenshi-yonezuhttpswwwyoutubecomwatchvzknzxsacunulistpl63_35iprqotj_qyjol2yseyk-iyluaqkindex13">13) &lt;a href="https://www.youtube.com/watch?v=zkNzxsaCunU&amp;amp;list=PL63_35IpRqoTJ_qyJoL2YSeYK-iYlUAqk&amp;amp;index=13">Shunrai - Kenshi Yonezu&lt;/a>&lt;/h4>
 &lt;p>And finally, my most treasured Kenshi Yonezu song of all time. While I was initially under the impression that this was some sort of dance song, I was pretty much blown away once I listened in closely with the translated lyrics.&lt;/p>
 &lt;p>For me, this song is the strongest in terms of lyrics from this playlist. And also the most difficult to sing along. Also the second most played song on my playlist.&lt;/p>
-&lt;pre tabindex="0">&lt;code>&amp;quot;Kotoba ni suru no mo katachi ni suru no mo sono dore mo ga satoshi taba nakutte
+&lt;pre tabindex="0">&lt;code>&amp;#34;Kotoba ni suru no mo katachi ni suru no mo sono dore mo ga satoshi taba nakutte
 Tada me o mitsume ta suruto anata wa futto yasashiku waratta n da
 Shagare ta kokoro mo sazameku himitsu mo ki ga tsuke ba konagona ni natte
-Setsuna no ma ni itami ni ni ta koi ga karada o hashitta n da&amp;quot;
-&amp;quot;Putting it into words, or giving it a shape, either way, it's a bit shaky,
+Setsuna no ma ni itami ni ni ta koi ga karada o hashitta n da&amp;#34;
+&amp;#34;Putting it into words, or giving it a shape, either way, it&amp;#39;s a bit shaky,
 Because when I gazed into your eyes, you laughed, suddenly and gently,
-My ragged voice, my loudly kept secret, before I knew it, they've gone to pieces,
-In an instant, a love like pain had run through my body...&amp;quot;
+My ragged voice, my loudly kept secret, before I knew it, they&amp;#39;ve gone to pieces,
+In an instant, a love like pain had run through my body...&amp;#34;
 &lt;/code>&lt;/pre>&lt;hr>
 &lt;p>There you have it, your lucky number 13 and my best wishes for a lovely day.&lt;/p>
 &lt;p>Loading something clever to end this post&amp;hellip;&lt;/p></content></item></channel></rss>
