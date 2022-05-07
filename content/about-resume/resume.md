@@ -10,7 +10,7 @@ description: "CV of a computer undergrad"
 **Employment Status:** Student\
 **College:** Pulchowk Campus, IOE\
 **Undergraduate:** Bachelor in Computer Engineering (BCT)\
-**Year:** Third Year, Sixth Semester\
+**Year:** Fourth Year, Seventh Semester\
 **Address:**
 - Primary: Bharatpur-5, Chitwan 
 - Secondary: Pulchowk, Lalitpur (current)
@@ -30,7 +30,7 @@ description: "CV of a computer undergrad"
   1. Front End: HTML5, CSS3 (SASS, Bootstrap), JavaScript, React.
   2. Back End: Python (Django, Flask), Node (Express).
   3. Database: SQLite3, Postgres, MongoDB, BadgerDB.
-- **Beginner in App Development** through Flutter + Dart.
+- **App Development (UI)** using Flutter + Dart.
 - Excellent expereince in working with the **Linux** development environment including system calls, networking, job management and shell scripting.
 - Excellent **content writing/documentation** skills (English)
 - **Others:** LaTex, Git.
