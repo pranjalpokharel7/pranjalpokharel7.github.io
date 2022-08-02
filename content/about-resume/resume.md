@@ -27,7 +27,7 @@ description: "CV of a computer undergrad"
 - **Programming Languages** - prefer to work in Python, C++, C, JavaScript and Go, although I feel language barrier is rarely the issue over the concept itself.
 - **Graphic Design/Digital Art** using Illustrator/Photoshop/Figma.
 - **Web Development**
-  1. Front End: HTML5, CSS3 (SASS, Bootstrap), JavaScript, React.
+  1. Front End: HTML5, CSS3 (SASS, Bootstrap, Tailwind), JavaScript, TypeScript, React (NextJS).
   2. Back End: Python (Django, Flask), Node (Express).
   3. Database: SQLite3, Postgres, MongoDB, BadgerDB.
 - **App Development (UI)** using Flutter + Dart.
