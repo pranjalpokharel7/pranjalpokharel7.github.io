@@ -1,21 +1,21 @@
 ---
-title: "About Me"
-date: 2021-02-13T18:31:06+05:45
-draft: false 
-description: "Hi there!"
+title: 'About Me'
+draft: false
+description: 'Hi there!'
 ---
 
 **Name:** Pranjal Pokharel
 
 **Short Bio:**
-As of now, I am a 4th Year Bachelor in Computer Engineering Student (BCT) studying in Pulchowk Campus, IOE, Nepal. Social links are at the footer of this page. You can contact me by email/discord DM. 
+As of now, I am a 4th Year Bachelor in Computer Engineering Student (BCT) studying in Pulchowk Campus, IOE, Nepal. Social links are at the footer of this page. You can contact me by email/discord DM.
 
 **Email:** pranjalpokharel007@gmail.com, 075bct061.pranjal@pcampus.edu.np\
 **Discord:** ppok24#9422\
 \
 **Quotes To Live By:**
-- "The most important thing is to try and inspire people so that they can be great in whatever they want to do." - *Kobe*
-- "You can't beat me. I'm prepared to die." - *Israel Adesanya, 5th Round vs. Kelvin Gastelum, UFC 236* 
+
+- "The most important thing is to try and inspire people so that they can be great in whatever they want to do." - _Kobe_
+- "You can't beat me. I'm prepared to die." - _Israel Adesanya, 5th Round vs. Kelvin Gastelum, UFC 236_
 
 **Dedicated:**
 
