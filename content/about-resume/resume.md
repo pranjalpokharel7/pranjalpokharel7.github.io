@@ -32,7 +32,9 @@ description: 'CV of a computer undergrad'
 
 ##### 2023-Present
 
-- **Intern** at **[Naamche](https://www.naamche.com/)**, where I worked on the frontend portion (NextJS) of their AI product **[Mimir](https://www.withmimir.com/)**. Designed and developed a ChatGPT-like chat interface and related components, optimized loading time using server-side rendering, and worked on the authentication API.
+- Current: **Software Engineer** at **[Naamche](https://www.naamche.com/)**, starting from May.
+
+- **Intern** at **[Naamche](https://www.naamche.com/)** (until April), where I worked on the frontend portion (NextJS) of their AI product **[Mimir](https://www.withmimir.com/)**. Designed and developed a ChatGPT-like chat interface and related components, optimized loading time using server-side rendering, and worked on the authentication API.
 
 ##### 2022-2023
 
