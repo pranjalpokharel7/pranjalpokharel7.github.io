@@ -136,7 +136,7 @@ On a side note, if your RAM isn&amp;rsquo;t soldered and/or you have some extra 
 &lt;p>&lt;strong>4. &amp;ldquo;I installed Google Chrome as a flatpak package, but it acts &amp;ldquo;wierd&amp;rdquo; when I run flutter&amp;rdquo;&lt;/strong>&lt;/p>
 &lt;p>Apparently flatpak Chrome doesn&amp;rsquo;t gel too well with flutter. Thanks to @badnick for pointing it our on Discord. Install from AUR from this one, might fix the issue. Anyway, unless you are programming for browser apps you might not need Chrome beyond this initial testing. So don&amp;rsquo;t be too riled up by this one.&lt;/p>
 &lt;p>&lt;strong>5. &amp;ldquo;I close flutter but my computer seems to be getting slow every time I do so. What&amp;rsquo;s happening?&amp;rdquo;&lt;/strong>&lt;/p>
-&lt;p>Did you &amp;lsquo;sudo flutter run&amp;rsquo;? Chances are the OS is not able to free up the resources because you ran flutter as root. Quick check with &lt;code>htop&lt;/code> or &lt;code>top&lt;/code> to verify. See if there are multiple &lt;code>dart&lt;/code> processes still running even after you&amp;rsquo;ve closed flutter and &lt;code>killall dart&lt;/code>. Sometimes this problem also persists when you close vscode even though you did not do anything &lt;code>sudo&lt;/code> with it, I&amp;rsquo;m guessing it&amp;rsquo;s got something to do with how the dart intellisense works, but it&amp;rsquo;s just speculation on my part.&lt;/p></content></item><item><title>What's Cooking This Month?</title><link>http://pranjalpokharel.com.np/posts/june-playlist-2021/</link><pubDate>Tue, 22 Jun 2021 09:48:59 +0545</pubDate><guid>http://pranjalpokharel.com.np/posts/june-playlist-2021/</guid><description>Here are 10 songs looping through my thick skull this month of June.
+&lt;p>Did you &amp;lsquo;sudo flutter run&amp;rsquo;? Chances are the OS is not able to free up the resources because you ran flutter as root. Quick check with &lt;code>htop&lt;/code> or &lt;code>top&lt;/code> to verify. See if there are multiple &lt;code>dart&lt;/code> processes still running even after you&amp;rsquo;ve closed flutter and &lt;code>killall dart&lt;/code>. Sometimes this problem also persists when you close vscode even though you did not do anything &lt;code>sudo&lt;/code> with it, I&amp;rsquo;m guessing it&amp;rsquo;s got something to do with how the dart intellisense works, but it&amp;rsquo;s just speculation on my part.&lt;/p></content></item><item><title>What's Cooking This June?</title><link>http://pranjalpokharel.com.np/posts/june-playlist-2021/</link><pubDate>Tue, 22 Jun 2021 09:48:59 +0545</pubDate><guid>http://pranjalpokharel.com.np/posts/june-playlist-2021/</guid><description>Here are 10 songs looping through my thick skull this month of June.
 1) Paprika - Kenshi Yonezu While I didn&amp;rsquo;t really feel anything special about the song when I heard it a year back, my heart has really warmed up to this. Especially after listening to NHK&amp;rsquo;s version sung by kids. Apparently this song will be used as a cheer anthem in the Tokyo Olympics too.
 The song is just pure nostalgia - climbing trees, stealing fruits from other people&amp;rsquo;s garden, playing dhyakki and phiyo (local games involving sandals and stones) - everything that made my childhood worth remembering.</description><content>&lt;p>Here are 10 songs looping through my thick skull this month of June.&lt;/p>
 &lt;h4 id="1-paprika---kenshi-yonezuhttpswwwyoutubecomwatchvs582l3gujnw">1) &lt;a href="https://www.youtube.com/watch?v=s582L3gujnw">Paprika - Kenshi Yonezu&lt;/a>&lt;/h4>
@@ -562,5 +562,18 @@ Relevant Skills Programming Languages - prefer to work in C, C++, Python, JavaSc
 &lt;/ul>
 &lt;hr>
 &lt;h4 id="life-outside-programming">Life Outside Programming&lt;/h4>
-&lt;p>&lt;strong>Hobbies:&lt;/strong> Guitar, Writing, Gym, Running, UFC/MMA, Anime/Manga\&lt;/p>
-&lt;hr></content></item></channel></rss>
+&lt;p>&lt;strong>Hobbies:&lt;/strong> Guitar, Writing, Gym, Running, UFC/MMA, Anime/Manga&lt;/p>
+&lt;hr></content></item><item><title>Table of Contents</title><link>http://pranjalpokharel.com.np/contents/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://pranjalpokharel.com.np/contents/</guid><description>Programming Flutter Series: Emulate Like A Pro! (Part 2)
+Flutter Series: Flutter Like A Butterfly… (Part 1)
+Learning Bash Scripting
+Writings Garage Door
+Music What’s Cooking This June?
+Valentine Playlist 2021</description><content>&lt;h2 id="programming">Programming&lt;/h2>
+&lt;p>&lt;a href="http://pranjalpokharel.com.np/posts/emulator-on-linux">Flutter Series: Emulate Like A Pro! (Part 2)&lt;/a>&lt;br>
+&lt;a href="http://pranjalpokharel.com.np/posts/flutter-on-linux">Flutter Series: Flutter Like A Butterfly… (Part 1)&lt;/a>&lt;br>
+&lt;a href="http://pranjalpokharel.com.np/posts/learning-bash/">Learning Bash Scripting&lt;/a>&lt;/p>
+&lt;h2 id="writings">Writings&lt;/h2>
+&lt;p>&lt;a href="http://pranjalpokharel.com.np/posts/garage-door">Garage Door&lt;/a>&lt;/p>
+&lt;h2 id="music">Music&lt;/h2>
+&lt;p>&lt;a href="http://pranjalpokharel.com.np/posts/june-playlist-2021">What’s Cooking This June?&lt;/a>&lt;br>
+&lt;a href="http://pranjalpokharel.com.np/posts/valentine-playlist-2021">Valentine Playlist 2021&lt;/a>&lt;/p></content></item></channel></rss>
