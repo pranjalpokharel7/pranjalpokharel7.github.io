@@ -1,8 +1,9 @@
----
-title: 'Resume/CV'
-draft: false
-description: 'CV of a computer undergrad'
----
++++
+title = 'Resume/CV'
+draft = false
+description = 'CV of a computer undergrad'
+color = "blue"
++++
 
 ### Primary Information
 
@@ -103,6 +104,6 @@ description: 'CV of a computer undergrad'
 
 #### Life Outside Programming
 
-**Hobbies:** Guitar, Writing, Gym, Running, UFC/MMA, Anime/Manga\
+**Hobbies:** Guitar, Writing, Gym, Running, UFC/MMA, Anime/Manga
 
 ---

@@ -1,7 +1,7 @@
 baseURL = "http://pranjalpokharel.com.np/"
 languageCode = "en-us"
 theme = "terminal"
-paginate = 3
+paginate = 4
 
 [params]
   # the list of set content will show up on your index page (baseurl).
@@ -28,6 +28,7 @@ paginate = 3
   # set post to show the last updated
   # If you use git, you can set `enableGitInfo` to `true` and then post will automatically get the last updated
   showLastUpdated = false
+
   # Provide a string as a prefix for the last update date. By default, it looks like this: 2020-xx-xx [Updated: 2020-xx-xx] :: Author
   # updatedDatePrefix = "Updated"
 
@@ -53,8 +54,8 @@ paginate = 3
     menuMore = "Show More"
     readMore = "Read More"
     readOtherPosts = "Read Other Posts"
-    missingContentMessage = "Page not found..."
-    missingBackButtonLabel = "Back to home page"
+    missingContentMessage = "You seem to have lost your way, young padwan..."
+    missingBackButtonLabel = "Back to Home"
 
     [languages.en.params.logo]
       logoText = "HOME"
@@ -62,16 +63,16 @@ paginate = 3
 
     [languages.en.menu]
       [[languages.en.menu.main]]
+        identifier = "contents"
+        name = "Contents"
+        url = "/contents"
+
+      [[languages.en.menu.main]]
         identifier = "about"
         name = "About"
-        url = "/about-resume/about"
+        url = "/about"
 
       [[languages.en.menu.main]]
         identifier = "resume"
         name = "Resume"
-        url = "/about-resume/resume"
-
-      [[languages.en.menu.main]]
-        identifier = "programming"
-        name = "Programming"
-        url = "/tags/programming"
+        url = "/resume"
