@@ -40,7 +40,7 @@ description: 'CV of a computer undergrad'
 
 - **Intern** at **[LIS Nepal](https://lisnepal.com.np/)**, where we received mentorship and guidance on our final year major project. Completed an in-house course on ETL and SQL queries.
 
-- Worked as a **Front End Blockchain Developer** at **[iBriz.ai](https://ibriz.ai/)** where my tasks included creating responsive UI, managing states using Redux, integrating smart contract logic deployed on the **[ICON Lisbon Network](https://tracker.lisbon.icon.community/)**, using custom events defined for **[ICONex wallet](https://chrome.google.com/webstore/detail/iconex/flpiciilemghbmfalicajoolhkkenfel)**, and more.
+- Worked as a **Front End Blockchain Developer** at **[iBriz.ai](https://ibriz.ai/)** where my tasks included creating responsive UI, managing states using Redux, integrating smart contract logic deployed on the **[ICON Lisbon Network](https://tracker.lisbon.icon.community/)**, integrating **[ICONex wallet](https://chrome.google.com/webstore/detail/iconex/flpiciilemghbmfalicajoolhkkenfel)** in the application, and more.
 
 - Worked as **Full Stack Developer** at **[Ensemble Matrix](https://ensemblematrix.com/)** on the Django + React (Typescript + NextJS) stack creating database models, using canvas API for image extraction, writing a parser for custom logic implementation, using financial APIs (**[Finacle](https://www.edgeverve.com/finacle/)**), and more.
 
@@ -48,11 +48,11 @@ description: 'CV of a computer undergrad'
 
 - Worked as **Blockchain Developer (Intern)** at **[iBriz.ai](https://ibriz.ai/)** where I worked on the **[Blockchain Transmission Protocol (BTP)](https://icon.community/learn/btp/)** project where my tasks included deploying smart contracts, setting up local nodes and configuring the BTP Relayer.
 
-- Worked as **Design Intern** at **[Esfera Brandings](https://esferabrandings.com/)**, where my responsibilities included designing social media posters for clients, creating design components, and re-designing existing client designs.
+- Worked as **Design Intern** at **[Esfera Brandings](https://esferabrandings.com/)**, where my responsibilities included designing social media posters/advertisements, creating design components, and re-designing existing client designs.
 
 ##### 2020-2021
 
-- Worked as a **Front End Developer** at **[Clamphook](https://clamphook.com/)**, where my responsibilities comprised implementing design mockups on code, integrating API, and responsive web design.
+- Worked as a **Front End Developer** at **[Clamphook](https://clamphook.com/)**, where my responsibilities comprised implementing design mockups to code, integrating API, and responsive web design.
 
 ## Volunteer Experience
 
@@ -103,7 +103,6 @@ description: 'CV of a computer undergrad'
 
 #### Life Outside Programming
 
-**Hobbies:** Guitar, Writing, Digital Art, Table Tennis, UFC/MMA, Anime/Manga\
-**Irrelevant Achievement:** Bluffed my way into a stranger's wedding, twice.
+**Hobbies:** Guitar, Writing, Gym, Running, UFC/MMA, Anime/Manga\
 
 ---
