@@ -33,7 +33,7 @@ color = "blue"
 
 ##### 2023-Present
 
-- Current: **Software Engineer** at **[Naamche](https://www.naamche.com/)**, starting from May.
+- Current: **Software Engineer** at **[Naamche](https://www.naamche.com/)**, where I am working on the backend logic of [**EthanAI**](https://www.ethan-ai.com/), a wealth management app for relationship managers of HNIs (High Net Worth Individuals). Configured a multi-tenant Postgres database system using Django, deployed a multi-service infrastructure on AWS for authentication, analytics and transaction processing, set up periodic tasks using celery, celerybeat and redis (message broker), wrote standard API tests, and performed cleanup and transformation on financial data. 
 
 - **Intern** at **[Naamche](https://www.naamche.com/)** (until April), where I worked on the frontend portion (NextJS) of their AI product **[Mimir](https://www.withmimir.com/)**. Designed and developed a ChatGPT-like chat interface and related components, optimized loading time using server-side rendering, and worked on the authentication API.
 
