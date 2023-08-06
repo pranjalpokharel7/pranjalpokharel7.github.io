@@ -465,7 +465,7 @@ Relevant Skills Programming Languages - prefer to work in C, C++, Python, JavaSc
 &lt;h5 id="2023-present">2023-Present&lt;/h5>
 &lt;ul>
 &lt;li>
-&lt;p>Current: &lt;strong>Software Engineer&lt;/strong> at &lt;strong>&lt;a href="https://www.naamche.com/">Naamche&lt;/a>&lt;/strong>, starting from May.&lt;/p>
+&lt;p>Current: &lt;strong>Software Engineer&lt;/strong> at &lt;strong>&lt;a href="https://www.naamche.com/">Naamche&lt;/a>&lt;/strong>, where I am working on the backend logic of &lt;a href="https://www.ethan-ai.com/">&lt;strong>EthanAI&lt;/strong>&lt;/a>, a wealth management app for relationship managers of HNIs (High Net Worth Individuals). Configured a multi-tenant Postgres database system using Django, deployed a multi-service infrastructure on AWS for authentication, analytics and transaction processing, set up periodic tasks using celery, celerybeat and redis (message broker), wrote standard API tests, and performed cleanup and transformation on financial data.&lt;/p>
 &lt;/li>
 &lt;li>
 &lt;p>&lt;strong>Intern&lt;/strong> at &lt;strong>&lt;a href="https://www.naamche.com/">Naamche&lt;/a>&lt;/strong> (until April), where I worked on the frontend portion (NextJS) of their AI product &lt;strong>&lt;a href="https://www.withmimir.com/">Mimir&lt;/a>&lt;/strong>. Designed and developed a ChatGPT-like chat interface and related components, optimized loading time using server-side rendering, and worked on the authentication API.&lt;/p>
