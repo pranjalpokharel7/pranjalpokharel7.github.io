@@ -6,12 +6,7 @@ color = "red"
 +++
 
 **Name:** Pranjal Pokharel
-
-**Short Bio:**
-As of now, I am a 4th Year Bachelor in Computer Engineering Student (BCT) studying in Pulchowk Campus, IOE, Nepal. Social links are at the footer of this page. You can contact me by email/discord DM.
-
-**Email:** pranjalpokharel007@gmail.com, 075bct061.pranjal@pcampus.edu.np\
-**Discord:** ppok24#9422\
+**Email:** pranjalpokharel007@gmail.com
 \
 **Quotes To Live By:**
 
