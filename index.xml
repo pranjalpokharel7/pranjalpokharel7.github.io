@@ -431,7 +431,7 @@ To my mom and dad, thanks for bearing with my indecisive, weepy, overthinking an
 &lt;p>Except maybe my &lt;strong>sister&lt;/strong>, who has been my source of inspiration and moral compass for all these years. Hope you conquer everything you&amp;rsquo;ve set out to do, you are my hero.&lt;/p></content></item><item><title>Resume/CV</title><link>http://pranjalpokharel.com.np/resume/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://pranjalpokharel.com.np/resume/</guid><description>Primary Information Name: Pranjal Pokharel
 Employment Status: Software Engineer, Naamche Undergraduate: Pulchowk Campus, IOE, Bachelor in Computer Engineering (BCT)
 Address: Nakhkhu, Lalitpur, Nepal (current) Email: pranjalpokharel007@gmail.com Designs: https://bit.ly/pranjal_designs GitHub: https://github.com/pranjalpokharel7
-Relevant Skills Programming Languages - prefer to work in C, C++, Python, JavaScript and Go. Graphic Design/Digital Art using Illustrator/Photoshop/Figma. Web Development Front End: HTML5, CSS3 (SASS, Bootstrap, Tailwind, Material UI), JavaScript, TypeScript, React (NextJS), Redux-Toolkit. Back End: Python (Django, Flask), Node (Express), Go (Gin).</description><content>&lt;h3 id="primary-information">Primary Information&lt;/h3>
+Relevant Skills Programming Languages - prefer to work in C, C++, Python, JavaScript, and Go. Graphic Design/Digital Art using Illustrator/Photoshop/Figma. Web Development Front End: NextJS (React) Back End: Python (Django), Node (Express), Go (Gin). Database: SQLite3, Postgres (RDBMS), MongoDB, BadgerDB (NoSQL).</description><content>&lt;h3 id="primary-information">Primary Information&lt;/h3>
 &lt;p>&lt;strong>Name:&lt;/strong> Pranjal Pokharel&lt;br>
 &lt;strong>Employment Status:&lt;/strong> Software Engineer, &lt;a href="https://www.naamche.com/">Naamche&lt;/a> &lt;br>
 &lt;strong>Undergraduate:&lt;/strong> &lt;a href="https://pcampus.edu.np/">Pulchowk Campus, IOE&lt;/a>, Bachelor in Computer Engineering (BCT)&lt;br>
@@ -442,24 +442,29 @@ Relevant Skills Programming Languages - prefer to work in C, C++, Python, JavaSc
 &lt;hr>
 &lt;h3 id="relevant-skills">Relevant Skills&lt;/h3>
 &lt;ul>
-&lt;li>&lt;strong>Programming Languages&lt;/strong> - prefer to work in C, C++, Python, JavaScript and Go.&lt;/li>
+&lt;li>&lt;strong>Programming Languages&lt;/strong> - prefer to work in C, C++, Python, JavaScript, and Go.&lt;/li>
 &lt;li>&lt;strong>Graphic Design/Digital Art&lt;/strong> using Illustrator/Photoshop/Figma.&lt;/li>
 &lt;li>&lt;strong>Web Development&lt;/strong>
 &lt;ol>
-&lt;li>Front End: HTML5, CSS3 (SASS, Bootstrap, Tailwind, Material UI), JavaScript, TypeScript, React (NextJS), Redux-Toolkit.&lt;/li>
-&lt;li>Back End: Python (Django, Flask), Node (Express), Go (Gin).&lt;/li>
-&lt;li>Database: SQLite3, Postgres, MongoDB, BadgerDB.&lt;/li>
+&lt;li>Front End: NextJS (React)&lt;/li>
+&lt;li>Back End: Python (Django), Node (Express), Go (Gin).&lt;/li>
+&lt;li>Database: SQLite3, Postgres (RDBMS), MongoDB, BadgerDB (NoSQL).&lt;/li>
 &lt;/ol>
 &lt;/li>
 &lt;li>&lt;strong>App Development (UI)&lt;/strong> using Flutter + Dart.&lt;/li>
 &lt;li>Excellent experience working with the &lt;strong>Linux&lt;/strong> development environment including system calls, networking, job management, and shell scripting.&lt;/li>
-&lt;li>&lt;strong>Others:&lt;/strong> LaTex, Git.&lt;/li>
+&lt;li>&lt;strong>Others:&lt;/strong> LaTex, Git, Docker.&lt;/li>
 &lt;/ul>
 &lt;h3 id="professional-experince">Professional Experince&lt;/h3>
 &lt;h5 id="2023-present">2023-Present&lt;/h5>
 &lt;ul>
 &lt;li>
-&lt;p>Current: &lt;strong>Software Engineer&lt;/strong> at &lt;strong>&lt;a href="https://www.naamche.com/">Naamche&lt;/a>&lt;/strong>, where I am working on the backend logic of &lt;a href="https://www.ethan-ai.com/">&lt;strong>EthanAI&lt;/strong>&lt;/a>, a wealth management app for relationship managers of HNIs (High Net Worth Individuals). Configured a multi-tenant Postgres database system using Django, deployed a multi-service infrastructure on AWS for authentication, analytics and transaction processing, set up periodic tasks using celery, celerybeat and redis (message broker), wrote standard API tests, and performed cleanup and transformation on financial data.&lt;/p>
+&lt;p>Current: &lt;strong>Software Engineer&lt;/strong> at &lt;strong>&lt;a href="https://www.naamche.com/">Naamche&lt;/a>&lt;/strong>, where I,&lt;/p>
+&lt;ul>
+&lt;li>Configured a multi-tenant Postgres database system for a wealth managment app (&lt;a href="https://www.ethan-ai.com/">EthanAI&lt;/a>) using Django, deployed a multi-service infrastructure on AWS for authentication, analytics and transaction processing, ran periodic tasks using celery and redis, and wrote API tests.&lt;/li>
+&lt;li>Wrote an internal custom SDK for &lt;a href="https://docs.dealmaker.tech/#section/Introduction">Dealmaker&lt;/a> API in Python to deploy over serverless (AWS Lambda) architecture.&lt;/li>
+&lt;li>Worked on NextJS to develop a resturant POS software, floor and table layout using drag and drop API, designed GraphQL schema, real-time synchronization using AWS Amplify, and more.&lt;/li>
+&lt;/ul>
 &lt;/li>
 &lt;li>
 &lt;p>&lt;strong>Intern&lt;/strong> at &lt;strong>&lt;a href="https://www.naamche.com/">Naamche&lt;/a>&lt;/strong> (until April), where I worked on the frontend portion (NextJS) of their AI product &lt;strong>&lt;a href="https://www.withmimir.com/">Mimir&lt;/a>&lt;/strong>. Designed and developed a ChatGPT-like chat interface and related components, optimized loading time using server-side rendering, and worked on the authentication API.&lt;/p>
@@ -504,10 +509,10 @@ Relevant Skills Programming Languages - prefer to work in C, C++, Python, JavaSc
 &lt;/ul>
 &lt;h4 id="website-projects">Website Projects&lt;/h4>
 &lt;ul>
-&lt;li>&lt;a href="https://pranjalpokharel.com.np/">https://pranjalpokharel.com.np/&lt;/a> - Hugo SSG; Portfolio Website&lt;/li>
-&lt;li>&lt;a href="https://armancards.com/">https://armancards.com/&lt;/a> - Django; Maintainance, SEO-Friendly Code Updates&lt;/li>
-&lt;li>&lt;a href="https://clamphook.com/">https://clamphook.com/&lt;/a> - Flask, React (At The Time)&lt;/li>
-&lt;li>&lt;a href="https://www.withmimir.com/">https://www.withmimir.com/&lt;/a> - NextJS&lt;/li>
+&lt;li>&lt;a href="https://pranjalpokharel.com.np/">https://pranjalpokharel.com.np/&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://armancards.com/">https://armancards.com/&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://clamphook.com/">https://clamphook.com/&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://www.withmimir.com/">https://www.withmimir.com/&lt;/a>&lt;/li>
 &lt;/ul>
 &lt;h4 id="highlighted-projects">Highlighted Projects&lt;/h4>
 &lt;ul>
