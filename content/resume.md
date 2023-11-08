@@ -19,21 +19,24 @@ color = "blue"
 
 ### Relevant Skills
 
-- **Programming Languages** - prefer to work in C, C++, Python, JavaScript and Go.
+- **Programming Languages** - prefer to work in C, C++, Python, JavaScript, and Go.
 - **Graphic Design/Digital Art** using Illustrator/Photoshop/Figma.
 - **Web Development**
-  1. Front End: HTML5, CSS3 (SASS, Bootstrap, Tailwind, Material UI), JavaScript, TypeScript, React (NextJS), Redux-Toolkit.
-  2. Back End: Python (Django, Flask), Node (Express), Go (Gin).
-  3. Database: SQLite3, Postgres, MongoDB, BadgerDB.
+  1. Front End: NextJS (React) 
+  2. Back End: Python (Django), Node (Express), Go (Gin).
+  3. Database: SQLite3, Postgres (RDBMS), MongoDB, BadgerDB (NoSQL).
 - **App Development (UI)** using Flutter + Dart.
 - Excellent experience working with the **Linux** development environment including system calls, networking, job management, and shell scripting.
-- **Others:** LaTex, Git.
+- **Others:** LaTex, Git, Docker.
 
 ### Professional Experince
 
 ##### 2023-Present
 
-- Current: **Software Engineer** at **[Naamche](https://www.naamche.com/)**, where I am working on the backend logic of [**EthanAI**](https://www.ethan-ai.com/), a wealth management app for relationship managers of HNIs (High Net Worth Individuals). Configured a multi-tenant Postgres database system using Django, deployed a multi-service infrastructure on AWS for authentication, analytics and transaction processing, set up periodic tasks using celery, celerybeat and redis (message broker), wrote standard API tests, and performed cleanup and transformation on financial data. 
+- Current: **Software Engineer** at **[Naamche](https://www.naamche.com/)**, where I,
+	- Configured a multi-tenant Postgres database system for a wealth managment app ([EthanAI](https://www.ethan-ai.com/)) using Django, deployed a multi-service infrastructure on AWS for authentication, analytics and transaction processing, ran periodic tasks using celery and redis, and wrote API tests. 
+	- Wrote an internal custom SDK for [Dealmaker](https://docs.dealmaker.tech/#section/Introduction) API in Python to deploy over serverless (AWS Lambda) architecture.
+	- Worked on NextJS to develop a resturant POS software, floor and table layout using drag and drop API, designed GraphQL schema, real-time synchronization using AWS Amplify, and more.
 
 - **Intern** at **[Naamche](https://www.naamche.com/)** (until April), where I worked on the frontend portion (NextJS) of their AI product **[Mimir](https://www.withmimir.com/)**. Designed and developed a ChatGPT-like chat interface and related components, optimized loading time using server-side rendering, and worked on the authentication API.
 
@@ -65,10 +68,10 @@ color = "blue"
 
 #### Website Projects
 
-- https://pranjalpokharel.com.np/ - Hugo SSG; Portfolio Website
-- https://armancards.com/ - Django; Maintainance, SEO-Friendly Code Updates
-- https://clamphook.com/ - Flask, React (At The Time)
-- https://www.withmimir.com/ - NextJS
+- https://pranjalpokharel.com.np/ 
+- https://armancards.com/ 
+- https://clamphook.com/ 
+- https://www.withmimir.com/
 
 #### Highlighted Projects
 
