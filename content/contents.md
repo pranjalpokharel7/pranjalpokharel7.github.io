@@ -19,3 +19,6 @@ color = "orange"
 
 [What’s Cooking This June?](/posts/june-playlist-2021)\
 [Valentine Playlist 2021](/posts/valentine-playlist-2021)
+
+## Plan
+[July 2024](/posts/july-2024-plan)
