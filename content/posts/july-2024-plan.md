@@ -37,3 +37,17 @@ I am the only one keeping myself from succeeding. Yet only recognizing this does
 Nostalgia does not help. Just because I worked my ass off for the last 3 weeks doesn't mean I'll do that automatically today. Just because I failed 100 times doesn't mean I'll repeat my mistakes today. Focus on the moment. Silence your mind. They are just thoughts. Immaterial, they can cause no harm.
 
 My back seems to give out first. It whispers into my brain, "just lie down, I need some rest". I need to make my back stronger. Will start with simple rows using the 8kg dumbells I have in the room.
+
+---
+
+## 2024-07-15
+
+- Solved some edge cases at work today. Data issues are harder to debug since they don't throw syntax errors or internal server errors. Constraints can only go so far; it's really difficult to define invalid states in SQL especially when such logic bears it's roots in business requirements.
+- Completed that zk-SNARK video, still require much in-depth knowledge to make everything in my head click.
+
+---
+
+I just can't find myself slacking off at work, even if I actively try to. I just can't turn my mind off if there's a problem to solve, a logic to optimize, some section to refactor. It's 8PM and I'm still pushing some company code to remote. I've often led myself to accepting exploitative work hours as a result of this. For my first job I got paid fucking $3.75 for two weeks of FE work. And I still pulled an all nighter before said work's deadline until 4 AM in the morning, just so I could "make one particular screen's responsive design a bit smoother". Capitalism will chew up your passion and spit it right at your face.
+
+My productivity plummets after 10PM, I need to structure some useless tasks post this time (checking up on social media, say).
+I'm not sure if I could wake up earlier, but I'll give it a shot tomorrow. Let's reduce sleeping time by around 15 mins tomorrow. Did not do my back exercies today, that's an L for me.
