@@ -70,3 +70,15 @@ There are three things I need to target to evolve my programming skills - consis
 Taking a nap or a shower are sure fire ways to douse that initial phase of burnout.
 
 I had the worst possible start to the day and ended up having one of the most productive days in this 4 week span. Life is full of surprises, give future possibilities a chance.
+
+--- 
+
+## 2024-07-17
+
+- Merged a change in data pipeline that should significantly speed up database ingestion by a huge factor.
+
+Couldn't sleep at all last night, and I had the brilliant idea of browsing instagram because I couldn't fall asleep. I need to face my dragon. The next time I can't fall asleep, I'm getting out of bed and start coding.
+
+My teeth hurts. Had it checked out on Saturday, but I'll visit it tomorrow as early as possible. Health -> Family/Relationships -> Programming/Work -> Everything Else. That's the only priority order that matters.
+
+I have opted into a challenge at work where I've promised to deliver milestones on optimization within 7 days (5 working days + weekends). I have to prepare a design document with the proposed changes first, so my plan first thing tomorrow is to go through the entire backend codebase. I can see a lot of optimizations happening at the database level, following that I plan to go deeper into the deployment structure. DevOps isn't really my expertise but for now it happens to align with what I'm trying to achieve in the next 7 days.
