@@ -8,37 +8,37 @@ color = "blue"
 ### Primary Information
 
 **Name:** Pranjal Pokharel\
-**Employment Status:** Software Engineer, [Naamche](https://www.naamche.com/) \
 **Undergraduate:** [Pulchowk Campus, IOE](https://pcampus.edu.np/), Bachelor in Computer Engineering (BCT)\
 **Address:** Nakhkhu, Lalitpur, Nepal (current) \
 **Email:** pranjalpokharel007@gmail.com \
-**Designs:** https://bit.ly/pranjal_designs \
 **GitHub**: https://github.com/pranjalpokharel7
 
 ---
 
 ### Relevant Skills
 
-- **Programming Languages** - prefer to work in C, C++, Python, JavaScript, and Go.
-- **Graphic Design/Digital Art** using Illustrator/Photoshop/Figma.
-- **Web Development**
-  1. Front End: NextJS (React) 
-  2. Back End: Python (Django), Node (Express), Go (Gin).
-  3. Database: SQLite3, Postgres (RDBMS), MongoDB, BadgerDB (NoSQL).
-- **App Development (UI)** using Flutter + Dart.
-- Excellent experience working with the **Linux** development environment including system calls, networking, job management, and shell scripting.
+- **Programming Languages** - Medium-large scale projects in Python, JavaScript, C, C++, and Go.
+- Excellent proficiency in **backend libraries/frameworks** such as Django and FastAPI.
+- Practical knowledge of **relational database systems** (Postgres), with introductory experience in NoSQL (MongoDB) and Key-Value DB (Redis, BadgerDB).
+- Strong knowledge of the **AWS cloud infrastructure/services** such as compute (EC2, ECS, Lambda), storage (S3), database (DynamoDB, RDS), identity (Cognito), secrets (Parameter Store) and more.
 - **Others:** LaTex, Git, Docker.
 
 ### Professional Experince
 
-##### 2023-Present
+##### 2024
 
-- Current: **Software Engineer** at **[Naamche](https://www.naamche.com/)**, where I,
-	- Configured a multi-tenant Postgres database system for a wealth managment app ([EthanAI](https://www.ethan-ai.com/)) using Django, deployed a multi-service infrastructure on AWS for authentication, analytics and transaction processing, ran periodic tasks using celery and redis, and wrote API tests. 
-	- Wrote an internal custom SDK for [Dealmaker](https://docs.dealmaker.tech/#section/Introduction) API in Python to deploy over serverless (AWS Lambda) architecture.
-	- Worked on NextJS to develop a resturant POS software, floor and table layout using drag and drop API, designed GraphQL schema, real-time synchronization using AWS Amplify, and more.
+- **Senior Software Engineer** at **[Naamche](https://www.naamche.com/)**, where I worked on their flagship product **[reAlpha](https://www.realpha.com/)**. 
+	- Setup data pipelines and wrote geo-spatial queries for insertion, retrieval, aggregation, and analysis on a table of +2M real estate data (read-write replication, triggers, materialized views, indexing, full-text search).
+	- OpenAI Assistants API for streaming chat response (latest support), exception handling (poor support in standard API), prompt engineering, and more.
+	- Major contributions to document management, ID verification and signature ([Docusign](https://www.docusign.com/)), search auto-completion/indexing ([Opensearch](https://opensearch.org/)), performance and exceptions monitoring ([Sentry](https://sentry.io/welcome/)), CRM integration ([Follow Up Boss](https://www.followupboss.com/)), property comparison heuristic, custom admin panel, data scraping/ETL pipelines and more.
 
-- **Intern** at **[Naamche](https://www.naamche.com/)** (until April), where I worked on the frontend portion (NextJS) of their AI product **[Mimir](https://www.withmimir.com/)**. Designed and developed a ChatGPT-like chat interface and related components, optimized loading time using server-side rendering, and worked on the authentication API.
+##### 2023-2024
+
+- **Software Engineer** at **[Naamche](https://www.naamche.com/)**, where I,
+	- Configured multi-tenant database system (handling connections to user-hosted databases using an application-layer router) for [EthanAI](https://www.ethan-ai.com/), deployed microservice infrastructure for authentication (custom support for multi-tenancy), analytics, transaction processing and data reconciliation, and wrote tests.
+	- Wrote a Python SDK (no official Python support) for [Dealmaker](https://docs.dealmaker.tech/#section/Introduction) API for deployment over AWS Lambda with functionalities like token caching in DynamoDB, wrappers for response format parsing, and more.
+	- Worked on context management, floor layout creation (rotate-resize-relocate table positions using custom drag-and-drop UI), and data synchronization using [AWS Datastore](https://aws.amazon.com/amplify/datastore/) for an offline-first, restaurant POS web app.
+	- Worked on the frontend of [Mimir](https://www.stork.ai/ai-tools/mimir-7101c), specifically on the chat interface and history.
 
 ##### 2022-2023
 
@@ -46,7 +46,7 @@ color = "blue"
 
 - Worked as a **Front End Blockchain Developer** at **[iBriz.ai](https://ibriz.ai/)** where my tasks included creating responsive UI, managing states using Redux, integrating smart contract logic deployed on the **[ICON Lisbon Network](https://tracker.lisbon.icon.community/)**, integrating **[ICONex wallet](https://chrome.google.com/webstore/detail/iconex/flpiciilemghbmfalicajoolhkkenfel)** in the application, and more.
 
-- Worked as **Full Stack Developer** at **[Ensemble Matrix](https://ensemblematrix.com/)** on the Django + React (Typescript + NextJS) stack creating database models, using canvas API for image extraction, writing a parser for custom logic implementation, using financial APIs (**[Finacle](https://www.edgeverve.com/finacle/)**), and more.
+- Worked as **Full Stack Developer** at **[Ensemble Matrix](https://www.linkedin.com/company/ensemblematrix/)** where I used canvas API for signature vector image extraction, wrote custom boolean logic parser for any combination of conjunction/dis-junction logic, integrated [Finacle](https://www.edgeverve.com/finacle/) (XML interface), and more.
 
 ##### 2021-2022
 

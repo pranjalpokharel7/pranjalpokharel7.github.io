@@ -17,10 +17,10 @@ paginate = 4
   showLanguageSelector = false
 
   # set theme to full screen width
-  fullWidthTheme = false
+  fullWidthTheme = true
 
   # center theme with default width
-  centerTheme = true 
+  centerTheme = false
 
   # set a custom favicon (default is a `themeColor` square)
   favicon = "icon.png"
@@ -54,7 +54,7 @@ paginate = 4
     menuMore = "Show More"
     readMore = "Read More"
     readOtherPosts = "Read Other Posts"
-    missingContentMessage = "You seem to have lost your way, young padwan..."
+    missingContentMessage = "You seem to have lost your way, young Padawan..."
     missingBackButtonLabel = "Back to Home"
 
     [languages.en.params.logo]
@@ -66,11 +66,6 @@ paginate = 4
         identifier = "contents"
         name = "Contents"
         url = "/contents"
-
-      [[languages.en.menu.main]]
-        identifier = "about"
-        name = "About"
-        url = "/about"
 
       [[languages.en.menu.main]]
         identifier = "resume"

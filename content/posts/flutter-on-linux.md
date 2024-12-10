@@ -2,7 +2,7 @@
 title: "Flutter Series : Flutter Like A Butterfly... (Part 1)"
 date: 2021-08-04T11:20:09+05:45
 draft: false 
-tags: ["programming"]
+tags: ["programming", "flutter"]
 description: "...Sudo Like A Linux Chump!"
 ---
 

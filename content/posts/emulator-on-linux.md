@@ -2,7 +2,7 @@
 title: "Flutter Series : Emulate Like A Pro! (Part 2)"
 date: 2021-08-15T21:20:09+05:45
 draft: false 
-tags: ["programming"]
+tags: ["programming", "flutter"]
 description: "Memory <= 4GB ? Take A Hike!"
 ---
 
