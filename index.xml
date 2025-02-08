@@ -196,61 +196,65 @@ Wait, why are files of name ‘180000’ scattered around my storage? Oh no, for
 &lt;li>&lt;strong>Advanced Bash Scripting Guide:&lt;/strong> &lt;a href="https://tldp.org/LDP/abs/html/">https://tldp.org/LDP/abs/html/&lt;/a>&lt;/li>
 &lt;li>&lt;strong>Common Bash Pitfalls:&lt;/strong> &lt;a href="http://mywiki.wooledge.org/BashPitfalls">http://mywiki.wooledge.org/BashPitfalls&lt;/a>&lt;/li>
 &lt;/ul></content></item><item><title>Resume/CV</title><link>http://pranjalpokharel.com.np/resume/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://pranjalpokharel.com.np/resume/</guid><description>Primary Information Name: Pranjal Pokharel
-Undergraduate: Pulchowk Campus, IOE, Bachelor in Computer Engineering (BCT)
-Address: Nakhkhu, Lalitpur, Nepal (current) Email: pranjalpokharel007@gmail.com GitHub: https://github.com/pranjalpokharel7
-Relevant Skills Programming Languages - Medium-large scale projects in Python, JavaScript, C, C++, and Go. Excellent proficiency in backend libraries/frameworks such as Django and FastAPI. Practical knowledge of relational database systems (Postgres), with introductory experience in NoSQL (MongoDB) and Key-Value DB (Redis, BadgerDB). Strong knowledge of the AWS cloud infrastructure/services such as compute (EC2, ECS, Lambda), storage (S3), database (DynamoDB, RDS), identity (Cognito), secrets (Parameter Store) and more.</description><content>&lt;h3 id="primary-information">Primary Information&lt;/h3>
+Address: Nakhkhu, Lalitpur, Nepal Email: pranjalpokharel007@gmail.com GitHub: https://github.com/pranjalpokharel7
+Education Undergraduate: Bachelor in Computer Engineering (BCT), Pulchowk Campus, IOE, Tribhuwan University [2018-2023]. Aggregate Percentage: 75.5% (out of possible 100%).
+Relevant Skills Programming Languages: Python, JavaScript, Rust, C, C++, and Go (in order of expertise). Backend Development: Proficient in Django, FastAPI. Frontend Development: Experience developing apps in React/Next.js. Databases: Strong expertise in PostgreSQL; basic experience with MongoDB, Redis, BadgerDB.</description><content>&lt;h3 id="primary-information">Primary Information&lt;/h3>
 &lt;p>&lt;strong>Name:&lt;/strong> Pranjal Pokharel&lt;br>
-&lt;strong>Undergraduate:&lt;/strong> &lt;a href="https://pcampus.edu.np/">Pulchowk Campus, IOE&lt;/a>, Bachelor in Computer Engineering (BCT)&lt;br>
-&lt;strong>Address:&lt;/strong> Nakhkhu, Lalitpur, Nepal (current) &lt;br>
+&lt;strong>Address:&lt;/strong> Nakhkhu, Lalitpur, Nepal &lt;br>
 &lt;strong>Email:&lt;/strong> &lt;a href="mailto:pranjalpokharel007@gmail.com">pranjalpokharel007@gmail.com&lt;/a> &lt;br>
 &lt;strong>GitHub&lt;/strong>: &lt;a href="https://github.com/pranjalpokharel7">https://github.com/pranjalpokharel7&lt;/a>&lt;/p>
 &lt;hr>
+&lt;h3 id="education">Education&lt;/h3>
+&lt;p>&lt;strong>Undergraduate:&lt;/strong> &lt;a href="https://doece.pcampus.edu.np/index.php/bce/">Bachelor in Computer Engineering&lt;/a> (BCT), &lt;a href="https://pcampus.edu.np/">Pulchowk Campus, IOE&lt;/a>, Tribhuwan University [2018-2023]. &lt;br>
+&lt;strong>Aggregate Percentage&lt;/strong>: 75.5% (out of possible 100%).&lt;/p>
+&lt;hr>
 &lt;h3 id="relevant-skills">Relevant Skills&lt;/h3>
 &lt;ul>
-&lt;li>&lt;strong>Programming Languages&lt;/strong> - Medium-large scale projects in Python, JavaScript, C, C++, and Go.&lt;/li>
-&lt;li>Excellent proficiency in &lt;strong>backend libraries/frameworks&lt;/strong> such as Django and FastAPI.&lt;/li>
-&lt;li>Practical knowledge of &lt;strong>relational database systems&lt;/strong> (Postgres), with introductory experience in NoSQL (MongoDB) and Key-Value DB (Redis, BadgerDB).&lt;/li>
-&lt;li>Strong knowledge of the &lt;strong>AWS cloud infrastructure/services&lt;/strong> such as compute (EC2, ECS, Lambda), storage (S3), database (DynamoDB, RDS), identity (Cognito), secrets (Parameter Store) and more.&lt;/li>
-&lt;li>&lt;strong>Others:&lt;/strong> LaTex, Git, Docker.&lt;/li>
+&lt;li>&lt;strong>Programming Languages&lt;/strong>: Python, JavaScript, Rust, C, C++, and Go (in order of expertise).&lt;/li>
+&lt;li>&lt;strong>Backend Development&lt;/strong>: Proficient in &lt;strong>Django, FastAPI&lt;/strong>.&lt;/li>
+&lt;li>&lt;strong>Frontend Development&lt;/strong>: Experience developing apps in &lt;strong>React/Next.js&lt;/strong>.&lt;/li>
+&lt;li>&lt;strong>Databases&lt;/strong>: Strong expertise in &lt;strong>PostgreSQL&lt;/strong>; basic experience with &lt;strong>MongoDB, Redis, BadgerDB&lt;/strong>.&lt;/li>
+&lt;li>&lt;strong>Cloud &amp;amp; DevOps&lt;/strong>: Experienced with &lt;strong>AWS&lt;/strong> (EC2, ECS, Lambda, S3, RDS, DynamoDB, Cognito, Secrets).&lt;/li>
 &lt;/ul>
+&lt;hr>
 &lt;h3 id="professional-experince">Professional Experince&lt;/h3>
 &lt;h5 id="2024">2024&lt;/h5>
 &lt;ul>
-&lt;li>&lt;strong>Senior Software Engineer&lt;/strong> at &lt;strong>&lt;a href="https://www.naamche.com/">Naamche&lt;/a>&lt;/strong>, where I worked on their flagship product &lt;strong>&lt;a href="https://www.realpha.com/">reAlpha&lt;/a>&lt;/strong>.
+&lt;li>&lt;strong>Senior Software Engineer&lt;/strong> at &lt;strong>&lt;a href="https://www.naamche.com/">Naamche&lt;/a>&lt;/strong>, contributing to their flagship product &lt;strong>&lt;a href="https://www.realpha.com/">reAlpha&lt;/a>&lt;/strong>.
 &lt;ul>
-&lt;li>Setup data pipelines and wrote geo-spatial queries for insertion, retrieval, aggregation, and analysis on a table of +2M real estate data (read-write replication, triggers, materialized views, indexing, full-text search).&lt;/li>
-&lt;li>OpenAI Assistants API for streaming chat response (latest support), exception handling (poor support in standard API), prompt engineering, and more.&lt;/li>
-&lt;li>Major contributions to document management, ID verification and signature (&lt;a href="https://www.docusign.com/">Docusign&lt;/a>), search auto-completion/indexing (&lt;a href="https://opensearch.org/">Opensearch&lt;/a>), performance and exceptions monitoring (&lt;a href="https://sentry.io/welcome/">Sentry&lt;/a>), CRM integration (&lt;a href="https://www.followupboss.com/">Follow Up Boss&lt;/a>), property comparison heuristic, custom admin panel, data scraping/ETL pipelines and more.&lt;/li>
+&lt;li>Setup data pipelines and wrote geo-spatial queries for +2M real estate records (read-write replication, triggers, materialized views, indexing, full-text search).&lt;/li>
+&lt;li>Integrated &lt;a href="https://platform.openai.com/docs/assistants/overview">OpenAI Assistants API&lt;/a> for chat response streaming, worked on exception handling, and prompt engineering.&lt;/li>
+&lt;li>Led developments in document management and ID verification (&lt;a href="https://www.docusign.com/">Docusign&lt;/a>), search auto-completion (&lt;a href="https://opensearch.org/">Opensearch&lt;/a>), performance monitoring (&lt;a href="https://sentry.io/welcome/">Sentry&lt;/a>), CRM integration (&lt;a href="https://www.followupboss.com/">Follow Up Boss&lt;/a>), property comparison heuristic, admin panel, data scraping pipelines, and more.&lt;/li>
 &lt;/ul>
 &lt;/li>
 &lt;/ul>
 &lt;h5 id="2023-2024">2023-2024&lt;/h5>
 &lt;ul>
-&lt;li>&lt;strong>Software Engineer&lt;/strong> at &lt;strong>&lt;a href="https://www.naamche.com/">Naamche&lt;/a>&lt;/strong>, where I,
+&lt;li>&lt;strong>Software Engineer&lt;/strong> at &lt;strong>&lt;a href="https://www.naamche.com/">Naamche&lt;/a>&lt;/strong>.
 &lt;ul>
-&lt;li>Configured multi-tenant database system (handling connections to user-hosted databases using an application-layer router) for &lt;a href="https://www.ethan-ai.com/">EthanAI&lt;/a>, deployed microservice infrastructure for authentication (custom support for multi-tenancy), analytics, transaction processing and data reconciliation, and wrote tests.&lt;/li>
-&lt;li>Wrote a Python SDK (no official Python support) for &lt;a href="https://docs.dealmaker.tech/#section/Introduction">Dealmaker&lt;/a> API for deployment over AWS Lambda with functionalities like token caching in DynamoDB, wrappers for response format parsing, and more.&lt;/li>
-&lt;li>Worked on context management, floor layout creation (rotate-resize-relocate table positions using custom drag-and-drop UI), and data synchronization using &lt;a href="https://aws.amazon.com/amplify/datastore/">AWS Datastore&lt;/a> for an offline-first, restaurant POS web app.&lt;/li>
-&lt;li>Worked on the frontend of &lt;a href="https://www.stork.ai/ai-tools/mimir-7101c">Mimir&lt;/a>, specifically on the chat interface and history.&lt;/li>
+&lt;li>Configured multi-tenant database system (application-layer router) for &lt;a href="https://www.ethan-ai.com/">EthanAI&lt;/a>, deployed custom microservices for authentication, analytics, transaction processing, and data reconciliation, and wrote tests.&lt;/li>
+&lt;li>Developed a Python SDK for &lt;a href="https://docs.dealmaker.tech/#section/Introduction">Dealmaker&lt;/a> API (AWS Lambda deployment, token caching in DynamoDB).&lt;/li>
+&lt;li>Worked primarily on floor layout customization (rotate-resize-relocate tables using custom drag-and-drop UI), and data sync using &lt;a href="https://aws.amazon.com/amplify/datastore/">AWS Datastore&lt;/a> for an offline-first, restaurant POS web app.&lt;/li>
+&lt;li>Enhanced frontend chat interface and history panel for &lt;a href="https://www.stork.ai/ai-tools/mimir-7101c">Mimir&lt;/a>.&lt;/li>
 &lt;/ul>
 &lt;/li>
 &lt;/ul>
 &lt;h5 id="2022-2023">2022-2023&lt;/h5>
 &lt;ul>
 &lt;li>
+&lt;p>&lt;strong>Full Stack Developer&lt;/strong> at &lt;strong>&lt;a href="https://www.linkedin.com/company/ensemblematrix/">Ensemble Matrix&lt;/a>&lt;/strong> - used canvas API for signature vector extraction, custom parser for &lt;a href="https://en.wikipedia.org/wiki/Boolean_satisfiability_problem">SAT&lt;/a> verification, and integrated &lt;a href="https://www.edgeverve.com/finacle/">Finacle&lt;/a>.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Blockchain Developer&lt;/strong> at &lt;strong>&lt;a href="https://ibriz.ai/">iBriz.ai&lt;/a>&lt;/strong> - built responsive UI, monitored smart contracts, and integrated &lt;a href="https://chrome.google.com/webstore/detail/iconex/flpiciilemghbmfalicajoolhkkenfel">ICONex wallet&lt;/a> for sICX/ICX transfer.&lt;/p>
+&lt;/li>
+&lt;li>
 &lt;p>&lt;strong>Intern&lt;/strong> at &lt;strong>&lt;a href="https://lisnepal.com.np/">LIS Nepal&lt;/a>&lt;/strong>, where we received mentorship and guidance on our final year major project. Completed an in-house course on ETL and SQL queries.&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>Worked as a &lt;strong>Front End Blockchain Developer&lt;/strong> at &lt;strong>&lt;a href="https://ibriz.ai/">iBriz.ai&lt;/a>&lt;/strong> where my tasks included creating responsive UI, managing states using Redux, integrating smart contract logic deployed on the &lt;strong>&lt;a href="https://tracker.lisbon.icon.community/">ICON Lisbon Network&lt;/a>&lt;/strong>, integrating &lt;strong>&lt;a href="https://chrome.google.com/webstore/detail/iconex/flpiciilemghbmfalicajoolhkkenfel">ICONex wallet&lt;/a>&lt;/strong> in the application, and more.&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>Worked as &lt;strong>Full Stack Developer&lt;/strong> at &lt;strong>&lt;a href="https://www.linkedin.com/company/ensemblematrix/">Ensemble Matrix&lt;/a>&lt;/strong> where I used canvas API for signature vector image extraction, wrote custom boolean logic parser for any combination of conjunction/dis-junction logic, integrated &lt;a href="https://www.edgeverve.com/finacle/">Finacle&lt;/a> (XML interface), and more.&lt;/p>
 &lt;/li>
 &lt;/ul>
 &lt;h5 id="2021-2022">2021-2022&lt;/h5>
 &lt;ul>
 &lt;li>
-&lt;p>Worked as &lt;strong>Blockchain Developer (Intern)&lt;/strong> at &lt;strong>&lt;a href="https://ibriz.ai/">iBriz.ai&lt;/a>&lt;/strong> where I worked on the &lt;strong>&lt;a href="https://icon.community/learn/btp/">Blockchain Transmission Protocol (BTP)&lt;/a>&lt;/strong> project where my tasks included deploying smart contracts, setting up local nodes and configuring the BTP Relayer.&lt;/p>
+&lt;p>&lt;strong>Blockchain Developer (Intern)&lt;/strong> at &lt;strong>&lt;a href="https://ibriz.ai/">iBriz.ai&lt;/a>&lt;/strong> where I worked on the &lt;strong>&lt;a href="https://icon.community/learn/btp/">Blockchain Transmission Protocol (BTP)&lt;/a>&lt;/strong> project where my tasks included deploying smart contracts, setting up local nodes and configuring the BTP Relayer.&lt;/p>
 &lt;/li>
 &lt;li>
 &lt;p>Worked as &lt;strong>Design Intern&lt;/strong> at &lt;strong>&lt;a href="https://esferabrandings.com/">Esfera Brandings&lt;/a>&lt;/strong>, where my responsibilities included designing social media posters/advertisements, creating design components, and re-designing existing client designs.&lt;/p>
@@ -260,26 +264,24 @@ Relevant Skills Programming Languages - Medium-large scale projects in Python, J
 &lt;ul>
 &lt;li>Worked as a &lt;strong>Front End Developer&lt;/strong> at &lt;strong>&lt;a href="https://clamphook.com/">Clamphook&lt;/a>&lt;/strong>, where my responsibilities comprised implementing design mockups to code, integrating API, and responsive web design.&lt;/li>
 &lt;/ul>
-&lt;h2 id="volunteer-experience">Volunteer Experience&lt;/h2>
+&lt;hr>
+&lt;h3 id="volunteer-experience">Volunteer Experience&lt;/h3>
 &lt;ul>
 &lt;li>
 &lt;p>&lt;strong>Founding Member&lt;/strong> of &lt;strong>&lt;a href="https://github.com/IT-Club-Pulchowk">IT Club Pulchowk&lt;/a>&lt;/strong> where my responsibilities included event management, social media promotion, marketing, teaching-learning through various programming workshops, graphic design, and more.&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>Worked as the &lt;strong>Editor-in-Chief&lt;/strong> of &lt;strong>&lt;a href="https://medium.com/zerone-magazine">The Zerone 2023&lt;/a>&lt;/strong>, an annual tech magazine of Pulchowk Campus, during which my responsibilities included appointing and assigning tasks to the editorial team, approving the final edits on published articles, organizing writing competitions, promoting content on social media, and making sure the final magazine is published on schedule.&lt;/p>
+&lt;p>&lt;strong>Editor-in-Chief&lt;/strong> of &lt;strong>&lt;a href="https://medium.com/zerone-magazine">The Zerone 2023&lt;/a>&lt;/strong> – led the editorial team, approved edits, organized competitions, and ensured timely publication.&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>Worked as a &lt;strong>Graphic Designer&lt;/strong> in the &lt;strong>&lt;a href="https://www.facebook.com/locus.ioe/">LOCUS&lt;/a> Design Team&lt;/strong> for LOCUS 2020 and LOCUS 2021, Pulchowk Campus. Details of my work include graphic design, exhibition management, content writing, resource management and more.&lt;/p>
+&lt;p>&lt;strong>Graphic Designer&lt;/strong> in the &lt;strong>&lt;a href="https://www.facebook.com/locus.ioe/">LOCUS&lt;/a> Design Team&lt;/strong> for LOCUS 2020 and LOCUS 2021, Pulchowk Campus. Details of my work include graphic design, exhibition management, content writing, resource management and more.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>Instructor&lt;/strong> for on-campus workshops, including &lt;strong>Advanced C Workshop&lt;/strong> &lt;a href="https://github.com/ITClubPulchowk/Advance-C-Workshop">2021&lt;/a>, &lt;a href="https://github.com/ITClubPulchowk/Advanced-C-Workshop-2022">2022&lt;/a> and &lt;a href="https://github.com/pdscorg/Blockchain-Fellowship">&lt;strong>Blockchain Fellowship&lt;/strong>&lt;/a>.&lt;/p>
 &lt;/li>
 &lt;/ul>
-&lt;h4 id="website-projects">Website Projects&lt;/h4>
-&lt;ul>
-&lt;li>&lt;a href="https://pranjalpokharel.com.np/">https://pranjalpokharel.com.np/&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://armancards.com/">https://armancards.com/&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://clamphook.com/">https://clamphook.com/&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://www.withmimir.com/">https://www.withmimir.com/&lt;/a>&lt;/li>
-&lt;/ul>
-&lt;h4 id="highlighted-projects">Highlighted Projects&lt;/h4>
+&lt;hr>
+&lt;h3 id="personal-projects">Personal Projects&lt;/h3>
 &lt;ul>
 &lt;li>
 &lt;p>&lt;strong>&lt;a href="https://github.com/Guthi-Distribution">Guthi (Distributed Framework for Application Development)&lt;/a>&lt;/strong>&lt;/p>
@@ -324,9 +326,6 @@ Relevant Skills Programming Languages - Medium-large scale projects in Python, J
 &lt;/ul>
 &lt;/li>
 &lt;/ul>
-&lt;hr>
-&lt;h4 id="life-outside-programming">Life Outside Programming&lt;/h4>
-&lt;p>&lt;strong>Hobbies:&lt;/strong> Guitar, Writing, Gym, Running, UFC/MMA, Anime/Manga&lt;/p>
 &lt;hr></content></item><item><title>Table of Contents</title><link>http://pranjalpokharel.com.np/contents/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://pranjalpokharel.com.np/contents/</guid><description>Programming Flutter Series: Emulate Like A Pro! (Part 2)
 Flutter Series: Flutter Like A Butterfly… (Part 1)
 Learning Bash Scripting</description><content>&lt;h2 id="programming">Programming&lt;/h2>
