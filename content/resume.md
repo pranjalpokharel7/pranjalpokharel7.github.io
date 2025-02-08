@@ -8,49 +8,58 @@ color = "blue"
 ### Primary Information
 
 **Name:** Pranjal Pokharel\
-**Undergraduate:** [Pulchowk Campus, IOE](https://pcampus.edu.np/), Bachelor in Computer Engineering (BCT)\
-**Address:** Nakhkhu, Lalitpur, Nepal (current) \
+**Address:** Nakhkhu, Lalitpur, Nepal \
 **Email:** pranjalpokharel007@gmail.com \
 **GitHub**: https://github.com/pranjalpokharel7
 
 ---
 
+### Education
+
+**Undergraduate:** [Bachelor in Computer Engineering](https://doece.pcampus.edu.np/index.php/bce/) (BCT), [Pulchowk Campus, IOE](https://pcampus.edu.np/),  Tribhuwan University \[2018-2023\]. \
+**Aggregate Percentage**: 75.5% (out of possible 100%).
+
+---
+
 ### Relevant Skills
 
-- **Programming Languages** - Medium-large scale projects in Python, JavaScript, C, C++, and Go.
-- Excellent proficiency in **backend libraries/frameworks** such as Django and FastAPI.
-- Practical knowledge of **relational database systems** (Postgres), with introductory experience in NoSQL (MongoDB) and Key-Value DB (Redis, BadgerDB).
-- Strong knowledge of the **AWS cloud infrastructure/services** such as compute (EC2, ECS, Lambda), storage (S3), database (DynamoDB, RDS), identity (Cognito), secrets (Parameter Store) and more.
-- **Others:** LaTex, Git, Docker.
+- **Programming Languages**: Python, JavaScript, Rust, C, C++, and Go (in order of expertise).
+- **Backend Development**: Proficient in **Django, FastAPI**.
+- **Frontend Development**: Experience developing apps in **React/Next.js**.
+- **Databases**: Strong expertise in **PostgreSQL**; basic experience with **MongoDB, Redis, BadgerDB**.
+- **Cloud & DevOps**: Experienced with **AWS** (EC2, ECS, Lambda, S3, RDS, DynamoDB, Cognito, Secrets).
+
+---
 
 ### Professional Experince
 
 ##### 2024
 
-- **Senior Software Engineer** at **[Naamche](https://www.naamche.com/)**, where I worked on their flagship product **[reAlpha](https://www.realpha.com/)**. 
-	- Setup data pipelines and wrote geo-spatial queries for insertion, retrieval, aggregation, and analysis on a table of +2M real estate data (read-write replication, triggers, materialized views, indexing, full-text search).
-	- OpenAI Assistants API for streaming chat response (latest support), exception handling (poor support in standard API), prompt engineering, and more.
-	- Major contributions to document management, ID verification and signature ([Docusign](https://www.docusign.com/)), search auto-completion/indexing ([Opensearch](https://opensearch.org/)), performance and exceptions monitoring ([Sentry](https://sentry.io/welcome/)), CRM integration ([Follow Up Boss](https://www.followupboss.com/)), property comparison heuristic, custom admin panel, data scraping/ETL pipelines and more.
+- **Senior Software Engineer** at **[Naamche](https://www.naamche.com/)**, contributing to their flagship product **[reAlpha](https://www.realpha.com/)**. 
+	- Setup data pipelines and wrote geo-spatial queries for +2M real estate records (read-write replication, triggers, materialized views, indexing, full-text search).
+	- Integrated [OpenAI Assistants API](https://platform.openai.com/docs/assistants/overview) for chat response streaming, worked on exception handling, and prompt engineering.
+	- Led developments in document management and ID verification ([Docusign](https://www.docusign.com/)), search auto-completion ([Opensearch](https://opensearch.org/)), performance monitoring ([Sentry](https://sentry.io/welcome/)), CRM integration ([Follow Up Boss](https://www.followupboss.com/)), property comparison heuristic, admin panel, data scraping pipelines, and more.
+
 
 ##### 2023-2024
 
-- **Software Engineer** at **[Naamche](https://www.naamche.com/)**, where I,
-	- Configured multi-tenant database system (handling connections to user-hosted databases using an application-layer router) for [EthanAI](https://www.ethan-ai.com/), deployed microservice infrastructure for authentication (custom support for multi-tenancy), analytics, transaction processing and data reconciliation, and wrote tests.
-	- Wrote a Python SDK (no official Python support) for [Dealmaker](https://docs.dealmaker.tech/#section/Introduction) API for deployment over AWS Lambda with functionalities like token caching in DynamoDB, wrappers for response format parsing, and more.
-	- Worked on context management, floor layout creation (rotate-resize-relocate table positions using custom drag-and-drop UI), and data synchronization using [AWS Datastore](https://aws.amazon.com/amplify/datastore/) for an offline-first, restaurant POS web app.
-	- Worked on the frontend of [Mimir](https://www.stork.ai/ai-tools/mimir-7101c), specifically on the chat interface and history.
+- **Software Engineer** at **[Naamche](https://www.naamche.com/)**.
+	- Configured multi-tenant database system (application-layer router) for [EthanAI](https://www.ethan-ai.com/), deployed custom microservices for authentication, analytics, transaction processing, and data reconciliation, and wrote tests.
+	- Developed a Python SDK for [Dealmaker](https://docs.dealmaker.tech/#section/Introduction) API (AWS Lambda deployment, token caching in DynamoDB).
+	- Worked primarily on floor layout customization (rotate-resize-relocate tables using custom drag-and-drop UI), and data sync using [AWS Datastore](https://aws.amazon.com/amplify/datastore/) for an offline-first, restaurant POS web app.
+	- Enhanced frontend chat interface and history panel for [Mimir](https://www.stork.ai/ai-tools/mimir-7101c).
 
 ##### 2022-2023
 
+- **Full Stack Developer** at **[Ensemble Matrix](https://www.linkedin.com/company/ensemblematrix/)** - used canvas API for signature vector extraction, custom parser for [SAT](https://en.wikipedia.org/wiki/Boolean_satisfiability_problem) verification, and integrated [Finacle](https://www.edgeverve.com/finacle/).
+
+- **Blockchain Developer** at **[iBriz.ai](https://ibriz.ai/)** - built responsive UI, monitored smart contracts, and integrated [ICONex wallet](https://chrome.google.com/webstore/detail/iconex/flpiciilemghbmfalicajoolhkkenfel) for sICX/ICX transfer.
+
 - **Intern** at **[LIS Nepal](https://lisnepal.com.np/)**, where we received mentorship and guidance on our final year major project. Completed an in-house course on ETL and SQL queries.
-
-- Worked as a **Front End Blockchain Developer** at **[iBriz.ai](https://ibriz.ai/)** where my tasks included creating responsive UI, managing states using Redux, integrating smart contract logic deployed on the **[ICON Lisbon Network](https://tracker.lisbon.icon.community/)**, integrating **[ICONex wallet](https://chrome.google.com/webstore/detail/iconex/flpiciilemghbmfalicajoolhkkenfel)** in the application, and more.
-
-- Worked as **Full Stack Developer** at **[Ensemble Matrix](https://www.linkedin.com/company/ensemblematrix/)** where I used canvas API for signature vector image extraction, wrote custom boolean logic parser for any combination of conjunction/dis-junction logic, integrated [Finacle](https://www.edgeverve.com/finacle/) (XML interface), and more.
 
 ##### 2021-2022
 
-- Worked as **Blockchain Developer (Intern)** at **[iBriz.ai](https://ibriz.ai/)** where I worked on the **[Blockchain Transmission Protocol (BTP)](https://icon.community/learn/btp/)** project where my tasks included deploying smart contracts, setting up local nodes and configuring the BTP Relayer.
+- **Blockchain Developer (Intern)** at **[iBriz.ai](https://ibriz.ai/)** where I worked on the **[Blockchain Transmission Protocol (BTP)](https://icon.community/learn/btp/)** project where my tasks included deploying smart contracts, setting up local nodes and configuring the BTP Relayer.
 
 - Worked as **Design Intern** at **[Esfera Brandings](https://esferabrandings.com/)**, where my responsibilities included designing social media posters/advertisements, creating design components, and re-designing existing client designs.
 
@@ -58,22 +67,21 @@ color = "blue"
 
 - Worked as a **Front End Developer** at **[Clamphook](https://clamphook.com/)**, where my responsibilities comprised implementing design mockups to code, integrating API, and responsive web design.
 
-## Volunteer Experience
+---
+
+### Volunteer Experience
 
 - **Founding Member** of **[IT Club Pulchowk](https://github.com/IT-Club-Pulchowk)** where my responsibilities included event management, social media promotion, marketing, teaching-learning through various programming workshops, graphic design, and more.
 
-- Worked as the **Editor-in-Chief** of **[The Zerone 2023](https://medium.com/zerone-magazine)**, an annual tech magazine of Pulchowk Campus, during which my responsibilities included appointing and assigning tasks to the editorial team, approving the final edits on published articles, organizing writing competitions, promoting content on social media, and making sure the final magazine is published on schedule.
+- **Editor-in-Chief** of **[The Zerone 2023](https://medium.com/zerone-magazine)** – led the editorial team, approved edits, organized competitions, and ensured timely publication.
 
-- Worked as a **Graphic Designer** in the **[LOCUS](https://www.facebook.com/locus.ioe/) Design Team** for LOCUS 2020 and LOCUS 2021, Pulchowk Campus. Details of my work include graphic design, exhibition management, content writing, resource management and more.
+- **Graphic Designer** in the **[LOCUS](https://www.facebook.com/locus.ioe/) Design Team** for LOCUS 2020 and LOCUS 2021, Pulchowk Campus. Details of my work include graphic design, exhibition management, content writing, resource management and more.
 
-#### Website Projects
+- **Instructor** for on-campus workshops, including **Advanced C Workshop** [2021](https://github.com/ITClubPulchowk/Advance-C-Workshop), [2022](https://github.com/ITClubPulchowk/Advanced-C-Workshop-2022) and [**Blockchain Fellowship**](https://github.com/pdscorg/Blockchain-Fellowship).
 
-- https://pranjalpokharel.com.np/ 
-- https://armancards.com/ 
-- https://clamphook.com/ 
-- https://www.withmimir.com/
+---
 
-#### Highlighted Projects
+### Personal Projects
 
 - **[Guthi (Distributed Framework for Application Development)](https://github.com/Guthi-Distribution)**
 
@@ -105,8 +113,3 @@ color = "blue"
 
 ---
 
-#### Life Outside Programming
-
-**Hobbies:** Guitar, Writing, Gym, Running, UFC/MMA, Anime/Manga
-
----
