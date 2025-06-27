@@ -1,0 +1,249 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Android Emulator On Linux | Pranjal Pokharel</title>
+    <link rel="stylesheet" href="../style.css" />
+  </head>
+  <body>
+    <header>
+      <h1 id="android-emulator-on-linux">Android Emulator On Linux</h1>
+      <nav>
+        <a href="/">Home</a>&nbsp;
+        <a href="/posts">Posts</a>&nbsp;
+        <a href="/resume.pdf">Resume</a>
+      </nav>
+      <p>Updated: <i>2021-08-04</i></p>
+      <hr class="header-separator" />
+    </header>
+    <main>
+      <p>
+        As you can guess from the description, emulators are in fact a "luxury"
+        item only for soydevs with more memory on their PCs than subscribers to
+        PewDiePie. Turns out, I am one of those and my laptop can handle me
+        running an emulator and writing this on Emacs simultaneously. Peace
+        peace - I say with a posed look. On a side note, if your RAM isn't
+        soldered and/or you have some extra slots, just get an upgrade dude. It
+        doesn't cost much compared to how much headaches you need to go through
+        on a 4GB ENIAC, flutter or not.
+      </p>
+      <h2 id="step-1-back-to-the-rice-fields">
+        Step 1 : "Back to the rice fields"
+      </h2>
+      <p>
+        We just planted our first flutter grain a while back and while it was
+        "fun" playing with the counter app on Chrome, we will now bring out the
+        'heavy' guns. First, we re-open the ArchWiki page on Android and
+        download that emulator package. Again, if you're on other distros, look
+        up the specific installation, cause I'm not that dedicated to writing
+        tech articles yet :).
+      </p>
+      <p>
+        Link -
+        <a href="https://aur.archlinux.org/packages/android-emulator/"
+          >Emulator Package (AUR)</a
+        >
+      </p>
+      <h2 id="step-2-from-dvds-to-avds-we-all-grew-up">
+        Step 2 : "From DVDs to AVDs, we all grew up"
+      </h2>
+      <p>
+        The fundamental thing about emulators is that they only go as far as to
+        emulate a specific hardware layout. You need some software to run over
+        the emulated hardware.
+      </p>
+      <p>
+        Think of Android Virtual Devices (AVDs) as something that contains
+        configuration on how an Android device should run. A virtual android
+        device, as the abbreviation says, over which you will be able to run
+        your app. There are a lot of AVDs you can choose from, seeing that you
+        have Android running on everywhere ranging from mobile devices to smart
+        watches.
+      </p>
+      <p>
+        If you completed the installation of <code>android-sdk</code>
+        properly as a part of the previous article, you should have
+        <code>sdkmanager</code> available from the command line (might need to
+        log out or restart the system to have <code>sdkamanager</code> available
+        after initial install.
+      </p>
+      <pre><code>$ sdkmanager --list</code></pre>
+      <p>
+        The above command will list out all the available android system-images
+        from which you can create an AVD - you will download a system-image
+        depending on the architecture you're working on.
+      </p>
+      <pre><code># expected output
+...
+platforms;android-30
+platforms;android-31 ... # Android SDK Platform
+...
+system-images;android-31;google_apis;arm64-v8a ...
+system-images;android-31;google_apis;x86_64 ... # Google APIs Intel x86 Atom_64 System Image
+system-images;android-31;google_apis_playstore;arm64-v8a ...
+system-images;android-31;google_apis_playstore;x86_64 ... 
+...</code></pre>
+      <p>
+        The number 31 is just the Android API version - newer the better, unless
+        you are specific in not using the latest one. I am on an x86_64
+        architecture (i.e. my laptop) so I will download the latest system-image
+        and SDK platform correspondingly.
+      </p>
+      <pre><code>$ sdkmanager &quot;platforms;android-31&quot; 
+$ sdkmanager &quot;system-images;android-31;google_apis;x86_64&quot; </code></pre>
+      <p>
+        Following this (and successful installation based on part 1), you should
+        have
+        <code>avdmanager</code> available from the command line - as the name
+        suggests, we will be using this tool to manage our AVDs.
+      </p>
+      <pre><code>$ avdmanager create avd -n myavdname -k &quot;system-images;android-31;google_apis;x86_64&quot;</code></pre>
+      <p>
+        The above command creates an AVD with the name 'myavdname'. Do not
+        choose custom hardware profile for now, just go for default option. You
+        can always edit the config files later if necessary.
+      </p>
+      <p>
+        Two links that will certainly be useful to you in the future - -
+        <a href="https://developer.android.com/studio/command-line/sdkmanager"
+          >skdmanger - official guide</a
+        >
+        -
+        <a href="https://developer.android.com/studio/command-line/avdmanager"
+          >avdmanager - official guide</a
+        >
+      </p>
+      <p>
+        Hopefully this section hasn't been too lengthy. Next, we boot up our
+        emulator. About damn time.
+      </p>
+      <h2 id="step-3-you-made-it-you-absolute-madlad">
+        Step 3 : "You made it, you absolute madlad!"
+      </h2>
+      <p>On your console, type the following command -</p>
+      <pre><code>$ emulator -list-avds</code></pre>
+      <p>
+        If your newly created AVD pops up on the list, congratulations, it's
+        your birthday today!
+      </p>
+      <pre><code>$ emulator -no-snapshot -avd myavdname </code></pre>
+      <p>
+        The <code>-no-snapshot</code> command makes sure the emulator does not
+        save state on exit i.e. your emulator will boot up as if your Android
+        phone is on cold boot every time. Just my preference, you can remove
+        this and your emulator should launch just fine. Refer to the official
+        android developer article on
+        <a href="https://developer.android.com/studio/run/emulator-commandline"
+          >other command line options</a
+        >.
+      </p>
+      <p>
+        If you are having problems related to hardware acceleration, refer to
+        <a href="https://developer.android.com/studio/run/emulator-acceleration"
+          >this article</a
+        >. Reason I won't explain this over here is because I've never had
+        problems with it, and better not take word from a developer who hasn't
+        had a bug on the issue. Honestly, it wouldn't hurt to go through the
+        emulator section on the linked website.
+      </p>
+      <h2 id="step-4-counting-like-a-true-soydev">
+        Step 4 : "Counting like a true soydev"
+      </h2>
+      <p>
+        <code>cd</code> into your flutter project directory. Time to run your
+        flutter app on the emulator. Start the emulator, and check if flutter
+        has detected your emulator.
+      </p>
+      <pre><code>$ flutter devices</code></pre>
+      <p>
+        If it shows your shiny emulator, it's now time to run the counter app -
+      </p>
+      <pre><code>$ flutter run</code></pre>
+      <h2 id="and-watch-the-sunrise-on-a-grateful-universe...">
+        And watch the sunrise on a grateful universe...
+      </h2>
+      <p>
+        As with the previous article, some common bugs and/or errors are listed
+        below, though not as much as on the side of quantity. Mention or DM me
+        on Twitter to send your suggestions/query through, link is at the bottom
+        of this website.
+      </p>
+      <p>
+        Also, let me know if you want something more related to flutter, can be
+        setting up editors for example. Honestly though, I am just tired and
+        need some rest from this app development hangover.
+      </p>
+      <h2 id="step-stderr-handling-some-common-errorsbugs">
+        Step stderr : Handling Some Common Errors/Bugs
+      </h2>
+      <p>
+        Any future errors I might encounter, or possibly even help you to solve,
+        will be posted here.
+      </p>
+      <p><strong>1. "Navigation buttons on the emulator don't work"</strong></p>
+      <p>
+        Honestly, I never got them to work. By default, the on-screen navigation
+        buttons are hidden - I enabled them and used them as substitute. You'll
+        need to modify some config files for this. Navigate inside your
+        <code>~/.android</code> directory (usually located in the home page) and
+        then <code>avd/[avd-name]</code> within which you should see the
+        <code>config.ini</code> file.
+      </p>
+      <p>
+        Full path might be something like,
+        <code>~/.android/avd/myavdname/config.ini</code>. Inside the file, edit
+        the line,
+      </p>
+      <pre><code>hw.keyboard = yes</code></pre>
+      <p>to</p>
+      <pre><code>hw.keyboard = no</code></pre>
+      <p>
+        This should bring up your on-screen navigation keys. However, this can
+        disable your keyboard to emulator input, and you'll have to press the
+        touch screen keyboard manually. Well, let's just hope you are not
+        working on a blogging app :eyes:.
+      </p>
+      <p>
+        You can go through other configuration parameters as well and change
+        them as required.
+      </p>
+      <p>
+        <strong
+          >2. "Emulator shut down takes a lot of time, just says saving state
+          and gets stuck there."</strong
+        >
+      </p>
+      <p>
+        Launch emulator with <code>-no-snapshot</code> option. I was getting
+        pretty irritated by this and I stopped saving state once and for all.
+        You can also try wiping the previously stored snapshots, simply pass in
+        the <code>-wipe-data</code> parameter.
+      </p>
+      <p>
+        <strong
+          >3. "Installing system-image (sdkmanager) is stuck at x%"</strong
+        >
+      </p>
+      <p>
+        You can try downloading from the source directly, which is our little
+        overlord called Google.
+      </p>
+      <p>
+        https://dl.google.com/android/repository/sys-img/google_apis/x86_64-30_r10.zip
+        - this link downloads the system-image for android-30 SDK, just replace
+        the
+        <code>x86_64-30</code> with the match from your
+        <code>sdkmanger --list</code> output.
+      </p>
+      <p>
+        Extract the downloaded zip to the <code>system-images</code> folder
+        inside <code>/opt/android-sdk/</code> (assuming you installed from AUR
+        there) and rename it appropriately. For instance, my final full path is
+        -
+        <code>/opt/android-sdk/system-images/android-30/google_apis/x86_64</code
+        >.
+      </p>
+    </main>
+  </body>
+</html>

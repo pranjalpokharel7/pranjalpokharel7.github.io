@@ -1,0 +1,370 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flutter Setup On Linux | Pranjal Pokharel</title>
+    <link rel="stylesheet" href="../style.css" />
+  </head>
+  <body>
+    <header>
+      <h1 id="android-emulator-on-linux">Flutter Setup On Linux</h1>
+      <nav>
+        <a href="/">Home</a>&nbsp;
+        <a href="/posts">Posts</a>&nbsp;
+        <a href="/resume.pdf">Resume</a>
+      </nav>
+      <p>Updated: <i>2021-08-15</i></p>
+      <hr class="header-separator" />
+    </header>
+
+    <main>
+      <p>
+        Yet another poorly written article about Flutter setup on Linux. As the
+        big brain monkey I am, I installed it on my machine about 4 weeks prior
+        and so, due to reasons I did not document my steps then, I don't have
+        screenshots to explain things more visually. The length of this article
+        does not correlate to productive learning - feel free to skip certain
+        sections then bash me about it on Twitter later. Welcome to the rice
+        fields [redacted]!
+      </p>
+      <h2 id="step-1-i-am-simply-too-chad-to-read-the-official-docs">
+        Step 1 : "I am simply too chad to read the official docs"
+      </h2>
+      <p>
+        Easiest way is to simply git clone the flutter repository then setup the
+        path. Why not download the tarball over git? This way any new
+        release-police catches up, you can <code>git pull</code> over without a
+        worry.
+      </p>
+      <div class="sourceCode" id="cb1">
+        <pre
+          class="sourceCode bash"
+        ><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="ex">$</span> git clone https://github.com/flutter/flutter.git <span class="at">-b</span> stable</span></code></pre>
+      </div>
+      <p>
+        We will clone the stable branch (omit everything after the
+        <code>-b</code> branch if living on the edge is your thing). Wherever
+        you clone it, the next step is to update the $PATH variable in your
+        shell config file.
+
+        Don't know how to do that? In your home directory <code>~/</code>, you
+        should have a config file named <code>.bashrc</code> (bash) or
+        <code>.zshrc</code> (zsh) or something else depending upon the shell you
+        use. Simply open the file and add the following lines -
+      </p>
+      <div class="sourceCode" id="cb2">
+        <pre
+          class="sourceCode bash"
+        ><code class="sourceCode bash"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="co"># inside .bashrc</span></span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="bu">export</span> <span class="va">FLUTTER_HOME</span><span class="op">=</span>~/flutter</span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a><span class="bu">export</span> <span class="va">PATH</span><span class="op">=</span><span class="va">$FLUTTER_HOME</span>/bin:<span class="va">$PATH</span></span></code></pre>
+      </div>
+      <p>
+        <code>FLUTTER_HOME</code> is the location to where you git cloned the
+        flutter repo previously (mine is in the home directory). An experienced
+        eye will notice that the PATH we provide is not the actual flutter
+        directory, but the <code>bin</code> directory INSIDE the root
+        <code>flutter</code> directory.
+      </p>
+      <p>
+        Confused about the mumbo-jumbo regarding $PATH variable? This person
+        here explains it in a single minute read -
+				<a href="https://linuxconfig.org/linux-path-environment-variable/">linux PATH environment variable</a>.
+      </p>
+      <h2 id="step-2-call-a-doctor...but-not-for-me">
+        Step 2 : "Call a doctor...but not for me!"
+      </h2>
+      <p>
+        If you've completed the first step, the following command should execute
+        without the <code>flutter: command not found</code> error -
+      </p>
+      <div class="sourceCode" id="cb3">
+        <pre
+          class="sourceCode bash"
+        ><code class="sourceCode bash"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="ex">$</span> flutter doctor</span></code></pre>
+      </div>
+      <p>
+        It will probably show you are missing the Android SDK and Android Studio
+        (I'm assuming those are the flags that pop up). We will not touch that
+        RAM gobbling monstrosity called Android Studio, but we will download the
+        Android SDK which is super necessary.
+      </p>
+      <h2 id="step-3-cool-uncle-java">Step 3: "Cool uncle Java"</h2>
+      <p>
+        If you have had any experience coding in Java before, this step should
+        be over in a flash. If not, it should still be over in a flash. Linux
+        makes things easier - just install the Java Development Kit (JDK minimum
+        version 8).
+      </p>
+      <div class="sourceCode" id="cb4">
+        <pre
+          class="sourceCode bash"
+        ><code class="sourceCode bash"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="co"># command for arch based distros</span></span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a><span class="ex">$</span> pacman <span class="at">-Ss</span> openjdk</span></code></pre>
+      </div>
+      <p>
+        The above command should fetch you a list of openjdk versions you can
+        choose to install from. Any distro you use, finding openjdk for your
+        system should be pretty easy from the official repositories (customary
+        bow to Gentoo users).
+      </p>
+      <p>
+        <strong>Note</strong>: Some legacy flutter projects might not work on
+        the latest jdk-16. If you encounter some weird error during the latter
+        steps, make sure the jdk version is compatible with your project
+        (openjdk-8 is always the safest bet).
+      </p>
+      <h2 id="step-4-hey-are-we-all-using-arch-or-what">
+        Step 4 : "Hey, are we all using Arch or what?"
+      </h2>
+      <p>
+        The steps should not be that different if you are not on an Arch-based
+        distro, just that you will have to install it from source or go the
+        Android Studio route. Updates on this will arrive as soon as I move onto
+        a Debian machine, which might never happen, just saying...
+      </p>
+      <p>
+        First things first - you will need the
+        <code>android-tools</code> package that contains adb (android debug
+        bridge), fastboot and some other tools, that will be useful if you plan
+        not to use an emulator but a connected Android device for development.
+        This should be available on the official repo -
+      </p>
+      <div class="sourceCode" id="cb5">
+        <pre
+          class="sourceCode bash"
+        ><code class="sourceCode bash"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="ex">$</span> sudo pacman <span class="at">-S</span> android-tools</span></code></pre>
+      </div>
+      <p>
+        Next, you will need to download the following four packages from the AUR
+        - 1. Command Line Tools (<a
+          href="https://aur.archlinux.org/packages/android-sdk-cmdline-tools-latest/"
+          >android-sdk-cmdline-tools-latest</a
+        >) 2. SDK Build-Tools (<a
+          href="https://aur.archlinux.org/packages/android-sdk-build-tools/"
+          >android-sdk-build-tools</a
+        >) 3. SDK Platform-Tools (<a
+          href="https://aur.archlinux.org/packages/android-sdk-platform-tools/"
+          >android-sdk-platform-tools</a
+        >) 4. SDK Platform (<a
+          href="https://aur.archlinux.org/packages/android-platform/"
+          >android-platform</a
+        >)
+      </p>
+      <p>
+        Whatever I write here is a shameless copy of the following link -
+				<a href="https://wiki.archlinux.org/title/Android#SDK_packages">ArchWiki - SDK Packages</a>. Credit where
+        credit's due, ArchWiki is a Godsend.
+
+        You can also install the
+        <a href="https://aur.archlinux.org/packages/android-emulator/"
+          >emulator</a
+        >
+        package, but configuring the emulator without Android Studio is a bit
+        contrived (docs don't help), and I have had quite a miserable experience
+				with it. See this <a href="/posts/android-emulator-on-linux.html">post</a>.
+      </p>
+      <h2 id="step-5-reading-licenses-we-dont-do-that-here">
+        Step 5 : "Reading licenses? We don't do that here!"
+      </h2>
+      <p>
+        If you've successfully completed step 4, now's the time to accept some
+        completely "innocuous" licenses.
+      </p>
+      <div class="sourceCode" id="cb6">
+        <pre
+          class="sourceCode bash"
+        ><code class="sourceCode bash"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="ex">$</span> sudo flutter doctor <span class="at">--android-licenses</span></span></code></pre>
+      </div>
+      <p>
+        Notice the <code>sudo</code> access which is required. Flutter docs
+        mention using an "elevated console", which is pretty easy to miss.
+        Wasted an hour spamming this command and re-accepting android licenses
+        without realizing I simply needed an "elevated console".
+      </p>
+      <p>
+        If you run <code>flutter doctor</code> now, the only warning you should
+        get is <code>Android Studio missing</code> which is optional either way.
+      </p>
+      <h2 id="step-6-ahh-shit-here-we-hello-world-again...">
+        Step 6 : "Ahh shit, here we 'Hello World' again..."
+      </h2>
+      <p>
+        Flutter docs have this part after setting up your editor. But I beg to
+        differ - editors are secondary and running your first 'hello world' app
+        comes first.
+      </p>
+      <p>
+        You will need one of three things to run your first app - an Android
+        device connected with <strong>USB debugging enabled</strong>, a running
+        Android emulator or a Chrome browser (flutter's default app runs on the
+        web too) - simply because android apps do not run out of the box on your
+        desktop Linux machine. To see the devices that are available to run your
+        app -
+      </p>
+      <div class="sourceCode" id="cb7">
+        <pre
+          class="sourceCode bash"
+        ><code class="sourceCode bash"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="ex">$</span> flutter devices</span></code></pre>
+      </div>
+      <p>
+        If it says <code>N devices connected</code> (N being a number) and lists
+        the available devices, you are good to go. I will go into more details
+        about setting up the emulator in future posts, since this post is
+        already too long at this point. For now, go for Chrome, we are only
+        looking to verify flutter setup anyway.
+      </p>
+      <p>To set up the default flutter project, run the command -</p>
+      <div class="sourceCode" id="cb8">
+        <pre
+          class="sourceCode bash"
+        ><code class="sourceCode bash"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="co"># our-app is the name of the folder where we setup the project</span></span>
+<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a><span class="ex">$</span> flutter create our-app</span>
+<span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a><span class="ex">$</span> cd our-app</span></code></pre>
+      </div>
+      <p>
+        This will create a folder with the project directory setup from the
+        get-go.
+        <code>cd</code> into the folder. Next, we will need to install flutter
+        packages and then run the app, which can be done in a single step as,
+      </p>
+      <div class="sourceCode" id="cb9">
+        <pre
+          class="sourceCode bash"
+        ><code class="sourceCode bash"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="co"># requires internet connection</span></span>
+<span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a><span class="ex">$</span> flutter run</span></code></pre>
+      </div>
+      <p>
+        First it will download all the packages (which is
+        <code>flutter pub get</code> or <code>flutter install</code> if you run
+        separately) into a system cache folder for use. If you have ever used
+        the python package manager <code>pip</code> outside of the virtual
+        environment, this process is similar to that. Which means if two
+        projects share the same dependency and version, one install should work
+        for both.
+      </p>
+      <p>
+        Wait for <code>assembleDebug</code> to complete. Basically this installs
+        Gradle and then builds the app for use. First build can take a long time
+        to complete, patience among Flutter devs is highly underrated. Once this
+        process is complete, the default counter app should launch on your
+        Chrome browser.
+      </p>
+      <h2 id="thats-it-folks">That's it folks!</h2>
+      <p>
+        Below this I have listed some errors I had to encounter during this
+        process which might be common to you. I still left out a lot of things
+        to cover, select few being setting up editors, configuring emulator,
+        setting up Google sign-in for emulator, more command line usage in the
+        absence of Android Studio and more.
+      </p>
+      <p>
+        I have named this article Part 1 so that my future-self will not come up
+        with excuses to not cover these areas. Hope we stay alive until then.
+      </p>
+      <h2 id="step-stderr-handling-some-common-errorsbugs">
+        Step stderr : Handling Some Common Errors/Bugs
+      </h2>
+      <p>
+        Any future errors I might encounter or possibly even help you to solve
+        will be posted here.
+      </p>
+      <p>
+        <strong
+          >1. "assembleDebug fails because it does not have permission to write
+          in the android-sdk directory"</strong
+        >
+      </p>
+      <p>
+        When you install packages from the AUR, by default it is stored in the
+        <code>/opt/</code> directory. Usually, the files within this directory
+        can only be modified with root access, hence the permission denied
+        error. You can do one of the following things:
+      </p>
+      <ul>
+        <li>
+          Run <code>sudo flutter run</code> to bypass the permission
+          restrictions. Even flutter itself tells you this is a
+          <strong>bad practice</strong>, don't be me and spend your time
+          cleaning up multiple root spawned process (more on that later).
+        </li>
+        <li>
+          Move the <code>android-sdk</code> directory to someplace else where
+          permissions are not an issue. You will need to update the $PATH
+          variable for this one though, which was not the case for
+          <code>/opt</code> directory.
+        </li>
+        <li>
+          Use <code>chown</code> to modify user permissions to allow read/write
+          access for normal users. This is what I did, just marking individual
+          files that were causing the permission errors and chowning 777.
+        </li>
+        <li>
+          ArchWiki recommends creating new user and with permissions for that
+          specific user to read/write into android-sdk folder (check the link I
+          posted above under section 4 of installing SDK packages).
+        </li>
+      </ul>
+      <p><strong>2. "Do I always need to be online to run my app?"</strong></p>
+      <p>
+        Nope, but you will need it for the first build and downloading packages
+        that haven't been previously installed.
+      </p>
+      <p>
+        <strong
+          >3. "module java.base does not "opens java.io" to unnamed
+          module"</strong
+        >
+      </p>
+      <p>
+        Refer to my note on newer versions of openjdk probably not supporting
+        legacy code. The stackoverflow solution also seems to suggest the same
+        thing -
+        https://stackoverflow.com/questions/67782975/how-to-fix-the-module-java-base-does-not-opens-java-io-to-unnamed-module
+      </p>
+      <p>
+        <strong
+          >4. "I installed Google Chrome as a flatpak package, but it acts
+          "weird" when I run flutter"</strong
+        >
+      </p>
+      <p>
+        Apparently flatpak Chrome doesn't gel too well with flutter. Thanks to
+        <span class="citation" data-cites="badnick">@badnick</span> for pointing
+        it on our Discord. Install from AUR from this one, might fix the issue.
+        Anyway, unless you are programming for browser apps you might not need
+        Chrome beyond this initial testing. So don't be too riled up by this
+        one.
+      </p>
+      <p>
+        <strong
+          >5. "I close flutter but my computer seems to be getting slow every
+          time I do so. What's happening?"</strong
+        >
+      </p>
+      <p>
+        Did you 'sudo flutter run'? Chances are the OS is not able to free up
+        the resources because you ran flutter as root. Quick check with
+        <code>htop</code> or <code>top</code> to verify. See if there are
+        multiple <code>dart</code> processes still running even after you've
+        closed flutter and <code>killall dart</code>. Sometimes this problem
+        also persists when you close vscode even though you did not do anything
+        <code>sudo</code> with it, I'm guessing it's got something to do with
+        how the dart intellisense works, but it's just speculation on my part.
+      </p>
+    </main>
+
+    <footer>
+      <span
+        ><a href="https://github.com/pranjalpokharel7">Github</a>&nbsp;</span
+      >
+      <span
+        >::
+        <a href="https://www.linkedin.com/in/pranjal-pokharel-860637188/"
+          >LinkedIn</a
+        ></span
+      >
+    </footer>
+  </body>
+</html>
