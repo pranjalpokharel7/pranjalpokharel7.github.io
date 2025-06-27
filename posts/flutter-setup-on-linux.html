@@ -10,8 +10,7 @@
     <header>
       <h1 id="android-emulator-on-linux">Flutter Setup On Linux</h1>
       <nav>
-        <a href="/">Home</a>&nbsp;
-        <a href="/posts">Posts</a>&nbsp;
+        <a href="/">Home</a>&nbsp; <a href="/posts.html">Posts</a>&nbsp;
         <a href="/resume.pdf">Resume</a>
       </nav>
       <p>Updated: <i>2021-08-15</i></p>
@@ -46,12 +45,11 @@
         We will clone the stable branch (omit everything after the
         <code>-b</code> branch if living on the edge is your thing). Wherever
         you clone it, the next step is to update the $PATH variable in your
-        shell config file.
-
-        Don't know how to do that? In your home directory <code>~/</code>, you
-        should have a config file named <code>.bashrc</code> (bash) or
-        <code>.zshrc</code> (zsh) or something else depending upon the shell you
-        use. Simply open the file and add the following lines -
+        shell config file. Don't know how to do that? In your home directory
+        <code>~/</code>, you should have a config file named
+        <code>.bashrc</code> (bash) or <code>.zshrc</code> (zsh) or something
+        else depending upon the shell you use. Simply open the file and add the
+        following lines -
       </p>
       <div class="sourceCode" id="cb2">
         <pre
@@ -70,7 +68,9 @@
       <p>
         Confused about the mumbo-jumbo regarding $PATH variable? This person
         here explains it in a single minute read -
-				<a href="https://linuxconfig.org/linux-path-environment-variable/">linux PATH environment variable</a>.
+        <a href="https://linuxconfig.org/linux-path-environment-variable/"
+          >linux PATH environment variable</a
+        >.
       </p>
       <h2 id="step-2-call-a-doctor...but-not-for-me">
         Step 2 : "Call a doctor...but not for me!"
@@ -154,16 +154,17 @@
       </p>
       <p>
         Whatever I write here is a shameless copy of the following link -
-				<a href="https://wiki.archlinux.org/title/Android#SDK_packages">ArchWiki - SDK Packages</a>. Credit where
-        credit's due, ArchWiki is a Godsend.
-
-        You can also install the
+        <a href="https://wiki.archlinux.org/title/Android#SDK_packages"
+          >ArchWiki - SDK Packages</a
+        >. Credit where credit's due, ArchWiki is a Godsend. You can also
+        install the
         <a href="https://aur.archlinux.org/packages/android-emulator/"
           >emulator</a
         >
         package, but configuring the emulator without Android Studio is a bit
         contrived (docs don't help), and I have had quite a miserable experience
-				with it. See this <a href="/posts/android-emulator-on-linux.html">post</a>.
+        with it. See this
+        <a href="/posts/android-emulator-on-linux.html">post</a>.
       </p>
       <h2 id="step-5-reading-licenses-we-dont-do-that-here">
         Step 5 : "Reading licenses? We don't do that here!"
@@ -319,9 +320,12 @@
       </p>
       <p>
         Refer to my note on newer versions of openjdk probably not supporting
-        legacy code. The stackoverflow solution also seems to suggest the same
-        thing -
-        https://stackoverflow.com/questions/67782975/how-to-fix-the-module-java-base-does-not-opens-java-io-to-unnamed-module
+        legacy code. This
+        <a
+          href="https://stackoverflow.com/questions/67782975/how-to-fix-the-module-java-base-does-not-opens-java-io-to-unnamed-module"
+          >stackoverflow solution</a
+        >
+        also seems to suggest the same thing.
       </p>
       <p>
         <strong
