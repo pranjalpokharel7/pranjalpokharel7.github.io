@@ -1,3 +1,8 @@
+html {
+	font-family: Verdana, Arial, sans-serif;
+	font-size: 20px;
+}
+
 html, body {
   height: 100%;
   margin: 0;
@@ -11,7 +16,21 @@ body {
 
 main {
   flex: 1;
+	line-height: 1.35;
 	padding: 0px 0px 10px 0px;
+  width: 100%;
+}
+
+@media (min-width: 1200px) {
+  main {
+    width: 75%;
+  }
+}
+
+@media (min-width: 1600px) {
+  main {
+    width: 60%;
+  }
 }
 
 footer {
@@ -25,9 +44,24 @@ footer {
 
 pre, code {
 	background: #eee;
+	font-size: 16px;
 }
 
 pre {
 	padding: 15px;
 	overflow-x: auto;
+}
+
+a {
+  color: #0066cc;
+  text-decoration: none;
+	font-weight: 500;
+}
+
+a:hover {
+  color: #012b52;
+}
+
+ol, ul {
+	line-height: 1.5;
 }
