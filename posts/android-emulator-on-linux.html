@@ -3,12 +3,12 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Android Emulator On Linux | Pranjal Pokharel</title>
+    <title>Android Emulator Setup (Linux) | Pranjal Pokharel</title>
     <link rel="stylesheet" href="../style.css" />
   </head>
   <body>
     <header>
-      <h1 id="android-emulator-on-linux">Android Emulator On Linux</h1>
+      <h1 id="android-emulator-on-linux">Android Emulator Setup (Linux)</h1>
       <nav>
         <a href="/">Home</a>&nbsp; <a href="/posts.html">Posts</a>&nbsp;
         <a href="/resume.html">Resume</a>
@@ -81,7 +81,7 @@ platforms;android-31 ... # Android SDK Platform
 system-images;android-31;google_apis;arm64-v8a ...
 system-images;android-31;google_apis;x86_64 ... # Google APIs Intel x86 Atom_64 System Image
 system-images;android-31;google_apis_playstore;arm64-v8a ...
-system-images;android-31;google_apis_playstore;x86_64 ... 
+system-images;android-31;google_apis_playstore;x86_64 ...
 ...</code></pre>
       <p>
         The number 31 is just the Android API version - newer the better, unless
@@ -89,7 +89,7 @@ system-images;android-31;google_apis_playstore;x86_64 ...
         architecture (i.e. my laptop) so I will download the latest system-image
         and SDK platform correspondingly.
       </p>
-      <pre><code>$ sdkmanager &quot;platforms;android-31&quot; 
+      <pre><code>$ sdkmanager &quot;platforms;android-31&quot;
 $ sdkmanager &quot;system-images;android-31;google_apis;x86_64&quot; </code></pre>
       <p>
         Following this (and successful installation based on part 1), you should

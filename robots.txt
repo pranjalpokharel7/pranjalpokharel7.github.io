@@ -2,4 +2,7 @@
 User-agent: *
 Disallow:
 Disallow: boilperplate.html
+Disallow: md-to-post.py
+Disallow: requirements.txt
+Disallow: .pre-commit-config.yaml
 Disallow: README.md

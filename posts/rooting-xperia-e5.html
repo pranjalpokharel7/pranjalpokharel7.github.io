@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rooting Xperia E5 | Pranjal Pokharel</title>
+    <link rel="stylesheet" href="../style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Rooting Xperia E5</h1>
+      <nav>
+        <a href="/">Home</a>&nbsp; <a href="/posts.html">Posts</a>&nbsp;
+        <a href="/resume.html">Resume</a>
+      </nav>
+      <p>Updated: <i>2025-06-27</i></p>
+      <hr class="header-separator" />
+    </header>
+
+    <main>
+      <p>Aug 6, 2025</p>
+      <p>
+        I spent the day today trying to root my Xperia E5. Since this is an
+        older model, the XDA forums which contain the
+        <a
+          href="https://xdaforums.com/t/sony-xperia-e5-f3311-root-guide-twrp.3584813/"
+          >definite walkthrough for rooting the device</a
+        >
+        doesn't seem to contain the essential files required for the rooting
+        process. Nevertheless, I tried my best from the limited information I
+        had.
+      </p>
+      <p>
+        Here's what I understand about rooting (might be wrong in making this
+        assumptions, which might get updated in the future anyway).
+
+      <ul>
+				<li>
+					Rooting is simply another term for getting privileged access as an android user
+					(similar to sudo in Linux)
+				</li>
+				<li>
+					Brand manufacturers usually hide away the
+        	privileged access to normal users and the fastest way to bypass it is to
+        	flash the bootloader with an image that is already in a
+        	privileged/rooted state (it's like you are always logged in as the root
+					user in Linux).
+				</li>
+			</ul>
+      </p>
+      <p>
+        The first step is to thus unlock the bootloader i.e. enable the feature
+        that will allow us to flash custom ROM images in the boot sector of
+        android. Sony devices make it very easy to do so as detailed in their
+        <a
+          href="https://developer.sony.com/open-source/aosp-on-xperia-open-devices/get-started/unlock-bootloader/how-to-unlock-bootloader"
+          >website how-to</a
+        >.
+      </p>
+      <ul>
+        <li>
+          Enable USB Debugging on your phone through the Developer Options. See
+          the official tutorial on doing the
+          <a href="https://developer.android.com/studio/debug/dev-options"
+            >android developer portal here</a
+          >.
+        </li>
+        <li>
+          Boot device into
+          <a href="https://en.wikipedia.org/wiki/Fastboot"
+            ><code>fastboot</code> mode</a
+          >. Use the command <code>adb reboot bootloader</code> (did I mention
+          you need to
+          <a href="https://developer.android.com/tools/releases/platform-tools"
+            >install android sdk tools</a
+          >?). Sony claims that you can enter fastboot mode through volume up (+
+          power button?) combination, but I couldn't do that with my phone so I
+          used <code>adb</code> instead.
+        </li>
+        <li>
+          You need to get an unlock code for your device (<a
+            href="https://developer.sony.com/open-source/aosp-on-xperia-open-devices/get-started/unlock-bootloader"
+            >use model and IMEI number here</a
+          >) and run the command
+          <code>./fastboot oem unlock 0x&lt;your_code&gt;</code>, where you
+          replace <code>&lt;your_code&gt;</code> with the unlock code you got
+          from the official Sony developer portal.
+        </li>
+      </ul>
+      <p>
+        Now comes the hard part that I am currently pausing this process on.
+        Here's the things we need to do.
+      </p>
+      <ul>
+        <li>
+          Download official Sony firmware (not considering alternatives such as
+          <a href="https://lineageos.org/">LineageOS</a> for now) using
+          <a
+            href="https://xdaforums.com/t/tool-xperifirm-xperia-firmware-downloader-v5-7-1.2834142/"
+            >XperiFirm</a
+          >. Be sure to check the firmware version on your phone and see if it
+          matches the available options. This part is straightforward.
+        </li>
+        <li>
+          Now we create a <code>boot.img</code> file from the extracted firmware
+          directory. Now there are a lot of <code>.sin</code> files in the
+          extracted directory and apparently we have to create my boot image
+          through <code>boot_xxx.sin</code> file. Once the image is created, we
+          use <a href="https://github.com/topjohnwu/Magisk">Magisk</a> to create
+          a rooted boot image.
+        </li>
+      </ul>
+      <p>
+        Here's where I'm stuck currently - I used
+        <a
+          href="https://xdaforums.com/t/tool-unsin-sin-v3-v4-v5-unpacker-v2-0.3128106/"
+          >Unsin</a
+        >
+        to create a boot.img file, however, this isn't recognized by Magisk as a
+        valid boot image. Maybe the way to do it is to create a 'super' boot
+        image as the Unsin XDA forum says and then unpack it into individual
+        partition images (using lpunpack?). I'm going to try and use a vanilla
+        android (AOSP) ROM next (<a
+          href="https://developer.sony.com/open-source/aosp-on-xperia-open-devices/guides/aosp-build-instructions/build-aosp-pie-9-0"
+          >see here</a
+        >), but this work is postponed for now.
+      </p>
+    </main>
+
+    <footer>
+      <span
+        ><a href="https://github.com/pranjalpokharel7">Github</a>&nbsp;</span
+      >
+      <span
+        >::
+        <a href="https://www.linkedin.com/in/pranjal-pokharel-860637188/"
+          >LinkedIn</a
+        ></span
+      >
+    </footer>
+  </body>
+</html>
