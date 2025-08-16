@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Boilerplate | Pranjal Pokharel</title>
+    <link rel="stylesheet" href="../style.css?v=2" />
+  </head>
+  <body>
+    <header>
+      <h1>Boilerplate!</h1>
+      <nav>
+        <a href="/">Home</a>&nbsp; <a href="/posts.html">Posts</a>&nbsp;
+        <a href="/resume.html">Resume</a>
+      </nav>
+      <p>Updated: <i>2025-08-16</i></p>
+      <hr class="header-separator" />
+    </header>
+
+    <main>
+      <p>
+        This is just a simple list of tools I use for development. In no way is
+        this meant to be strongly opinionated or a how-to for the best developer
+        setup. This post is a work in progress and will be updated from time to
+        time.
+      </p>
+      <h3 id="browser-firefox">Browser: Firefox</h3>
+      <p>
+        I was on Chromium (the OSS version) for the longest time, mainly due to
+        the ability to natively switch user profiles. However, more recently,
+        watching videos on youtube has become almost impossible for me on
+        Chromium due to the aggressive response against ad-blockers (also
+        against the extension
+        <a
+          href="https://chromewebstore.google.com/detail/df-youtube-distraction-fr/ikeajfeodalhkonnaiklhpakinnghgaa?pli=1"
+          >DF Youtube</a
+        >
+        for some reason). Brave might have been an alternative option
+      </p>
+      <p>Extensions I recommend for Firefox include,</p>
+      <ul>
+        <li>uBlock Origin - Ad Blocker</li>
+        <li>Privacy Badger, Don't Track me Google - Privacy Extensions</li>
+        <li>
+          DF Youtube, YouTube Nonstop, Video Speed Controller, SponsorBlock for
+          YouTube - Better YouTube Experience
+        </li>
+        <li>Old Reddit Redirect - Better Reddit Experience</li>
+      </ul>
+      <h3 id="editor-neovim">Editor: NeoVim</h3>
+      <p>
+        I used vim mode in VSCode for the longest time, but I must admit the
+        native experience in NeoVim is something else. There are a lot of
+        packages available today that you almost never have to leave your
+        terminal for anything (eg, lsp protocol is native to nvim). I still have
+        VSCode for debugging purposes and for some refactoring issues (eg, find
+        and replace in multiple files is something I haven't figured out in
+        NeoVim).
+      </p>
+      <p>
+        Checkout my config files at
+        <a href="https://github.com/pranjalpokharel7/dotfiles/tree/main/nvim"
+          >pranjalpokharel7/dotfiles/nvim</a
+        >.
+      </p>
+      <h3 id="note-taker-obsidian">Note Taker: Obsidian</h3>
+      <p>
+        Enough said. There isn't a better note taking app which is available
+        offline. Even this blog post is being written in Obsidian (I have a
+        workflow to export the markdown to html page). There is no need to use
+        Notion, unless it's some sort of company policy.
+      </p>
+      <p>
+        You might want to install the following community extensions to make the
+        Obsidian experience just that better.
+      </p>
+      <ul>
+        <li>Natural Language Dates - Shortcut to add date/time while typing</li>
+        <li>
+          Pandoc Plugin - Access pandoc exports through command palette (you can
+          directly use the terminal though)
+        </li>
+        <li>Omnisearch - Better search throughout your vault</li>
+        <li>
+          Paste URL Into Selection - Paste URLs directly into text (instead of
+          manually typing square brackets and parenthesis in markdown)
+        </li>
+        <li>
+          Typewriter Mode - Keep the current line in the middle of the screen
+          (other options are available too)
+        </li>
+        <li>Obsidian Reading Time, Hider, Outliner - Better UI/UX</li>
+        <li>Settings Search, Janitor - Utilities</li>
+      </ul>
+      <h3 id="video-player-mpv">Video Player: mpv</h3>
+      <p>
+        Lightweight and it just works. I can see someone making a strong case
+        for vlc, but my requirements never really exceed everything provided by
+        mpv.
+      </p>
+    </main>
+
+    <footer>
+      <span
+        ><a href="https://github.com/pranjalpokharel7">Github</a>&nbsp;</span
+      >
+      <span
+        >::
+        <a href="https://www.linkedin.com/in/pranjal-pokharel-860637188/"
+          >LinkedIn</a
+        ></span
+      >
+    </footer>
+  </body>
+</html>
