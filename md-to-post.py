@@ -3,7 +3,7 @@ import sys
 from pathlib import Path
 
 if len(sys.argv) != 2:
-    print("Usage: python md-to-html.py <path/to/markdown-file.md>")
+    print("Usage: python md-to-post.py <path/to/markdown-file.md>")
     sys.exit(1)
 
 md_path = Path(sys.argv[1])

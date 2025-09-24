@@ -1,0 +1,74 @@
+/* Basic Responsive Image - Scales proportionally, never exceeds container */
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Fluid Image - Always fills container width */
+.img-fluid {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Responsive with breakpoint-based max-widths */
+.img-responsive {
+    width: 100%;
+    height: auto;
+    max-width: 300px; /* Mobile */
+}
+
+@media (min-width: 768px) {
+    .img-responsive {
+        max-width: 500px; /* Tablet */
+    }
+}
+
+@media (min-width: 1024px) {
+    .img-responsive {
+        max-width: 700px; /* Desktop */
+    }
+}
+
+@media (min-width: 1440px) {
+    .img-responsive {
+        max-width: 900px; /* Large screens */
+    }
+}
+
+/* Viewport width based sizing */
+.img-vw {
+    width: 90vw; /* 90% of viewport width */
+    height: auto;
+    max-width: 800px; /* Prevent too large on wide screens */
+}
+
+/* Container query approach (for modern browsers) */
+@container (min-width: 300px) {
+    .img-container-responsive {
+        width: 80%;
+        height: auto;
+    }
+}
+
+@container (min-width: 600px) {
+    .img-container-responsive {
+        width: 60%;
+        height: auto;
+    }
+}
+
+/* Aspect ratio preserved scaling */
+.img-aspect {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16 / 9; /* Maintains 16:9 ratio */
+    object-fit: cover;
+}
+
+/* Clamp function for smooth scaling */
+.img-clamp {
+    width: clamp(200px, 50vw, 800px);
+    height: auto;
+}

@@ -1,0 +1,406 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>K17 CTF Writeup | Pranjal Pokharel</title>
+  <link rel="stylesheet" href="../style.css?v=2" />
+</head>
+
+<body>
+  <header>
+    <h1>K17 CTF Writeup</h1>
+    <nav>
+      <a href="/">Home</a>&nbsp;
+      <a href="/posts.html">Posts</a>&nbsp;
+      <a href="/resume.html">Resume</a>
+    </nav>
+    <p>Updated: <i>2025-09-24</i></p>
+    <section class="toc-list">
+      <strong>Contents:</strong> 
+      <a href="#radioactive">
+        <span class="title">radioactive</span>
+      </a>
+      |
+      <a href="#smoothie">
+        <span class="title">smoothie</span>
+      </a>
+      |
+      <a href="#pass-me-the-salt">
+        <span class="title">pass me the salt</span>
+      </a>
+      |
+      <a href="#dinner">
+        <span class="title">dinner</span>
+      </a>
+      |
+      <a href="#daily-re">
+        <span class="title">daily re</span>
+      </a>
+      |
+    </section>
+    <hr class="header-separator" />
+  </header>
+
+  <main>
+    <p>This is a writeup of the <a href="https://ctf.secso.cc/">K17 CTF</a>
+      that I participated in. This was only my 2nd ever CTF! I couldn't solve
+      all the challenges, but the ones I did solve are listed in this
+      writeup.</p>
+    <h2 id="radioactive">radioactive</h2>
+    <p><strong>category:</strong> OSINT, Beginner</p>
+    <p>Where is this tower located?</p>
+    <p>Note: Please answer with coordinates rounded to 3 decimal places and
+      wrap your answer with K17{}. For example, if you think that the tower is
+      the Eiffel Tower, please submit K17{48.858,2.296}.</p>
+    <figure>
+      <img src="/static/images/k17/tower.webp" alt="tower.webp" />
+
+    </figure>
+    <h3 id="solution">Solution</h3>
+    <p>If you zoom in at this particular plate, you can see at least two
+      distinct identifiers that can narrow our search down.</p>
+    <figure>
+      <img src="/static/images/k17/radioactive.webp" alt="radioactive.webp" />
+
+    </figure>
+    <p>First is the website link, which is a bit obscured on the last
+      letter, but the text <code>NSA</code> on the bottom hints that the
+      obscured letter is probably an <code>a</code>. This makes our website
+      <code>www.rfnsa.com.au</code>.
+    </p>
+    <p>On the website, we can search for a telecommunications tower through
+      the site number. One of the digits for this is also hidden, but after
+      trying a few combinations, we get a tower with the number
+      <code>2154006</code>. If you click on the map point, you can get the
+      coordinates on a popup.
+    </p>
+    <figure>
+      <img src="/static/images/k17/tower-location.webp" alt="tower-location.webp" />
+
+    </figure>
+    <hr />
+    <h2 id="smoothie">smoothie</h2>
+    <p><strong>category:</strong> Misc, Beginner</p>
+    <p>I put the flag in a blender. Oops.</p>
+    <figure>
+      <img src="/static/images/k17/chall.webp" alt="chall.webp" />
+
+    </figure>
+    <h3 id="solution-1">Solution</h3>
+    <p>The challenge is to “unwind” the image and get the flag. If you
+      analyze the metadata on the <strong>original</strong> image (the
+      uploaded image here might not have it when you download it), there’s
+      something odd that you notice in the comment section.</p>
+    <div class="sourceCode" id="cb1">
+      <pre
+        class="sourceCode bash"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="ex">$</span> exiftool chall.webp <span class="kw">|</span> <span class="fu">tail</span> <span class="at">-n</span> 10</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="ex">Green</span> X                         : 0.3</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="ex">Green</span> Y                         : 0.6</span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="ex">Blue</span> X                          : 0.15</span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="ex">Blue</span> Y                          : 0.06</span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="ex">Pixels</span> Per Unit X               : 3780</span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a><span class="ex">Pixels</span> Per Unit Y               : 3780</span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a><span class="ex">Pixel</span> Units                     : meters</span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a><span class="ex">Comment</span>                         : Q3JlYXRlZCB3aXRoIEdJTVA=</span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a><span class="ex">Image</span> Size                      : 500x500</span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a><span class="ex">Megapixels</span>                      : 0.250</span></code></pre>
+    </div>
+    <p>It is a Base64 encoded string, which is decoded to
+      <code>Created with GIMP</code> (you can use any online decoder for
+      this). With this hint, you can open the image in GIMP and reverse the
+      previously applied whirl effect (i.e. in the clockwise direction).
+    </p>
+    <figure>
+      <img src="/static/images/k17/rev-whirl.webp" alt="rev-whirl.webp" />
+
+    </figure>
+    <hr />
+    <h2 id="pass-me-the-salt">pass me the salt</h2>
+    <p><strong>Category:</strong> Crypto, Beginner</p>
+    <p>Pretty pleaseeeeee 🥺🥺🥺</p>
+    <p><code>nc challenge.secso.cc 7002</code></p>
+    <h3 id="solution-2">Solution</h3>
+    <p>The remote server is running a python script acting as an
+      authentication server, where you can perform one of three tasks - create
+      account, login, or change password. Additionally, it has an
+      <code>admin</code> user created beforehand, whose password is the
+      <code>"admin"</code> string encoded as hex (in plaintext).
+    </p>
+    <div class="sourceCode" id="cb2">
+      <pre
+        class="sourceCode python"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="cf">if</span> <span class="va">__name__</span> <span class="op">==</span> <span class="st">&quot;__main__&quot;</span>:</span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>    <span class="co"># admin account is created beforehand, password is clearly visible</span></span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>    create_account(<span class="st">&quot;admin&quot;</span>, <span class="st">&quot;admin&quot;</span>.encode().<span class="bu">hex</span>())</span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a>    <span class="cf">while</span> <span class="va">True</span>:</span>
+<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a>                option <span class="op">=</span> <span class="bu">input</span>(<span class="st">&quot;1. Create Account</span><span class="ch">\n</span><span class="st">2. Login</span><span class="ch">\n</span><span class="st">3. Change Password</span><span class="ch">\n</span><span class="st">(1, 2, 3)&gt; &quot;</span>)</span>
+<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a>                <span class="cf">if</span> option <span class="op">==</span> <span class="st">&quot;1&quot;</span>:</span>
+<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a>                    <span class="co"># ... account creation logic</span></span>
+<span id="cb2-9"><a href="#cb2-9" aria-hidden="true" tabindex="-1"></a>                <span class="cf">elif</span> option <span class="op">==</span> <span class="st">&quot;2&quot;</span>:</span>
+<span id="cb2-10"><a href="#cb2-10" aria-hidden="true" tabindex="-1"></a>                    <span class="co"># ... login logic</span></span>
+<span id="cb2-11"><a href="#cb2-11" aria-hidden="true" tabindex="-1"></a>                <span class="cf">elif</span> option <span class="op">==</span> <span class="st">&quot;3&quot;</span>:</span>
+<span id="cb2-12"><a href="#cb2-12" aria-hidden="true" tabindex="-1"></a>                    <span class="co"># ... password change logic</span></span></code></pre>
+    </div>
+    <p>First, if we see the <code>create_account</code> logic, we can see
+      there are three major steps to note (described in comments).</p>
+    <div class="sourceCode" id="cb3">
+      <pre
+        class="sourceCode python"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> create_account(login, pwd):</span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> login <span class="kw">in</span> logins.keys():</span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>        <span class="cf">return</span> <span class="va">False</span></span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a>    <span class="co"># step 1: get a random salt (this can&#39;t be replicated)</span></span>
+<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a>    <span class="op">**</span>salt <span class="op">=</span> os.urandom(<span class="dv">16</span>)<span class="op">**</span></span>
+<span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb3-8"><a href="#cb3-8" aria-hidden="true" tabindex="-1"></a>    <span class="co"># step 2: concatenate salt with password encoded as bytes</span></span>
+<span id="cb3-9"><a href="#cb3-9" aria-hidden="true" tabindex="-1"></a>    <span class="op">**</span>salted_pwd <span class="op">=</span> salt <span class="op">+</span> (pwd).encode()<span class="op">**</span></span>
+<span id="cb3-10"><a href="#cb3-10" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb3-11"><a href="#cb3-11" aria-hidden="true" tabindex="-1"></a>    <span class="co"># step 3: calculate the hexdigest of the salted password</span></span>
+<span id="cb3-12"><a href="#cb3-12" aria-hidden="true" tabindex="-1"></a>    <span class="co"># i.e. the password bytes represented in hex format</span></span>
+<span id="cb3-13"><a href="#cb3-13" aria-hidden="true" tabindex="-1"></a>    <span class="op">**</span>passw <span class="op">=</span> sha1(salted_pwd).hexdigest()<span class="op">**</span></span>
+<span id="cb3-14"><a href="#cb3-14" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb3-15"><a href="#cb3-15" aria-hidden="true" tabindex="-1"></a>    logins[login] <span class="op">=</span> passw</span>
+<span id="cb3-16"><a href="#cb3-16" aria-hidden="true" tabindex="-1"></a>    salts[login] <span class="op">=</span> salt</span>
+<span id="cb3-17"><a href="#cb3-17" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-18"><a href="#cb3-18" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> <span class="va">True</span></span></code></pre>
+    </div>
+    <p>The challenge is to login as the admin user to get the flag.
+      Providing wrong password means we return after <code>check_login</code>
+      function call fails. Seems simple, but there is a catch - the password
+      can not be the string <code>"admin"</code> to view the flag - even
+      though that should be our password in plaintext (or are we wrong in
+      making this assumption?).</p>
+    <div class="sourceCode" id="cb4">
+      <pre
+        class="sourceCode python"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="cf">elif</span> option <span class="op">==</span> <span class="st">&quot;2&quot;</span>:</span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>        <span class="co"># ...</span></span>
+<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a>        </span>
+<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a>        <span class="co"># checks if the login credentials are correct</span></span>
+<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> <span class="kw">not</span> check_login(login, pwd):</span>
+<span id="cb4-6"><a href="#cb4-6" aria-hidden="true" tabindex="-1"></a>        <span class="bu">print</span>(<span class="st">&quot;Invalid login or password.&quot;</span>)</span>
+<span id="cb4-7"><a href="#cb4-7" aria-hidden="true" tabindex="-1"></a>        <span class="cf">continue</span></span>
+<span id="cb4-8"><a href="#cb4-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-9"><a href="#cb4-9" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> login <span class="op">==</span> <span class="st">&quot;admin&quot;</span>:</span>
+<span id="cb4-10"><a href="#cb4-10" aria-hidden="true" tabindex="-1"></a>            <span class="co"># can&#39;t use the correct password to view the flag???</span></span>
+<span id="cb4-11"><a href="#cb4-11" aria-hidden="true" tabindex="-1"></a>        <span class="cf">if</span> pwd <span class="op">!=</span> <span class="st">&quot;admin&quot;</span>.encode().<span class="bu">hex</span>():</span>
+<span id="cb4-12"><a href="#cb4-12" aria-hidden="true" tabindex="-1"></a>            <span class="bu">print</span>(<span class="ss">f&quot;Congratulations! Here is your flag: </span><span class="sc">{</span>os<span class="sc">.</span>getenv(<span class="st">&#39;FLAG&#39;</span>)<span class="sc">}</span><span class="ss">&quot;</span>)</span>
+<span id="cb4-13"><a href="#cb4-13" aria-hidden="true" tabindex="-1"></a>        </span>
+<span id="cb4-14"><a href="#cb4-14" aria-hidden="true" tabindex="-1"></a>      <span class="co"># ... rest of the logic</span></span></code></pre>
+    </div>
+    <p>For the <code>check_login</code> function, we can note a few things.
+      First, the <code>pwd</code> must be in hex format for the method
+      <code>bytes.fromhex</code> to work correctly - so password must be
+      provided in hex, which you assume will be
+      <code>"admin".encode().hex() == "61646d696e"</code> .
+    </p>
+    <div class="sourceCode" id="cb5">
+      <pre
+        class="sourceCode python"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> check_login(login, pwd):</span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>    <span class="co"># ...</span></span>
+<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a>        </span>
+<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a>    salt <span class="op">=</span> salts[login]</span>
+<span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a>    salted_pwd <span class="op">=</span> salt <span class="op">+</span> <span class="op">**</span><span class="bu">bytes</span>.fromhex(pwd)<span class="op">**</span></span>
+<span id="cb5-6"><a href="#cb5-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-7"><a href="#cb5-7" aria-hidden="true" tabindex="-1"></a>    passw <span class="op">=</span> sha1(salted_pwd).hexdigest()</span>
+<span id="cb5-8"><a href="#cb5-8" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> passw <span class="op">==</span> logins[login]</span>
+<span id="cb5-9"><a href="#cb5-9" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb5-10"><a href="#cb5-10" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb5-11"><a href="#cb5-11" aria-hidden="true" tabindex="-1"></a><span class="cf">if</span> <span class="va">__name__</span> <span class="op">==</span> <span class="st">&quot;__main__&quot;</span>:</span>
+<span id="cb5-12"><a href="#cb5-12" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-13"><a href="#cb5-13" aria-hidden="true" tabindex="-1"></a>        <span class="co"># ... login logic</span></span>
+<span id="cb5-14"><a href="#cb5-14" aria-hidden="true" tabindex="-1"></a>        <span class="co"># the password is passed in plaintext - no hex encoding within the code!</span></span>
+<span id="cb5-15"><a href="#cb5-15" aria-hidden="true" tabindex="-1"></a>        <span class="co"># so you must pass a hex string as password - is it 61646d696e???</span></span>
+<span id="cb5-16"><a href="#cb5-16" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> <span class="kw">not</span> check_login(login, pwd):</span>
+<span id="cb5-17"><a href="#cb5-17" aria-hidden="true" tabindex="-1"></a>        <span class="bu">print</span>(<span class="st">&quot;Invalid login or password.&quot;</span>)</span>
+<span id="cb5-18"><a href="#cb5-18" aria-hidden="true" tabindex="-1"></a>        <span class="cf">continue</span></span></code></pre>
+    </div>
+    <p><strong>WRONG!</strong> If you notice, the password used in creating
+      the account isn’t the word <code>"admin"</code> it is actually
+      <code>61646d696e</code> itself!
+    </p>
+    <div class="sourceCode" id="cb6">
+      <pre
+        class="sourceCode python"><code class="sourceCode python"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="cf">if</span> <span class="va">__name__</span> <span class="op">==</span> <span class="st">&quot;__main__&quot;</span>:</span>
+<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a>        <span class="co"># we are encoding into hex while creating the account though!</span></span>
+<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a>        <span class="co"># so password isn&#39;t admin but 61646d696e!</span></span>
+<span id="cb6-4"><a href="#cb6-4" aria-hidden="true" tabindex="-1"></a>    create_account(<span class="st">&quot;admin&quot;</span>, <span class="st">&quot;admin&quot;</span>.encode().<span class="bu">hex</span>())</span></code></pre>
+    </div>
+    <p>Since you can run the script locally, you can modify the code and add
+      a print statement to print out the password during account creation.
+      Here I used a debugger.</p>
+    <figure>
+      <img src="/static/images/k17/passwd.webp" alt="passwd.webp" />
+
+    </figure>
+    <p>This is also evident when you try to login using the password
+      <code>61646d696e</code> but the script outputs that the login
+      credentials are incorrect.
+    </p>
+    <div class="sourceCode" id="cb7">
+      <pre
+        class="sourceCode bash"><code class="sourceCode bash"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="ex">1.</span> Create Account</span>
+<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a><span class="ex">2.</span> Login</span>
+<span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a><span class="ex">3.</span> Change Password</span>
+<span id="cb7-4"><a href="#cb7-4" aria-hidden="true" tabindex="-1"></a><span class="kw">(</span><span class="ex">1,</span> 2, 3<span class="kw">)</span><span class="op">&gt;</span> 2</span>
+<span id="cb7-5"><a href="#cb7-5" aria-hidden="true" tabindex="-1"></a><span class="ex">Login:</span> admin</span>
+<span id="cb7-6"><a href="#cb7-6" aria-hidden="true" tabindex="-1"></a><span class="ex">Password:</span> 61646d696e</span>
+<span id="cb7-7"><a href="#cb7-7" aria-hidden="true" tabindex="-1"></a><span class="ex">Invalid</span> login or password.</span></code></pre>
+    </div>
+    <p>The logical step is to then pass <code>61646d696e</code> further
+      encoded into bytes and hex so that on decoding it is reconstructed.</p>
+    <div class="sourceCode" id="cb8">
+      <pre
+        class="sourceCode python"><code class="sourceCode python"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a>In [<span class="dv">5</span>]: <span class="st">&#39;61646d696e&#39;</span>.encode().<span class="bu">hex</span>()</span>
+<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a>Out[<span class="dv">5</span>]: <span class="st">&#39;36313634366436393665&#39;</span> <span class="co"># this is our login password!</span></span>
+<span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-4"><a href="#cb8-4" aria-hidden="true" tabindex="-1"></a>In [<span class="dv">6</span>]: <span class="bu">bytes</span>.fromhex(<span class="st">&#39;36313634366436393665&#39;</span>)</span>
+<span id="cb8-5"><a href="#cb8-5" aria-hidden="true" tabindex="-1"></a>Out[<span class="dv">6</span>]: <span class="st">b&#39;61646d696e&#39;</span></span></code></pre>
+    </div>
+    <p>With <code>36313634366436393665</code> as our password, we can
+      successfully login and retrieve the flag (here it is <code>None</code>
+      since the script is run locally, you’ll get the actual flag when you
+      netcat to the remote server
+      <code>nc challenge.secso.cc 7002</code>).
+    </p>
+    <div class="sourceCode" id="cb9">
+      <pre
+        class="sourceCode bash"><code class="sourceCode bash"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="ex">1.</span> Create Account</span>
+<span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a><span class="ex">2.</span> Login</span>
+<span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a><span class="ex">3.</span> Change Password</span>
+<span id="cb9-4"><a href="#cb9-4" aria-hidden="true" tabindex="-1"></a><span class="kw">(</span><span class="ex">1,</span> 2, 3<span class="kw">)</span><span class="op">&gt;</span> 2</span>
+<span id="cb9-5"><a href="#cb9-5" aria-hidden="true" tabindex="-1"></a><span class="ex">Login:</span> admin</span>
+<span id="cb9-6"><a href="#cb9-6" aria-hidden="true" tabindex="-1"></a><span class="ex">Password:</span> 36313634366436393665</span>
+<span id="cb9-7"><a href="#cb9-7" aria-hidden="true" tabindex="-1"></a><span class="ex">Congratulations!</span> Here is your flag: None</span></code></pre>
+    </div>
+    <hr />
+    <h2 id="dinner">dinner</h2>
+    <p><strong>category:</strong> OSINT, beginner</p>
+    <p>foood!!!! fooooood!!!!! what is the name of this venue?!?!!?!? TELL
+      ME</p>
+    <p>(no need to wrap your answer in the <code>K17</code> flag format,
+      just enter the name)</p>
+    <figure>
+      <img src="/static/images/k17/location.webp" alt="location.webp" />
+
+    </figure>
+    <h3 id="solution-3">Solution</h3>
+    <p>As in the previous OSINT exercise, key details from the image that
+      can help narrow our search are,</p>
+    <ul>
+      <li><strong>Date:</strong> 15-17 September (year unknown)</li>
+      <li><strong>Location:</strong> Sydney</li>
+      <li><strong>Keywords:</strong> Gala Dinner, Tech Central</li>
+    </ul>
+    <p>A quick google search should bring up <em>National Tech Summit
+        2025</em> (here it is my first result).</p>
+    <figure>
+      <img src="/static/images/k17/google-search.webp" alt="image.webp" />
+
+    </figure>
+    <p>If you visit the website, the graphics on the landing page are quite
+      similar to the poster graphics on the picture above (notice the
+      geometric graphics).</p>
+    <figure>
+      <img src="/static/images/k17/tech-council.webp" alt="tech-council.webp" />
+
+    </figure>
+    <p>Now this seems to be a multiple day event at different locations, but
+      we are specifically interested in finding out the venue where the gala
+      dinner took place. I couldn’t find the exact location within the
+      website, so I instead looked through some LinkedIn posts made by the
+      Tech Council of Australia (the event host) around the time of the
+      summit.</p>
+    <figure>
+      <img src="/static/images/k17/gala-dinner.webp" alt="gala-dinner.webp" />
+
+    </figure>
+    <p>Voila! We found the venue for our Gala Dinner!</p>
+    <hr />
+    <h2 id="daily-re">daily re</h2>
+    <p><strong>Category:</strong> Rev, Web, Beginner</p>
+    <p>It's too easy to cheat at Wordle, so I fixed that! What are the words
+      for the 72nd, 73rd, and 74th day?</p>
+    <p>Enter your answer in the format K17{&lt;72nd day word&gt;, &lt;73rd
+      day word&gt;, &lt;74th day word&gt;}. For example if you think the words
+      are 'trace', 'crane', and 'rocks' respectively, enter K17{trace, crane,
+      rocks}.</p>
+    <p><a href="https://daily-re.k17.secso.cc/">https://daily-re.k17.secso.cc</a></p>
+    <h2 id="solution-4">Solution</h2>
+    <p>If you inspect the network tab, there isn’t a specific server side
+      request that fetches the word for day 17. Even when you guess the word,
+      there is nothing sent to any external server to validate the check. This
+      hints that the word for the day is stored somewhere on client side. A
+      particular file that stands out to us is the <code>words.wasm</code>
+      file.</p>
+    <figure>
+      <img src="/static/images/k17/wordle-1.webp" alt="wordle-1.webp" />
+
+    </figure>
+    <p>Another way this file comes into notice is that we are explicitly
+      calling a webassembly function from our main script. This can be viewed
+      by opening the debugger tab and inspecting the <code>(index)</code>
+      file. To get the wordle script for any day, you need to provide the day
+      number (minus one, probably due to indexing issues) and the day key (a
+      hash value). So simply having the day numbers won’t suffice.</p>
+    <figure>
+      <img src="/static/images/k17/wordle-3.webp" alt="wordle-3.webp" />
+
+    </figure>
+    <p>If you now inspect the <code>words.wasm</code> file and scroll down
+      to the bottom, the assembly file describes a constant in the data
+      section.</p>
+    <figure>
+      <img src="/static/images/k17/wordle-2.webp" alt="wordle-2.webp" />
+
+    </figure>
+    <p>Copying and opening in a text file, we can see that it seems like a
+      byte-layout with interleaving alphanumeric words (a few are circled for
+      making the point).</p>
+    <figure>
+      <img src="/static/images/k17/wordle-5.webp" alt="wordle-5.webp" />
+
+    </figure>
+    <p>From this, we can deduce,</p>
+    <ol type="1">
+      <li>The wordle solution for each day is stored client-side.</li>
+      <li>The list of words are stored within a data segment in a web assembly
+        file.</li>
+      <li>To access word for a particular day, we need the day number
+        <strong>as well as</strong> some hash value.
+      </li>
+    </ol>
+    <p>Now, there can be better ways to proceed to the next part, but I
+      implemented a hack-ish solution to this. Since solution to a single day
+      seems to be encoded as
+
+      <code>day_number</code>, <code>hash</code> and <code>word_solution</code>,
+
+      I manually separated the large string into multiple newlines. This
+      might seem tedious, but for a small sample size (we only need about 80
+      lines to be sure), this is about 5 mins of work (I automated large
+      portions of it using vim scripting, since the character width of each
+      line is constant).
+    </p>
+    <figure>
+      <img src="/static/images/k17/wasm.webp" alt="wasm.webp" />
+
+    </figure>
+    <p>The line numbers correspond to the wordle values for a particular
+      day. I realize there could be a better way to disassemble/decompile the
+      file for direct access through indexing, but this seems the fastest way
+      to get the flag without having to learn too much about webasm.</p>
+
+  </main>
+
+  <footer>
+    <span><a href="https://github.com/pranjalpokharel7">Github</a></span>
+    <span>::
+      <a href="https://www.linkedin.com/in/pranjal-pokharel-860637188/">LinkedIn</a></span>
+    <span>::
+      <a href="https://www.twitch.tv/ppok24">Twitch</a></span>
+  </footer>
+</body>
+
+</html>
