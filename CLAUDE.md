@@ -39,7 +39,7 @@ Internal links can show a 400×500px preview card on click by adding the `previe
 
 Clicking the link opens a card to the right of the link showing the target page's `<main>` content. Clicking the same link again or clicking outside closes it. On screens narrower than 768px the card is disabled and the link navigates normally (also the natural fallback when JS is disabled).
 
-The feature lives in `preview.js` (root) and card styles are at the bottom of `style.css`. All HTML pages include `preview.js`; root pages use `src="preview.js"`, posts use `src="../preview.js"`. The `boilerplate.html` template already has the script tag, so new posts generated via `md-to-post.py` will include it automatically.
+The feature lives in `scripts/preview.js` and card styles in `stylesheets/preview-card.css`. All HTML pages include both; root pages use `scripts/preview.js` and `stylesheets/preview-card.css`, posts use `../scripts/preview.js` and `../stylesheets/preview-card.css`. The `boilerplate.html` template already has the correct paths, so new posts generated via `md-to-post.py` will include them automatically.
 
 ## Architecture
 
@@ -48,5 +48,8 @@ The feature lives in `preview.js` (root) and card styles are at the bottom of `s
 - `resume.html` — resume page
 - `posts/` — generated HTML blog posts
 - `boilerplate.html` — template wrapper for blog posts (the `CONTENTS GO HERE` marker is where post body is injected)
-- `style.css` — all site styles; uses Google Sans Code, responsive breakpoints at 768px / 1024px / 1200px / 1440px / 1600px
+- `stylesheets/style.css` — main site styles; uses Google Sans Code, responsive breakpoints at 768px / 1024px / 1200px / 1440px / 1600px
+- `stylesheets/style-image.css` — responsive image styles
+- `stylesheets/preview-card.css` — link preview card styles
+- `scripts/preview.js` — link preview card logic
 - `static/` — PDFs, images, and other assets

@@ -3,6 +3,11 @@ User-agent: *
 Disallow:
 Disallow: boilperplate.html
 Disallow: md-to-post.py
+Disallow: main.py
 Disallow: requirements.txt
 Disallow: .pre-commit-config.yaml
 Disallow: README.md
+Disallow: CLAUDE.md
+Disallow: uv.lock
+Disallow: .python-version
+Disallow: .gitignore
