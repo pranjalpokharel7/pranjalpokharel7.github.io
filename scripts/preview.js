@@ -84,10 +84,10 @@
       var doc = parser.parseFromString(html, 'text/html');
       var baseUrl = response.url;
 
-      var titleEl = doc.querySelector('title');
-      refs.titleLink.textContent = titleEl ? titleEl.textContent : href;
+			refs.titleLink.textContent = "Continue To Page >>>";
       refs.titleLink.href = href;
 
+      var title = doc.querySelector('h1');
       var main = doc.querySelector('main');
       if (!main) { throw new Error('no main element'); }
 
@@ -104,7 +104,7 @@
         }
       });
 
-      refs.body.innerHTML = main.innerHTML;
+			refs.body.innerHTML = `<h1>${title.innerHTML}</h1>` + main.innerHTML;
     } catch (e) {
       refs.body.innerHTML = '<p>Could not load preview.</p>';
     }
