@@ -45,15 +45,7 @@
 
     var titleLink = document.createElement('a');
     titleLink.className = 'preview-card-title';
-
-    var closeBtn = document.createElement('button');
-    closeBtn.className = 'preview-card-close';
-    closeBtn.setAttribute('aria-label', 'Close preview');
-    closeBtn.textContent = '\u00d7';
-    closeBtn.addEventListener('click', removeCard);
-
     header.appendChild(titleLink);
-    header.appendChild(closeBtn);
 
     var body = document.createElement('div');
     body.className = 'preview-card-body';
@@ -86,6 +78,7 @@
 
 			refs.titleLink.textContent = "Continue To Page >>>";
       refs.titleLink.href = href;
+			refs.titleLink.addEventListener('click', removeCard);
 
       var title = doc.querySelector('h1');
       var main = doc.querySelector('main');
